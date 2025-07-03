@@ -1,0 +1,23 @@
+# FastAPI 和 Web 服務
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# 文件處理
+PyPDF2>=3.0.0
+pdfplumber>=0.11.0
+PyMuPDF>=1.23.0
+
+# AI 和向量化
+openai>=1.0.0
+qdrant-client>=1.7.0
+
+# 數據處理
+numpy>=1.21.0
+scipy>=1.9.0
+pandas>=1.5.0
+
+# 環境變數管理
+python-dotenv>=1.0.0
+
+# 可選：中文支援
+jieba>=0.42.0
