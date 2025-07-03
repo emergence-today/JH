@@ -25,7 +25,8 @@ logger = logging.getLogger(__name__)
 app = FastAPI(
     title="圖面識別教學 RAG API",
     description="基於 Qdrant 向量資料庫的教學型 RAG 查詢服務",
-    version="1.0.0"
+    version="1.0.0",
+    root_path="/api/v1/JH"
 )
 
 # 添加 CORS 中間件
@@ -383,7 +384,7 @@ if __name__ == "__main__":
     uvicorn.run(
         "main:app",
         host="0.0.0.0",
-        port=8000,
+        port=8006,
         reload=True,
         log_level="info"
     )
