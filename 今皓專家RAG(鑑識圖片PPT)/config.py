@@ -18,11 +18,11 @@ class Config:
 
     # Qdrant 設定
     QDRANT_URL = os.getenv("QDRANT_URL", "http://ec2-13-112-118-36.ap-northeast-1.compute.amazonaws.com:6333")
-    QDRANT_COLLECTION_NAME = os.getenv("QDRANT_COLLECTION_NAME", "steven_test_0703")
+    QDRANT_COLLECTION_NAME = os.getenv("QDRANT_COLLECTION_NAME", "steven_JH_pro_0704")
 
     # OpenAI API 設定 - 從 .env 讀取
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
-    OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")
+    OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")
     OPENAI_EMBEDDING_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
 
     # RAG檢索參數 - 從 .env 讀取，如果沒有則使用預設值

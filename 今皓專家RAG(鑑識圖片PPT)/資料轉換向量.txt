@@ -1,0 +1,8 @@
+python batch_process_files.py "您的資料夾路徑" --collection steven_0704
+python batch_process_files.py "/home/ubuntu/projects/JH/今皓專家RAG(鑑識圖片PPT)/專家/圖紙認識/材料介紹" --collection steven_0704
+
+python batch_process_files.py "您的資料夾路徑" --collection steven_0704 --force-recreate
+
+python batch_process_files.py "/home/ubuntu/projects/JH/今皓專家RAG(鑑識圖片PPT)/專家/圖紙認識/材料介紹" --collection steven_0704 --force-recreate
+
+uv run batch_process_files.py "/home/ubuntu/projects/JH/今皓專家RAG(鑑識圖片PPT)/專家/圖紙認識/材料介紹" --collection steven_0704 --force-recreate

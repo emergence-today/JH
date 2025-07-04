@@ -44,7 +44,7 @@ class TeachingRAGSystem:
         # 設置 Qdrant 客戶端
         self.qdrant_url = qdrant_url or "http://ec2-13-112-118-36.ap-northeast-1.compute.amazonaws.com:6333"
         self.qdrant_client = QdrantClient(url=self.qdrant_url)
-        self.collection_name = "steven_test_0703"
+        self.collection_name = "steven_JH_pro_0704"
 
         # 初始化 MeteorUtilities
         self.meteor = MeteorUtilities()
@@ -67,6 +67,72 @@ class TeachingRAGSystem:
         self.chunks = processor.load_chunks(chunks_file)
 
         logger.info(f"載入了 {len(self.chunks)} 個文件段落")
+
+    def should_load_local_chunks(self) -> bool:
+        """
+        檢查是否需要載入本地 chunks 檔案
+
+        Returns:
+            bool: 如果需要載入本地檔案返回 True，否則返回 False
+        """
+        try:
+            # 檢查集合是否存在
+            collections = self.qdrant_client.get_collections()
+            collection_exists = any(col.name == self.collection_name for col in collections.collections)
+
+            if not collection_exists:
+                logger.info(f"集合 {self.collection_name} 不存在，需要載入本地檔案")
+                return True
+
+            # 檢查集合是否有資料
+            collection_info = self.qdrant_client.get_collection(self.collection_name)
+            existing_count = collection_info.vectors_count
+            points_count = collection_info.points_count
+
+            # 處理 vectors_count 可能為 None 的情況
+            if existing_count is None:
+                existing_count = points_count if points_count is not None else 0
+
+            if existing_count > 0:
+                logger.info(f"集合 {self.collection_name} 已存在且包含 {existing_count} 個向量，無需載入本地檔案")
+                return False
+            else:
+                logger.info(f"集合 {self.collection_name} 存在但為空，需要載入本地檔案")
+                return True
+
+        except Exception as e:
+            logger.warning(f"檢查集合狀態時發生錯誤: {e}，預設載入本地檔案")
+            return True
+
+    def has_vector_data(self) -> bool:
+        """
+        檢查 Qdrant 集合是否包含向量資料
+
+        Returns:
+            bool: 如果集合存在且包含資料返回 True，否則返回 False
+        """
+        try:
+            # 檢查集合是否存在
+            collections = self.qdrant_client.get_collections()
+            collection_exists = any(col.name == self.collection_name for col in collections.collections)
+
+            if not collection_exists:
+                return False
+
+            # 檢查集合是否有資料
+            collection_info = self.qdrant_client.get_collection(self.collection_name)
+            existing_count = collection_info.vectors_count
+            points_count = collection_info.points_count
+
+            # 處理 vectors_count 可能為 None 的情況
+            if existing_count is None:
+                existing_count = points_count if points_count is not None else 0
+
+            return existing_count > 0
+
+        except Exception as e:
+            logger.warning(f"檢查向量資料時發生錯誤: {e}")
+            return False
 
     def create_embeddings(self):
         """為所有文件段落創建向量嵌入並儲存到 Qdrant"""
@@ -93,8 +159,14 @@ class TeachingRAGSystem:
                     logger.info(f"集合 {self.collection_name} 的 vectors_count 為 None，使用 points_count: {existing_count}")
 
                 if existing_count > 0:
-                    logger.info(f"集合 {self.collection_name} 已存在且包含 {existing_count} 個向量，跳過重新生成")
-                    return
+                    logger.info(f"集合 {self.collection_name} 已存在且包含 {existing_count} 個向量")
+                    # 檢查是否需要添加新的文件內容
+                    if self._should_add_new_content(existing_count):
+                        logger.info("檢測到新文件內容，將添加到現有集合中...")
+                        self._generate_and_store_embeddings()
+                    else:
+                        logger.info("集合內容已是最新，跳過向量生成")
+                    return  # 提前返回，避免重複執行
                 else:
                     logger.info(f"集合 {self.collection_name} 存在但為空，將重新生成向量")
             else:
@@ -111,7 +183,7 @@ class TeachingRAGSystem:
             logger.error(f"Qdrant 集合操作失敗: {e}")
             raise
 
-        # 如果需要生成向量，調用內部方法
+        # 如果到這裡，說明是新集合或空集合，需要生成向量
         self._generate_and_store_embeddings()
 
     def force_recreate_embeddings(self):
@@ -145,6 +217,42 @@ class TeachingRAGSystem:
             logger.error(f"強制重新創建向量嵌入失敗: {e}")
             raise
 
+    def _should_add_new_content(self, existing_count: int) -> bool:
+        """
+        檢查是否需要添加新的文件內容到現有集合
+
+        Args:
+            existing_count: 現有集合中的向量數量
+
+        Returns:
+            bool: 如果需要添加新內容返回 True，否則返回 False
+        """
+        try:
+            # 檢查當前載入的 chunks 數量
+            current_chunks_count = len(self.chunks)
+
+            # 如果當前 chunks 數量大於現有向量數量，說明有新內容
+            if current_chunks_count > existing_count:
+                logger.info(f"檢測到新內容: 當前 {current_chunks_count} 個段落 > 現有 {existing_count} 個向量")
+                return True
+
+            # 如果數量相同，可以進一步檢查內容是否有變化
+            # 這裡可以添加更精細的檢查邏輯，比如檢查文件修改時間或內容雜湊值
+            if current_chunks_count == existing_count:
+                logger.info(f"段落數量相同 ({current_chunks_count})，假設內容未變化")
+                return False
+
+            # 如果當前 chunks 數量小於現有向量數量，可能是文件被刪減了
+            if current_chunks_count < existing_count:
+                logger.info(f"當前段落數量 ({current_chunks_count}) 小於現有向量數量 ({existing_count})，建議重新創建集合")
+                return False
+
+            return False
+
+        except Exception as e:
+            logger.warning(f"檢查新內容時發生錯誤: {e}，預設添加新內容")
+            return True
+
     def _generate_and_store_embeddings(self):
         """生成並儲存向量嵌入的內部方法"""
         # 準備文字內容進行向量化
@@ -162,6 +270,24 @@ class TeachingRAGSystem:
         logger.info("正在使用 MeteorUtilities 生成向量嵌入...")
 
         try:
+            # 獲取現有集合中的最大 ID，避免 ID 衝突
+            max_existing_id = 0
+            try:
+                # 獲取現有點的最大 ID
+                existing_points = self.qdrant_client.scroll(
+                    collection_name=self.collection_name,
+                    limit=10000,  # 假設不會超過這個數量
+                    with_payload=False,
+                    with_vectors=False
+                )
+                if existing_points[0]:
+                    existing_ids = [point.id for point in existing_points[0]]
+                    max_existing_id = max(existing_ids) if existing_ids else 0
+                    logger.info(f"現有集合中最大 ID: {max_existing_id}")
+            except Exception as e:
+                logger.warning(f"無法獲取現有 ID，將從 0 開始: {e}")
+                max_existing_id = 0
+
             # 批量處理以提高效率
             batch_size = 50
             total_batches = (len(texts) - 1) // batch_size + 1
@@ -181,7 +307,8 @@ class TeachingRAGSystem:
 
                 # 準備 Qdrant 點數據 - 使用階層式 metadata 結構
                 for j, (chunk, embedding) in enumerate(zip(batch_chunks, batch_embeddings)):
-                    point_id = i + j
+                    # 使用不會衝突的 ID：從最大現有 ID + 1 開始
+                    point_id = max_existing_id + 1 + i + j
 
                     # 創建階層式 metadata 結構
                     hierarchical_payload = {

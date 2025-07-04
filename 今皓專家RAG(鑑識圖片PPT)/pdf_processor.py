@@ -8,6 +8,8 @@ import re
 import base64
 import io
 import os
+import uuid
+import time
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass, asdict
 import pdfplumber
@@ -51,6 +53,10 @@ class PDFProcessor:
 
     def __init__(self, enable_vision_analysis: bool = True):
         self.enable_vision_analysis = enable_vision_analysis
+
+        # 生成唯一的處理會話 ID，避免 chunk_id 重複
+        self.session_id = str(uuid.uuid4())[:8]  # 使用前8位作為簡短標識
+        self.timestamp = str(int(time.time()))[-6:]  # 使用時間戳後6位
 
         # 初始化 OpenAI 客戶端（用於圖片分析）
         if self.enable_vision_analysis:
@@ -391,7 +397,7 @@ class PDFProcessor:
                     content_type=content_type,
                     keywords=keywords,
                     difficulty_level=difficulty,
-                    chunk_id=f"page_{page_num}_chunk_{i+1}",
+                    chunk_id=f"{self.session_id}_{self.timestamp}_page_{page_num}_chunk_{i+1}",
                     has_images=True,
                     image_analysis=vision_analysis["image_analysis"],
                     technical_symbols=vision_analysis["technical_symbols"],
@@ -406,7 +412,7 @@ class PDFProcessor:
                     content_type=content_type,
                     keywords=keywords,
                     difficulty_level=difficulty,
-                    chunk_id=f"page_{page_num}_chunk_{i+1}"
+                    chunk_id=f"{self.session_id}_{self.timestamp}_page_{page_num}_chunk_{i+1}"
                 )
 
             chunks.append(chunk)
