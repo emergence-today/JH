@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VSCode
+.vscode/
+.images/
+.專家/
+# OS files
+.DS_Store
+Thumbs.db
+
+# Env & dependency
+.env
+.venv/
+env/
+venv/
+*.egg-info/
+
+# Logs
+*.log
+
+# Data & output
+*.sqlite3
+*.db
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.pdf
+*.jsonl
+
+# Ignore your processed files or outputs
+processed_chunks.jsonl
+
+# Ignore other secrets/configs
+*.secret
+*.key.env
+.env
+.venv
