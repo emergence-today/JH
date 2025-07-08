@@ -42,9 +42,9 @@ class TeachingRAGSystem:
         self.embedding_model = Config.OPENAI_EMBEDDING_MODEL
 
         # 設置 Qdrant 客戶端
-        self.qdrant_url = qdrant_url or "http://ec2-13-112-118-36.ap-northeast-1.compute.amazonaws.com:6333"
+        self.qdrant_url = qdrant_url or Config.QDRANT_URL
         self.qdrant_client = QdrantClient(url=self.qdrant_url)
-        self.collection_name = "steven_JH_pro_0704"
+        self.collection_name = Config.QDRANT_COLLECTION_NAME
 
         # 初始化 MeteorUtilities
         self.meteor = MeteorUtilities()

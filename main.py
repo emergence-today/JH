@@ -63,6 +63,12 @@ async def lifespan(app: FastAPI):
         memory_manager = MemoryManager()
         logger.info("記憶管理器初始化完成")
 
+        # 檢查圖片目錄
+        if os.path.exists("images"):
+            logger.info(f"圖片目錄存在: images/ - 將通過 /images/{{filename}} 端點提供")
+        else:
+            logger.warning("images 目錄不存在")
+
     except Exception as e:
         logger.error(f"系統初始化失敗: {e}")
         raise
@@ -92,10 +98,7 @@ app.add_middleware(
 
 # 圖片檔案將通過手動端點 /images/{filename} 提供
 # 不使用 StaticFiles 掛載，避免與 root_path 衝突
-if os.path.exists("images"):
-    logger.info(f"圖片目錄存在: images/ - 將通過 /images/{{filename}} 端點提供")
-else:
-    logger.warning("images 目錄不存在")
+# 圖片目錄檢查將在應用啟動時進行
 
 # 記憶管理系統
 class MemoryManager:

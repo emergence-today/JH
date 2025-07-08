@@ -22,7 +22,9 @@ try:
     WIN32_AVAILABLE = True
 except ImportError as e:
     WIN32_AVAILABLE = False
-    logging.warning(f"Win32 COM 不可用，將使用替代方案: {e}")
+    # 只在 Windows 系統下顯示警告，Linux 下是預期行為
+    if platform.system() == "Windows":
+        logging.warning(f"Win32 COM 不可用，將使用替代方案: {e}")
 
 # PDF生成
 try:
