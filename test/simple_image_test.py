@@ -939,12 +939,28 @@ def generate_html_report_with_images(results: List[Dict], timestamp: str) -> str
         .close:hover {{
             color: #bbb;
         }}
+        /* API 回應中的圖片樣式 */
+        .api-response img {{
+            max-width: 300px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }}
+        .api-response img:hover {{
+            transform: scale(1.05);
+            border-color: #3498db;
+        }}
         @media (max-width: 768px) {{
             .image-result {{
                 grid-template-columns: 1fr;
                 gap: 15px;
             }}
             .test-image {{
+                max-width: 100%;
+            }}
+            .api-response img {{
                 max-width: 100%;
             }}
         }}
@@ -1052,15 +1068,46 @@ def generate_html_report_with_images(results: List[Dict], timestamp: str) -> str
 
                 # 檢查是否有 API 回應詳情
                 api_info = ""
-                if j < len(api_responses) and api_responses[j].get('success'):
-                    api_info = f"""
-                        <div style="font-size: 12px; color: #666; margin-top: 5px;">
-                            🤖 Heph API 回應成功
+                if j < len(api_responses):
+                    api_response = api_responses[j]
+                    if api_response.get('success'):
+                        # 顯示 API 的實際回應內容
+                        raw_response = api_response.get('raw_response', {})
+                        reply_content = raw_response.get('reply', '無回應內容')
+
+                        # 提取圖片網址
+                        import re
+                        image_urls = re.findall(r'https://[^\s]+\.(?:png|jpg|jpeg|gif)', reply_content)
+
+                        # 處理回應內容，將圖片網址替換為 HTML 圖片標籤
+                        processed_content = reply_content
+                        for url in image_urls:
+                            processed_content = processed_content.replace(url, f'<br><img src="{url}" style="max-width: 300px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;" onclick="openModal(this)"><br>')
+
+                        # 如果處理後的內容太長，截斷顯示（但保留圖片）
+                        if len(processed_content) > 500 and not image_urls:
+                            display_content = processed_content[:500] + "..."
+                        else:
+                            display_content = processed_content
+
+                        api_info = f"""
+                        <div class="api-response" style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; margin-top: 10px; border-left: 3px solid #28a745;">
+                            <div style="font-size: 12px; color: #28a745; font-weight: bold; margin-bottom: 5px;">
+                                🤖 Heph API 原始回應:
+                            </div>
+                            <div style="font-size: 13px; color: #495057; line-height: 1.4;">
+                                {display_content}
+                            </div>
+                            <div style="font-size: 11px; color: #6c757d; margin-top: 5px;">
+                                回應欄位: {list(raw_response.keys())} | 包含圖片: {len(image_urls)} 張
+                            </div>
                         </div>"""
-                elif j < len(api_responses):
-                    api_info = f"""
-                        <div style="font-size: 12px; color: #e74c3c; margin-top: 5px;">
-                            ⚠️ API 回應異常: {api_responses[j].get('error', '未知錯誤')[:50]}...
+                    else:
+                        api_info = f"""
+                        <div style="background-color: #f8d7da; padding: 10px; border-radius: 5px; margin-top: 10px; border-left: 3px solid #dc3545;">
+                            <div style="font-size: 12px; color: #dc3545; font-weight: bold;">
+                                ⚠️ API 回應異常: {api_response.get('error', '未知錯誤')}
+                            </div>
                         </div>"""
 
                 html_content += f"""
