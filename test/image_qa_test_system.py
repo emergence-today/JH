@@ -66,6 +66,9 @@ class ImageQATestSystem:
             base64_image = self.encode_image(image_path)
 
             # 構建提示詞
+            # 動態生成問題格式
+            question_format = "\n".join([f"{i}. [第{i}個問題]" for i in range(1, num_questions + 1)])
+
             prompt = f"""這是一張工程技術文件圖片，用於教育和技術分析目的。請協助分析這張技術圖片，並根據圖片中實際可見的內容生成 {num_questions} 個相關問題。
 
 技術分析要求：
@@ -81,11 +84,7 @@ class ImageQATestSystem:
 - 結構性：技術圖面的組成部分是什麼？
 
 請嚴格按以下格式輸出：
-1. [第一個問題]
-2. [第二個問題]
-3. [第三個問題]
-4. [第四個問題]
-5. [第五個問題]
+{question_format}
 
 這是正當的技術文件分析，請協助完成。"""
 

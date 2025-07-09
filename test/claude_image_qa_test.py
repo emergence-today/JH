@@ -91,6 +91,9 @@ class ClaudeImageQATestSystem:
             base64_image = self.encode_image(image_path)
             
             # 構建提示詞
+            # 動態生成問題格式
+            question_format = "\n".join([f"{i}. [第{i}個問題]" for i in range(1, num_questions + 1)])
+
             prompt = f"""這是一張工程技術文件圖片，請協助分析並根據圖片中實際可見的內容生成 {num_questions} 個相關問題。
 
 技術分析要求：
@@ -105,11 +108,7 @@ class ClaudeImageQATestSystem:
 - 結構性：技術圖面的組成部分是什麼？
 
 請嚴格按以下格式輸出：
-1. [第一個問題]
-2. [第二個問題]
-3. [第三個問題]
-4. [第四個問題]
-5. [第五個問題]
+{question_format}
 
 請用繁體中文回答。"""
 
