@@ -829,6 +829,123 @@ def generate_html_report_with_images(results: List[Dict], timestamp: str) -> str
 
         <h2>🖼️ 詳細測試結果</h2>"""
 
+    # 添加每個圖片的詳細結果
+    for i, result in enumerate(results, 1):
+        score_class = "high" if result['score'] >= 0.8 else "medium" if result['score'] >= 0.6 else "low"
+
+        # 編碼圖片為 base64
+        image_data = encode_image_to_base64(result['image_path'])
+        image_name = Path(result['image_path']).name
+
+        html_content += f"""
+        <div class="image-result">
+            <div class="image-container">
+                <img src="{image_data}" alt="{image_name}" class="test-image" onclick="openModal(this)">
+                <div class="image-info">
+                    <strong>檔案:</strong> {image_name}<br>
+                    <strong>類別:</strong> {result['category']}<br>
+                    <strong>大小:</strong> {os.path.getsize(result['image_path']) // 1024} KB
+                </div>
+            </div>
+
+            <div class="content-area">
+                <div class="image-header">
+                    <h3 style="margin: 0; color: white;">測試 #{i}: {image_name}</h3>
+                    <div>
+                        <span class="score {score_class}">得分: {result['score']:.3f}</span>
+                        <span style="margin-left: 15px;">⏱️ {result['time']:.1f}s</span>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: {result['score']*100}%"></div>
+                </div>
+
+                <div class="qa-section">"""
+
+        # 添加問答內容
+        if 'questions' in result and 'answers' in result:
+            questions = result['questions']
+            answers = result['answers']
+            scores = result.get('scores', [0.5] * len(questions))
+
+            for j, (q, a, s) in enumerate(zip(questions, answers, scores)):
+                question_text = q['text'] if isinstance(q, dict) else str(q)
+                html_content += f"""
+                    <div class="question">
+                        <strong>Q{j+1}:</strong> {question_text}
+                        <span class="question-score">{s:.3f}</span>
+                    </div>
+                    <div class="answer">
+                        <strong>A{j+1}:</strong> {a}
+                    </div>"""
+        else:
+            html_content += f"""
+                    <div class="answer">
+                        <strong>測試結果:</strong> 圖片分析完成，得分 {result['score']:.3f}
+                    </div>"""
+
+        html_content += """
+                </div>
+            </div>
+        </div>"""
+
+    # 添加頁面結尾和 JavaScript
+    html_content += f"""
+        <div class="timestamp">
+            報告生成時間: {timestamp} | 使用 {'Claude' if USE_CLAUDE else 'GPT-4o'} 視覺模型
+        </div>
+    </div>
+
+    <!-- 圖片放大模態框 -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openModal(img) {{
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImage");
+            modal.style.display = "block";
+            modalImg.src = img.src;
+        }}
+
+        function closeModal() {{
+            var modal = document.getElementById("imageModal");
+            modal.style.display = "none";
+        }}
+
+        // 點擊模態框背景關閉
+        window.onclick = function(event) {{
+            var modal = document.getElementById("imageModal");
+            if (event.target == modal) {{
+                modal.style.display = "none";
+            }}
+        }}
+
+        // ESC 鍵關閉模態框
+        document.addEventListener('keydown', function(event) {{
+            if (event.key === 'Escape') {{
+                closeModal();
+            }}
+        }});
+
+        // 頁面載入完成後的動畫效果
+        document.addEventListener('DOMContentLoaded', function() {{
+            const progressBars = document.querySelectorAll('.progress-fill');
+            progressBars.forEach(bar => {{
+                const width = bar.style.width;
+                bar.style.width = '0%';
+                setTimeout(() => {{
+                    bar.style.width = width;
+                }}, 100);
+            }});
+        }});
+    </script>
+</body>
+</html>"""
+
     return html_content
 
 def main():
