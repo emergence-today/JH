@@ -12,6 +12,7 @@ __pycache__/
 .vscode/
 .images/
 .專家/
+.aws/
 # OS files
 .DS_Store
 Thumbs.db
