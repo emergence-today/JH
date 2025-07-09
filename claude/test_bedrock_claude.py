@@ -12,7 +12,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 
 # 載入 .env.bedrock 檔案
-load_dotenv('.env.bedrock')
+load_dotenv('.env')
 
 try:
     from anthropic import AnthropicBedrock
@@ -32,15 +32,23 @@ class BedrockClaudeTest:
         # 可用的 Claude 模型
         self.available_models = {
             "claude-opus-4": "anthropic.claude-opus-4-20250514-v1:0",
-            "claude-sonnet-4": "anthropic.claude-sonnet-4-20250514-v1:0", 
+            "claude-sonnet-4": "anthropic.claude-sonnet-4-20250514-v1:0",
             "claude-sonnet-3.7": "anthropic.claude-3-7-sonnet-20250219-v1:0",
             "claude-haiku-3.5": "anthropic.claude-3-5-haiku-20241022-v1:0",
             "claude-sonnet-3.5": "anthropic.claude-3-5-sonnet-20241022-v2:0",
-            "claude-haiku-3": "anthropic.claude-3-haiku-20240307-v1:0"
+            "claude-haiku-3": "anthropic.claude-3-haiku-20240307-v1:0",
+            # 從 .env 檔案中的推薦模型
+            "claude-sonnet-3.5-us": "us.anthropic.claude-3-5-sonnet-20241022-v2:0"
         }
-        
-        # 預設使用的模型 (使用可用的模型)
-        self.default_model = "anthropic.claude-3-haiku-20240307-v1:0"
+
+        # 從 .env 檔案讀取預設模型，如果沒有則使用備用模型
+        self.default_model = os.getenv("BEDROCK_MODEL", "anthropic.claude-3-haiku-20240307-v1:0")
+
+        # 從 .env 檔案讀取其他設定
+        self.max_tokens = int(os.getenv("BEDROCK_MAX_TOKENS", "1024"))
+        self.temperature = float(os.getenv("BEDROCK_TEMPERATURE", "0.7"))
+        self.save_results = os.getenv("TEST_SAVE_RESULTS", "true").lower() == "true"
+        self.output_dir = os.getenv("TEST_OUTPUT_DIR", "./test_results/")
         
     def setup_client(self, aws_access_key: str = None, aws_secret_key: str = None,
                     aws_session_token: str = None, aws_region: str = None):
@@ -91,7 +99,8 @@ class BedrockClaudeTest:
             
             response = self.client.messages.create(
                 model=model,
-                max_tokens=256,
+                max_tokens=self.max_tokens,
+                temperature=self.temperature,
                 messages=[{"role": "user", "content": message}]
             )
             
@@ -147,7 +156,8 @@ class BedrockClaudeTest:
             
             response = self.client.messages.create(
                 model=model,
-                max_tokens=512,
+                max_tokens=self.max_tokens,
+                temperature=self.temperature,
                 messages=messages
             )
             
@@ -202,7 +212,8 @@ class BedrockClaudeTest:
             
             response = self.client.messages.create(
                 model=model,
-                max_tokens=1024,
+                max_tokens=self.max_tokens * 2,  # 技術問題需要更長的回應
+                temperature=self.temperature,
                 messages=[{"role": "user", "content": technical_question}]
             )
             
@@ -278,14 +289,22 @@ class BedrockClaudeTest:
     
     def save_results(self, filename: str = None):
         """儲存測試結果"""
+        if not self.save_results:
+            print("📝 根據 .env 設定，跳過儲存測試結果")
+            return
+
         if not filename:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             filename = f"bedrock_test_results_{timestamp}.json"
-        
+
+        # 確保輸出目錄存在
+        output_path = os.path.join(self.output_dir, filename)
+        os.makedirs(self.output_dir, exist_ok=True)
+
         try:
-            with open(filename, 'w', encoding='utf-8') as f:
+            with open(output_path, 'w', encoding='utf-8') as f:
                 json.dump(self.test_results, f, ensure_ascii=False, indent=2)
-            print(f"💾 測試結果已儲存至: {filename}")
+            print(f"💾 測試結果已儲存至: {output_path}")
         except Exception as e:
             print(f"❌ 儲存結果失敗: {str(e)}")
 
@@ -303,9 +322,13 @@ def main():
         print(f"  - {name}: {model_id}")
     
     print(f"\n🎯 預設使用模型: {tester.default_model}")
-    
-    # 設定憑證 (您需要在這裡提供您的 AWS 憑證)
-    print("\n🔐 設定 AWS 憑證...")
+    print(f"🔧 最大 Token 數: {tester.max_tokens}")
+    print(f"🌡️ 溫度參數: {tester.temperature}")
+    print(f"💾 儲存結果: {'是' if tester.save_results else '否'}")
+    print(f"📁 輸出目錄: {tester.output_dir}")
+
+    # 設定憑證 (從 .env 檔案讀取)
+    print("\n🔐 從 .env 檔案讀取 AWS 憑證...")
     
     # 方法 1: 直接提供憑證 (不建議在生產環境中硬編碼)
     # aws_access_key = "YOUR_ACCESS_KEY"

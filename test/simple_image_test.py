@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 簡化的圖片測試腳本
-可以選擇每個類別要測試幾張圖片
+可以選擇每個類別要測試幾張圖片，每張圖片只產生 1 個問題
 """
 
 import os
@@ -55,9 +55,20 @@ def call_heph_api(question: str, session_id: str = "test_session") -> Dict[str, 
         if response.status_code == 200:
             result = response.json()
             print(f"✅ API 回應成功")
+
+            # 顯示 API 回應的結構（調試用）
+            print(f"🔍 API 回應結構: {list(result.keys())}")
+
+            # API 回應格式是 {"reply": "..."} 而不是 {"response": "..."}
+            answer = result.get("reply", result.get("response", "無回應內容"))
+
+            if answer == "無回應內容":
+                print(f"⚠️ 警告: 在回應中找不到 'reply' 或 'response' 欄位")
+                print(f"🔍 完整回應: {result}")
+
             return {
                 "success": True,
-                "answer": result.get("response", "無回應內容"),
+                "answer": answer,
                 "raw_response": result
             }
         else:
@@ -115,6 +126,7 @@ def get_user_selection(categories: Dict[str, List[str]]) -> Dict[str, int]:
     category_list = list(categories.keys())
     
     print("\n🎯 請選擇要測試的類別和數量:")
+    print("📝 注意: 每張圖片只會產生 1 個問題")
     print("格式: 類別編號:數量 (例如: 1:3 表示第1個類別測試3張)")
     print("多個選擇用空格分隔 (例如: 1:3 5:2 10:1)")
     print("輸入 'all:N' 表示每個類別都測試N張")
@@ -179,9 +191,9 @@ def test_single_image_with_heph_api(test_system, image_path: str) -> Dict:
     try:
         print(f"🔍 分析圖片: {os.path.basename(image_path)}")
 
-        # 步驟1: 使用 Claude 從圖片生成問題
+        # 步驟1: 使用 Claude 從圖片生成問題 (只生成1個問題)
         print("📝 步驟1: Claude 生成問題...")
-        question_result = test_system.generate_questions_from_image(image_path, 5)
+        question_result = test_system.generate_questions_from_image(image_path, 1)
 
         if not question_result["success"]:
             print(f"❌ 生成問題失敗: {question_result.get('error', 'Unknown error')}")
@@ -203,6 +215,14 @@ def test_single_image_with_heph_api(test_system, image_path: str) -> Dict:
         for i, question in enumerate(questions, 1):
             print(f"   問題 {i}/{len(questions)}: {question[:50]}...")
             api_result = call_heph_api(question)
+
+            # 顯示 Heph API 的實際回應
+            if api_result["success"]:
+                answer_preview = api_result["answer"][:100] + "..." if len(api_result["answer"]) > 100 else api_result["answer"]
+                print(f"   💬 Heph 回應: {answer_preview}")
+            else:
+                print(f"   ❌ Heph 錯誤: {api_result.get('error', '未知錯誤')}")
+
             answers.append(api_result["answer"])
             api_responses.append(api_result)
 
@@ -1124,6 +1144,7 @@ def generate_html_report_with_images(results: List[Dict], timestamp: str) -> str
 def main():
     """主函數"""
     print("🧪 簡化圖片測試系統")
+    print("📝 每張圖片只產生 1 個問題")
     print("=" * 60)
     
     # 檢查 API 配置
