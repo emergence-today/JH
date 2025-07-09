@@ -6,7 +6,7 @@ MeteorUtilities - OpenAI 向量化實現
 import logging
 from typing import List, Optional
 from openai import OpenAI
-from config import Config
+from config.config import Config
 import time
 
 logger = logging.getLogger(__name__)

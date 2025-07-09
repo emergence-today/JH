@@ -22,10 +22,10 @@ import tiktoken
 import json
 import asyncio
 
-from rag_system import TeachingRAGSystem
-from config import Config
-from pdf_processor import PDFProcessor
-from file_converter import FileConverter
+from src.core.rag_system import TeachingRAGSystem
+from config.config import Config
+from src.processors.pdf_processor import PDFProcessor
+from src.processors.file_converter import FileConverter
 
 # 設置日誌
 logging.basicConfig(level=logging.INFO)

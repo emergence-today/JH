@@ -17,7 +17,7 @@ import PyPDF2
 from pathlib import Path
 import logging
 from openai import OpenAI
-from config import Config
+from config.config import Config
 import fitz  # PyMuPDF for image extraction
 
 # 設置日誌
