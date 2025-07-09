@@ -9,13 +9,14 @@ import base64
 import json
 import time
 import logging
+import requests
 from typing import Dict, List, Optional, Any
 from dataclasses import dataclass
 from dotenv import load_dotenv
 from pathlib import Path
 
-# 載入環境變數
-load_dotenv('.env')
+# 載入環境變數 (從上層目錄)
+load_dotenv('../.env')
 
 try:
     from anthropic import AnthropicBedrock

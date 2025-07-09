@@ -10,9 +10,10 @@ import json
 import time
 import random
 import base64
+import requests
 from pathlib import Path
 from collections import defaultdict
-from typing import Dict, List
+from typing import Dict, List, Any
 
 # 添加父目錄到 Python 路徑
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -34,7 +35,55 @@ except ImportError:
         print("❌ 無法導入任何圖像問答系統")
         sys.exit(1)
 
-def get_image_categories(images_dir: str = "images") -> Dict[str, List[str]]:
+def call_heph_api(question: str, session_id: str = "test_session") -> Dict[str, Any]:
+    """調用您的 Heph AI API 來回答問題"""
+    try:
+        url = "https://uat.heph-ai.net/api/v1/JH/query-with-memory"
+        headers = {
+            'accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+        data = {
+            "user_query": question,
+            "streaming": False,
+            "sessionId": session_id
+        }
+
+        print(f"🔄 調用 Heph API: {question[:50]}...")
+        response = requests.post(url, headers=headers, json=data, timeout=30)
+
+        if response.status_code == 200:
+            result = response.json()
+            print(f"✅ API 回應成功")
+            return {
+                "success": True,
+                "answer": result.get("response", "無回應內容"),
+                "raw_response": result
+            }
+        else:
+            print(f"❌ API 回應錯誤: {response.status_code}")
+            return {
+                "success": False,
+                "error": f"HTTP {response.status_code}: {response.text}",
+                "answer": f"API 調用失敗 (狀態碼: {response.status_code})"
+            }
+
+    except requests.exceptions.Timeout:
+        print(f"⏰ API 調用超時")
+        return {
+            "success": False,
+            "error": "請求超時",
+            "answer": "API 調用超時，無法獲得回答"
+        }
+    except Exception as e:
+        print(f"❌ API 調用異常: {e}")
+        return {
+            "success": False,
+            "error": str(e),
+            "answer": f"API 調用失敗: {str(e)}"
+        }
+
+def get_image_categories(images_dir: str = "../images") -> Dict[str, List[str]]:
     """獲取圖片分類"""
     categories = defaultdict(list)
     
@@ -78,14 +127,18 @@ def get_user_selection(categories: Dict[str, List[str]]) -> Dict[str, int]:
         for category in categories.keys():
             selection[category] = 1
         print("✅ 使用預設設定: 每個類別測試 1 張圖片")
-    elif user_input.startswith('all:'):
-        # 所有類別相同數量
+    elif user_input.startswith('all:') or user_input.startswith('all '):
+        # 所有類別相同數量 - 支援 "all:N" 和 "all N" 格式
         try:
-            count = int(user_input.split(':')[1])
+            if ':' in user_input:
+                count = int(user_input.split(':')[1])
+            else:
+                count = int(user_input.split()[1])
+
             for category in categories.keys():
                 selection[category] = min(count, len(categories[category]))
             print(f"✅ 所有類別都測試 {count} 張圖片")
-        except ValueError:
+        except (ValueError, IndexError):
             print("❌ 格式錯誤，使用預設設定")
             for category in categories.keys():
                 selection[category] = 1
@@ -111,6 +164,107 @@ def get_user_selection(categories: Dict[str, List[str]]) -> Dict[str, int]:
                 selection[category] = 1
     
     return selection
+
+def get_category_from_path(image_path: str) -> str:
+    """從圖片路徑提取類別名稱"""
+    path_parts = Path(image_path).parts
+    if len(path_parts) >= 2:
+        return path_parts[-2]  # 倒數第二個部分是類別名稱
+    return "未知類別"
+
+def test_single_image_with_heph_api(test_system, image_path: str) -> Dict:
+    """使用三步驟流程測試單張圖片：Claude生成問題 → Heph API回答 → Claude評估"""
+    start_time = time.time()
+
+    try:
+        print(f"🔍 分析圖片: {os.path.basename(image_path)}")
+
+        # 步驟1: 使用 Claude 從圖片生成問題
+        print("📝 步驟1: Claude 生成問題...")
+        question_result = test_system.generate_questions_from_image(image_path, 5)
+
+        if not question_result["success"]:
+            print(f"❌ 生成問題失敗: {question_result.get('error', 'Unknown error')}")
+            return create_error_result(image_path, start_time, "生成問題失敗")
+
+        # 解析生成的問題
+        questions = test_system.parse_questions(question_result["response"])
+        if not questions:
+            print("❌ 未能解析出有效問題")
+            return create_error_result(image_path, start_time, "未能解析出有效問題")
+
+        print(f"✅ 成功生成 {len(questions)} 個問題")
+
+        # 步驟2: 使用 Heph API 回答問題
+        print("🤖 步驟2: Heph API 回答問題...")
+        answers = []
+        api_responses = []
+
+        for i, question in enumerate(questions, 1):
+            print(f"   問題 {i}/{len(questions)}: {question[:50]}...")
+            api_result = call_heph_api(question)
+            answers.append(api_result["answer"])
+            api_responses.append(api_result)
+
+            # 避免 API 限制
+            if i < len(questions):
+                time.sleep(1)
+
+        print(f"✅ 獲得 {len(answers)} 個回答")
+
+        # 步驟3: 使用 Claude 評估答案品質
+        print("⭐ 步驟3: Claude 評估答案品質...")
+        scores = []
+
+        for i, (question, answer) in enumerate(zip(questions, answers), 1):
+            print(f"   評估 {i}/{len(questions)}...")
+            score = test_system.evaluate_answer_quality(question, answer, image_path)
+            scores.append(score)
+
+            # 避免 API 限制
+            if i < len(questions):
+                time.sleep(1)
+
+        # 計算總體分數
+        overall_score = sum(scores) / len(scores) if scores else 0.0
+        end_time = time.time()
+
+        print(f"✅ 測試完成！總體得分: {overall_score:.3f}")
+
+        # 創建問題字典列表
+        question_dicts = [{"text": q, "index": i+1} for i, q in enumerate(questions)]
+
+        return {
+            'image_path': image_path,
+            'category': get_category_from_path(image_path),
+            'score': overall_score,
+            'time': end_time - start_time,
+            'questions': question_dicts,
+            'answers': answers,
+            'scores': scores,
+            'api_responses': api_responses,  # 保存 API 原始回應
+            'success': True,
+            'workflow': 'claude_heph_claude'  # 標記使用的工作流程
+        }
+
+    except Exception as e:
+        print(f"❌ 測試圖片時發生錯誤: {e}")
+        return create_error_result(image_path, start_time, str(e))
+
+def create_error_result(image_path: str, start_time: float, error_msg: str) -> Dict:
+    """創建錯誤結果"""
+    return {
+        'image_path': image_path,
+        'category': get_category_from_path(image_path),
+        'score': 0.0,
+        'time': time.time() - start_time,
+        'questions': [],
+        'answers': [],
+        'scores': [],
+        'success': False,
+        'error': error_msg,
+        'workflow': 'claude_heph_claude'
+    }
 
 def run_test(selection: Dict[str, int], categories: Dict[str, List[str]]):
     """執行測試"""
@@ -159,29 +313,24 @@ def run_test(selection: Dict[str, int], categories: Dict[str, List[str]]):
             print(f"[{current_image}/{total_images}] 測試圖片: {image_name}")
             
             try:
-                # 執行測試
-                start_time = time.time()
-                result = test_system.test_single_image(image_path)
-                end_time = time.time()
-                
-                if result:
-                    score = result.overall_score
-                    category_scores.append(score)
-                    all_results.append({
-                        'category': category,
-                        'image': image_name,
-                        'image_path': image_path,
-                        'score': score,
-                        'time': end_time - start_time,
-                        'questions': result.questions,
-                        'answers': result.answers,
-                        'individual_scores': result.scores,
-                        'analysis_time': result.analysis_time
-                    })
+                # 執行新的三步驟測試流程
+                result_dict = test_single_image_with_heph_api(test_system, image_path)
 
-                    print(f"  ✅ 得分: {score:.3f} (耗時: {end_time - start_time:.1f}s)")
+                if result_dict['success']:
+                    score = result_dict['score']
+                    category_scores.append(score)
+
+                    # 直接使用返回的結果字典，並添加類別信息
+                    result_dict['category'] = category
+                    all_results.append(result_dict)
+
+                    print(f"  ✅ 得分: {score:.3f} (耗時: {result_dict['time']:.1f}s)")
+                    print(f"     🤖 Heph API 回答了 {len(result_dict.get('answers', []))} 個問題")
                 else:
-                    print(f"  ❌ 測試失敗")
+                    print(f"  ❌ 測試失敗: {result_dict.get('error', '未知錯誤')}")
+                    category_scores.append(0.0)
+                    result_dict['category'] = category
+                    all_results.append(result_dict)
                     
             except Exception as e:
                 print(f"  ❌ 測試出錯: {e}")
@@ -863,21 +1012,45 @@ def generate_html_report_with_images(results: List[Dict], timestamp: str) -> str
 
                 <div class="qa-section">"""
 
+        # 添加工作流程說明
+        workflow = result.get('workflow', 'unknown')
+        if workflow == 'claude_heph_claude':
+            html_content += f"""
+                    <div style="background-color: #e8f4fd; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
+                        <strong>🔄 測試流程:</strong> Claude 生成問題 → Heph API 回答 → Claude 評估
+                    </div>"""
+
         # 添加問答內容
         if 'questions' in result and 'answers' in result:
             questions = result['questions']
             answers = result['answers']
             scores = result.get('scores', [0.5] * len(questions))
+            api_responses = result.get('api_responses', [])
 
             for j, (q, a, s) in enumerate(zip(questions, answers, scores)):
                 question_text = q['text'] if isinstance(q, dict) else str(q)
+
+                # 檢查是否有 API 回應詳情
+                api_info = ""
+                if j < len(api_responses) and api_responses[j].get('success'):
+                    api_info = f"""
+                        <div style="font-size: 12px; color: #666; margin-top: 5px;">
+                            🤖 Heph API 回應成功
+                        </div>"""
+                elif j < len(api_responses):
+                    api_info = f"""
+                        <div style="font-size: 12px; color: #e74c3c; margin-top: 5px;">
+                            ⚠️ API 回應異常: {api_responses[j].get('error', '未知錯誤')[:50]}...
+                        </div>"""
+
                 html_content += f"""
                     <div class="question">
                         <strong>Q{j+1}:</strong> {question_text}
                         <span class="question-score">{s:.3f}</span>
                     </div>
                     <div class="answer">
-                        <strong>A{j+1}:</strong> {a}
+                        <strong>A{j+1} (Heph API):</strong> {a}
+                        {api_info}
                     </div>"""
         else:
             html_content += f"""
@@ -957,7 +1130,7 @@ def main():
     if USE_CLAUDE:
         # 檢查 AWS 憑證
         from dotenv import load_dotenv
-        load_dotenv('.env')
+        load_dotenv('../.env')  # 從 test 目錄向上找 .env 檔案
 
         aws_access_key = os.getenv("AWS_ACCESS_KEY_ID")
         aws_secret_key = os.getenv("AWS_SECRET_ACCESS_KEY")
