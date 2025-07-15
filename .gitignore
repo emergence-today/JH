@@ -13,7 +13,7 @@ __pycache__/
 .images/
 .專家/
 .aws/
-.outputs/
+outputs/
 # OS files
 .DS_Store
 Thumbs.db
