@@ -1,0 +1,60 @@
+{
+  "topic": "品質管理",
+  "sub_topic": "品質控制與不良品分析",
+  "content_type": "table",
+  "keywords": [
+    "GRAR",
+    "制程變更",
+    "不良分析",
+    "檢驗",
+    "讓步出貨",
+    "品質控制"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "7.13-7.25"
+  ],
+  "document_section": "第7章",
+  "equipment_mentioned": [
+    "設備"
+  ],
+  "materials_mentioned": [
+    "材料",
+    "成品"
+  ],
+  "processes_mentioned": [
+    "制程變更",
+    "檢驗流程",
+    "不良分析流程",
+    "讓步出貨"
+  ],
+  "standards_mentioned": [
+    "客戶要求"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "檢驗項目",
+    "出貨品質符合客戶要求",
+    "不良品處理方式"
+  ],
+  "application_area": "製造業",
+  "target_audience": [
+    "品質管理人員",
+    "工程師",
+    "製造主管"
+  ],
+  "action_items": [
+    "執行GRAR評估",
+    "進行可靠性測試",
+    "執行檢模基本要求",
+    "進行不良分析",
+    "處理不良品"
+  ],
+  "related_documents": [
+    "不良分析程序文件",
+    "讓步出貨管控文件"
+  ],
+  "revision_info": "Qisda Corporation",
+  "importance_level": "high"
+}

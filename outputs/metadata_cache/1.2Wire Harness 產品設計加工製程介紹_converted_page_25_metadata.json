@@ -1,0 +1,44 @@
+{
+  "topic": "線束組裝",
+  "sub_topic": "端子連接",
+  "content_type": "procedure",
+  "keywords": [
+    "端子",
+    "P1端",
+    "連接",
+    "線束",
+    "組裝流程"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "PIN",
+    "P1"
+  ],
+  "document_section": "組裝流程說明",
+  "equipment_mentioned": [
+    "端子"
+  ],
+  "materials_mentioned": [
+    "連接器",
+    "電纜",
+    "彩色線材"
+  ],
+  "processes_mentioned": [
+    "端子拉接",
+    "Pull on Terminal"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "正確連接P1端端子"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "組裝技術員",
+  "action_items": [
+    "拉接P1端端子"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

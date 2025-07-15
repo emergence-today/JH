@@ -1,0 +1,45 @@
+{
+  "topic": "材料規格",
+  "sub_topic": "PVC粒子成分介紹",
+  "content_type": "table",
+  "keywords": [
+    "PVC粒子",
+    "材質成分",
+    "塑化劑",
+    "阻燃劑",
+    "安定劑"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Sb2O3",
+    "Ca-Zn",
+    "CaCO3"
+  ],
+  "document_section": "二、PVC 粒子介紹",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "PVC粉",
+    "S-70S-60",
+    "聚酯",
+    "Sb2O3",
+    "Ca-Zn",
+    "PE腊",
+    "CaCO3",
+    "炭黑"
+  ],
+  "processes_mentioned": [],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "%"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "材料成分比率規範"
+  ],
+  "application_area": "工業製造",
+  "target_audience": "工程師、材料技術人員",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

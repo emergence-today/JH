@@ -1,0 +1,58 @@
+{
+  "topic": "外观加工",
+  "sub_topic": "贴平与束圈搭接区设计",
+  "content_type": "specification",
+  "keywords": [
+    "贴平",
+    "束圈",
+    "导电布",
+    "搭接区",
+    "过渡区"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "OD",
+    "mm"
+  ],
+  "document_section": "第20章",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "导电布",
+    "全背胶"
+  ],
+  "processes_mentioned": [
+    "贴平",
+    "搭接",
+    "冲型"
+  ],
+  "standards_mentioned": [
+    "SPEC",
+    "Wistron",
+    "PAGA",
+    "HP机种"
+  ],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "搭接区不可漏线",
+    "束圈进入过渡区5mm Min.",
+    "Wistron_至少5mm",
+    "PAGA_至少10mm",
+    "HP机种_10~15mm",
+    "其他无特殊要求_至少3mm"
+  ],
+  "application_area": "电子",
+  "target_audience": "工程师",
+  "action_items": [
+    "确保搭接区不可漏线",
+    "根据不同客户要求设计搭接尺寸",
+    "根据形状决定使用常规或冲型"
+  ],
+  "related_documents": [
+    "产品设计规范"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

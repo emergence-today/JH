@@ -1,0 +1,47 @@
+{
+  "topic": "連接器技術",
+  "sub_topic": "焊接式連接器規格與線材匹配",
+  "content_type": "introduction",
+  "keywords": [
+    "CONN",
+    "焊接式連接器",
+    "PITCH",
+    "焊點",
+    "線材匹配",
+    "锡膏"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "PITCH",
+    "#"
+  ],
+  "document_section": "第3章 CONN的种类介绍",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "連接器",
+    "線材",
+    "锡膏"
+  ],
+  "processes_mentioned": [
+    "焊接",
+    "預加工"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm",
+    "PITCH"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "保证焊接后焊点有适量的锡量"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "電子工程師、製造工程師",
+  "action_items": [
+    "選擇適合PITCH的線材",
+    "根據焊點規格選用適當锡膏"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

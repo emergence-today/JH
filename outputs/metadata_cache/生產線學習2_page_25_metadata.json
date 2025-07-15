@@ -1,0 +1,62 @@
+{
+  "topic": "焊接工藝",
+  "sub_topic": "焊盘作业流程",
+  "content_type": "procedure",
+  "keywords": [
+    "焊盘",
+    "助焊剂",
+    "温度设定",
+    "焊接方法",
+    "恒温烙铁"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "℃",
+    "±"
+  ],
+  "document_section": "作业流程书",
+  "equipment_mentioned": [
+    "焊台鉻铁(5W)",
+    "恒温烙铁(5W)",
+    "恒温烙铁(60W)(三温式)",
+    "静电环",
+    "焊接治具托",
+    "助焊剂笔"
+  ],
+  "materials_mentioned": [
+    "海绵",
+    "助焊剂",
+    "透明助件"
+  ],
+  "processes_mentioned": [
+    "焊实兑风",
+    "焊曲度",
+    "手焊作业"
+  ],
+  "standards_mentioned": [
+    "专用SOP"
+  ],
+  "measurements_units": [
+    "℃"
+  ],
+  "safety_requirements": [
+    "使用静电环",
+    "温度控制要求"
+  ],
+  "quality_criteria": [
+    "焊程材不科兑，不可有舌全,含榜,虚焊,空焊及冷焊",
+    "中件材,蚣不不可受文且助方科不可反据"
+  ],
+  "application_area": "电子制造",
+  "target_audience": "焊接技术员",
+  "action_items": [
+    "切件精洲侧内放置海绵",
+    "加入透明助件蒙",
+    "按规定温度设定焊接工具"
+  ],
+  "related_documents": [
+    "HTS-02871"
+  ],
+  "revision_info": "版本21.0 1/5",
+  "importance_level": "high"
+}

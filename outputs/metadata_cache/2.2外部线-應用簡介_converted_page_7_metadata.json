@@ -1,0 +1,44 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "隔離Shield",
+  "content_type": "specification",
+  "keywords": [
+    "隔離",
+    "Shield",
+    "電纜",
+    "干擾防護",
+    "編織",
+    "纏繞"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "A",
+    "S",
+    "B",
+    "E"
+  ],
+  "document_section": "2.3 隔離 Shield",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "Aluminum-foil/Mylar (鋁箔/麥拉)",
+    "導電塑膠",
+    "導電橡膠"
+  ],
+  "processes_mentioned": [
+    "編織",
+    "纏繞",
+    "疊繞包帶"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [
+    "防止電纜與外界電場之靜電或電磁場干擾"
+  ],
+  "quality_criteria": [],
+  "application_area": "電子、電氣工程",
+  "target_audience": "工程師、技術員",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

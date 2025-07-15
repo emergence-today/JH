@@ -1,0 +1,57 @@
+{
+  "topic": "電子線束測試",
+  "sub_topic": "雾灯LED測試程序設定",
+  "content_type": "procedure",
+  "keywords": [
+    "雾灯LED",
+    "程序编辑",
+    "测试设定",
+    "问题解决策略"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "mmiFix6"
+  ],
+  "document_section": "作业流程",
+  "equipment_mentioned": [
+    "测试仪",
+    "SSMA",
+    "连接器"
+  ],
+  "materials_mentioned": [
+    "电子线束",
+    "连接线"
+  ],
+  "processes_mentioned": [
+    "程序编辑",
+    "阻止输入各合同符检测",
+    "雾灯更换检测",
+    "短程设定"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "分钟"
+  ],
+  "safety_requirements": [
+    "静电环"
+  ],
+  "quality_criteria": [
+    "测试保障方式",
+    "雾灯更换检测检测时间"
+  ],
+  "application_area": "汽車電子",
+  "target_audience": "技術員",
+  "action_items": [
+    "按File键选择mmiFix6定程输入",
+    "进行程序编辑",
+    "设定测试保障方式",
+    "设定雾灯更换检测检测时间"
+  ],
+  "related_documents": [
+    "SOP-02871"
+  ],
+  "revision_info": "版本5.0，最近修訂於2014.06.17",
+  "importance_level": "high"
+}

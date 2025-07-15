@@ -1,0 +1,58 @@
+{
+  "topic": "電子線束測試",
+  "sub_topic": "LED測試程序",
+  "content_type": "procedure",
+  "keywords": [
+    "電子線束",
+    "LED測試",
+    "電池測試",
+    "設定測試",
+    "不良品檢測"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "LED",
+    "kΩ"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "LED測試設備",
+    "靜電杆"
+  ],
+  "materials_mentioned": [
+    "電子線束",
+    "LED"
+  ],
+  "processes_mentioned": [
+    "電池測試",
+    "LED發光測試",
+    "序設定測試",
+    "材料下載"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "kΩ"
+  ],
+  "safety_requirements": [
+    "注意事項"
+  ],
+  "quality_criteria": [
+    "LED發光品質",
+    "良品/不良品判定"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "測試技術員",
+  "action_items": [
+    "按Exit鍵退出電池測試菜單",
+    "按Learn鍵進行材料取材",
+    "按File鍵進行設定",
+    "檢測LED發光狀態"
+  ],
+  "related_documents": [
+    "料號:電子線束用三十八"
+  ],
+  "revision_info": "版本5.0，最近更新於2014.06.17，由管峰修訂",
+  "importance_level": "high"
+}

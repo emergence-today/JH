@@ -1,0 +1,47 @@
+{
+  "topic": "製造工藝",
+  "sub_topic": "鐵殼預加工",
+  "content_type": "specification",
+  "keywords": [
+    "鐵殼",
+    "Teflon",
+    "Kapton",
+    "焊接",
+    "毛邊",
+    "預加工"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "KA00"
+  ],
+  "document_section": "第16章",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "鐵殼",
+    "Teflon",
+    "Kapton"
+  ],
+  "processes_mentioned": [
+    "Teflon焊接制程",
+    "鐵殼預加工"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "Kapton超出鐵殼邊緣約0.5mm",
+    "避免鐵殼毛邊刺破Teflon外被"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "製造工程師、技術員",
+  "action_items": [
+    "確保鐵殼內Kapton超出鐵殼邊緣約0.5mm"
+  ],
+  "related_documents": [
+    "產品設計規範"
+  ],
+  "revision_info": "2019.03.11 ※2.0",
+  "importance_level": "high"
+}

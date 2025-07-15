@@ -1,0 +1,64 @@
+{
+  "topic": "品質檢測",
+  "sub_topic": "尺寸全檢",
+  "content_type": "procedure",
+  "keywords": [
+    "尺寸全檢",
+    "檢測治具",
+    "卡槽",
+    "CPK管控",
+    "品質檢驗"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "1:1",
+    "OD",
+    "CPK",
+    "±"
+  ],
+  "document_section": "第三十三章",
+  "equipment_mentioned": [
+    "厚度&OD檢測治具",
+    "工作臺"
+  ],
+  "materials_mentioned": [
+    "美紋紙",
+    "線材",
+    "藍色週轉托盤",
+    "紅色不良品托盤"
+  ],
+  "processes_mentioned": [
+    "尺寸測量",
+    "治具檢測",
+    "自檢"
+  ],
+  "standards_mentioned": [
+    "1:1圖面要求",
+    "CPK管控尺寸"
+  ],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "產品能進入卡槽則判定為OK",
+    "不能進入卡槽的判定為NG品",
+    "自檢無缺件現象"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "品質檢驗人員",
+  "action_items": [
+    "比對1:1圖面",
+    "測量相關尺寸",
+    "遮蓋非使用尺寸卡槽",
+    "將產品對準治具卡槽",
+    "垂直放入產品",
+    "判定OK/NG",
+    "自檢無缺件"
+  ],
+  "related_documents": [
+    "1:1圖面"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

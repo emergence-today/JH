@@ -1,0 +1,34 @@
+{
+  "topic": "公司介紹",
+  "sub_topic": "結尾致謝",
+  "content_type": "conclusion",
+  "keywords": [
+    "致謝",
+    "公司標誌",
+    "企業形象",
+    "商業合作"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [],
+  "document_section": "結尾頁",
+  "equipment_mentioned": [],
+  "materials_mentioned": [],
+  "processes_mentioned": [],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "企業宣傳",
+  "target_audience": [
+    "客戶",
+    "合作夥伴",
+    "潛在業務關係人"
+  ],
+  "action_items": [],
+  "related_documents": [
+    "公司簡介",
+    "產品目錄"
+  ],
+  "revision_info": "",
+  "importance_level": "medium"
+}

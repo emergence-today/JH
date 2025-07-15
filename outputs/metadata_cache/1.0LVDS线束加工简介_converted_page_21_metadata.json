@@ -1,0 +1,60 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "連接器組裝與焊接工藝",
+  "content_type": "procedure",
+  "keywords": [
+    "鐵殼安裝",
+    "焊接",
+    "UV膠",
+    "點膠",
+    "連接器組裝"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "GND",
+    "UV"
+  ],
+  "document_section": "第二十五、二十六章",
+  "equipment_mentioned": [
+    "烙鐵",
+    "點膠機",
+    "UV乾燥機",
+    "點膠治具"
+  ],
+  "materials_mentioned": [
+    "鐵殼",
+    "GND線",
+    "裸線",
+    "UV膠"
+  ],
+  "processes_mentioned": [
+    "鐵殼安裝",
+    "焊接",
+    "點膠",
+    "UV膠烘乾"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm",
+    "度"
+  ],
+  "safety_requirements": [
+    "點膠作業需戴手套"
+  ],
+  "quality_criteria": [
+    "連接器根部點膠區域線材不能重疊交叉",
+    "點膠均勻",
+    "焊點1mm"
+  ],
+  "application_area": "電子",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "安裝鐵殼",
+    "焊接GND線",
+    "點UV膠",
+    "UV膠烘乾"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

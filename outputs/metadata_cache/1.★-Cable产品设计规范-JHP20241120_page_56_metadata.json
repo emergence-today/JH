@@ -1,0 +1,53 @@
+{
+  "topic": "條碼標籤規格",
+  "sub_topic": "客戶條碼標籤範例",
+  "content_type": "specification",
+  "keywords": [
+    "條碼",
+    "PPID",
+    "LVDS Cable Label",
+    "COMPAL",
+    "仁宝",
+    "DELL",
+    "Acer"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "QR Code",
+    "PPID"
+  ],
+  "document_section": "第31章 B節",
+  "equipment_mentioned": [
+    "LVDS Cable"
+  ],
+  "materials_mentioned": [
+    "標籤"
+  ],
+  "processes_mentioned": [
+    "條碼生成",
+    "標籤製作"
+  ],
+  "standards_mentioned": [
+    "DELL PPID標準",
+    "Acer PPID標準"
+  ],
+  "measurements_units": [
+    "9.5*9.5"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "白底黑字",
+    "字體: Arial"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產工程師、品質檢驗人員、標籤製作人員",
+  "action_items": [
+    "按照DELL規則製作23碼條碼",
+    "按照Acer規則製作27碼條碼"
+  ],
+  "related_documents": [
+    "DELL PPID label 測試報告"
+  ],
+  "revision_info": "產品設計規範 第55頁",
+  "importance_level": "high"
+}

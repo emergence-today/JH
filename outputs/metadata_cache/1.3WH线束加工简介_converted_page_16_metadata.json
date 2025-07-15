@@ -1,0 +1,62 @@
+{
+  "topic": "品質檢驗",
+  "sub_topic": "外觀尺寸全檢",
+  "content_type": "procedure",
+  "keywords": [
+    "外觀檢驗",
+    "尺寸檢查",
+    "放大鏡檢查",
+    "品質控制"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "J1",
+    "J2",
+    "P1",
+    "P6",
+    "±"
+  ],
+  "document_section": "第十三章",
+  "equipment_mentioned": [
+    "10倍放大鏡"
+  ],
+  "materials_mentioned": [
+    "成品",
+    "線體"
+  ],
+  "processes_mentioned": [
+    "外觀檢查",
+    "尺寸檢驗",
+    "良品標識",
+    "不良品標識"
+  ],
+  "standards_mentioned": [
+    "SOP"
+  ],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "表面無沾污",
+    "線體無划傷及損壞",
+    "線位正確及插入到位",
+    "尺寸在公差要求內"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "品質檢驗人員",
+  "action_items": [
+    "使用10倍放大鏡檢查",
+    "按SOP要求作業",
+    "對不良品及良品進行標識區分",
+    "檢查表面沾污",
+    "檢查線體划傷",
+    "檢查線位正確性",
+    "檢查尺寸公差"
+  ],
+  "related_documents": [
+    "SOP"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

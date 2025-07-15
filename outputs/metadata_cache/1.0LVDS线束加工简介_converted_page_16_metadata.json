@@ -1,0 +1,59 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "鐳射加工工序",
+  "content_type": "procedure",
+  "keywords": [
+    "YAG夾具",
+    "鐳射",
+    "布線板",
+    "固定槽",
+    "壓線塊"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "YAG",
+    "2~3mm"
+  ],
+  "document_section": "第十五、十六章",
+  "equipment_mentioned": [
+    "YAG后上夹具",
+    "镭射机",
+    "镭射托盘"
+  ],
+  "materials_mentioned": [
+    "双孔布线板",
+    "单孔布线板",
+    "钢板"
+  ],
+  "processes_mentioned": [
+    "夹具固定",
+    "布线板安装",
+    "内被镭射",
+    "自检"
+  ],
+  "standards_mentioned": [
+    "撕铃尺寸：2~3mm"
+  ],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [
+    "夹具轻放在镭射机的镭射托盘上"
+  ],
+  "quality_criteria": [
+    "线材无镭射不良（镭射偏、未镭射开）"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "放置夾具",
+    "固定布線板",
+    "操作鐳射機",
+    "自檢線材"
+  ],
+  "related_documents": [
+    "線材加工規範"
+  ],
+  "revision_info": "未提供",
+  "importance_level": "high"
+}

@@ -1,0 +1,56 @@
+{
+  "topic": "品質檢驗",
+  "sub_topic": "條碼掃描檢測",
+  "content_type": "procedure",
+  "keywords": [
+    "尺寸全檢",
+    "條碼測試",
+    "PPID",
+    "掃描槍",
+    "二維條碼"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "PPID",
+    "NG",
+    "PCS"
+  ],
+  "document_section": "第三十五章",
+  "equipment_mentioned": [
+    "掃描槍",
+    "條碼測試程式"
+  ],
+  "materials_mentioned": [
+    "二維條碼"
+  ],
+  "processes_mentioned": [
+    "條碼掃描",
+    "尺寸全檢",
+    "不良品分類"
+  ],
+  "standards_mentioned": [
+    "PPID格式規範"
+  ],
+  "measurements_units": [
+    "PCS"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "條碼內容正確",
+    "不可有空格或－等任何字元",
+    "百分之百掃描檢查"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線操作員",
+  "action_items": [
+    "打開條碼測試程式",
+    "選擇料號",
+    "對準二維條碼",
+    "對PPID進行掃碼",
+    "檢出不良品",
+    "撕掉作廢放入不良品盒"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

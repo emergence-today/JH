@@ -622,3 +622,7 @@ TOPIC_CATEGORIES = {
 ---
 
 *最後更新: 2025-07-04*
+cd /home/chun/heph-dev/JH
+uv run embedding2qdrant/batch_process_files.py "專家/圖紙認識" --cost-per-file 0.05 --total-budget 0.5 --collection-name test0711
+
+uv run embedding2qdrant/batch_process_files.py "專家/圖紙認識" --collection-name "JH-圖紙認識-langchain"

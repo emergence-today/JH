@@ -1,0 +1,58 @@
+{
+  "topic": "線束製造工藝",
+  "sub_topic": "連接器焊接與線材布線",
+  "content_type": "procedure",
+  "keywords": [
+    "連接器",
+    "焊接",
+    "拉線",
+    "CCD顯微鏡",
+    "布線治具"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "PIN40",
+    "PIN1",
+    "0.5PITCH"
+  ],
+  "document_section": "三、剪縮組與四、尺寸拉線",
+  "equipment_mentioned": [
+    "CCD顯微鏡",
+    "烙鐵",
+    "拉線治具",
+    "布線治具"
+  ],
+  "materials_mentioned": [
+    "連接器",
+    "接地端子",
+    "小鋼板",
+    "線材"
+  ],
+  "processes_mentioned": [
+    "焊接",
+    "加錫固定",
+    "穿線",
+    "布線",
+    "排列"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "0.5PITCH"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "按LCD端點位要求"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "取對應連接器與接地端子",
+    "使用烙鐵加錫固定",
+    "放置小鋼板",
+    "穿線",
+    "排列線材"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

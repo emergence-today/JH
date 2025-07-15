@@ -1,0 +1,65 @@
+{
+  "topic": "電子產品接地設計",
+  "sub_topic": "GND設計與連接方式",
+  "content_type": "specification",
+  "keywords": [
+    "GND",
+    "排線",
+    "Housing連接器",
+    "LCD",
+    "端子",
+    "裸線",
+    "短路防護"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "GND",
+    "HSG",
+    "M/B",
+    "LCD"
+  ],
+  "document_section": "第14章 GND設計",
+  "equipment_mentioned": [
+    "LCD連接器",
+    "MB連接器"
+  ],
+  "materials_mentioned": [
+    "排線",
+    "端子",
+    "裸線",
+    "導電布"
+  ],
+  "processes_mentioned": [
+    "打端子",
+    "刻皮",
+    "連接",
+    "外包導電布"
+  ],
+  "standards_mentioned": [
+    "出口工藝相關確認事項"
+  ],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [
+    "排線端子間不能產生短路現象",
+    "HSG端子之間不能產生短路現象"
+  ],
+  "quality_criteria": [
+    "HSG端GND打端子應離端子60mm以上遠離HSG端子",
+    "所有端子GND功能端子應與LCD端子相連接",
+    "LCD端所有裸線必須是全部連接的(即裸線間相通)"
+  ],
+  "application_area": "電子產品製造",
+  "target_audience": "電子產品設計工程師、製造工程師",
+  "action_items": [
+    "設計時需確認產品樣品",
+    "設計圖面需要事前確認",
+    "設計更改時需要確認"
+  ],
+  "related_documents": [
+    "產品設計規範"
+  ],
+  "revision_info": "未提供",
+  "importance_level": "high"
+}

@@ -1,0 +1,45 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "連接器材料特性",
+  "content_type": "specification",
+  "keywords": [
+    "Wire Harness",
+    "CONN",
+    "端子",
+    "電鍍層",
+    "材料特性"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Picth"
+  ],
+  "document_section": "2.1. Wire Harness 常見材料及特性",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "Nylon66",
+    "Nylon46",
+    "LCP",
+    "磷青銅",
+    "黃銅",
+    "鍍錫",
+    "鍍金"
+  ],
+  "processes_mentioned": [
+    "穿端子式",
+    "刺破式",
+    "焊接式",
+    "電鍍"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "Picth"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子製造",
+  "target_audience": "工程師",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

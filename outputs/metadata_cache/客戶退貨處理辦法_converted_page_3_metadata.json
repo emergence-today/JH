@@ -1,0 +1,62 @@
+{
+  "topic": "品質管理",
+  "sub_topic": "客戶退貨處理",
+  "content_type": "procedure",
+  "keywords": [
+    "退貨處理",
+    "客戶退貨",
+    "退貨流程",
+    "替代",
+    "報廢"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "JHQMS-017-02"
+  ],
+  "document_section": "4.2無需求退貨",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "退回品",
+    "不良品"
+  ],
+  "processes_mentioned": [
+    "退貨處理流程",
+    "退庫動作",
+    "重工流程",
+    "報廢流程"
+  ],
+  "standards_mentioned": [
+    "客戶服務處理規定"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "核收確認",
+    "審核"
+  ],
+  "application_area": "製造業",
+  "target_audience": [
+    "業務人員",
+    "倉管員",
+    "生產單位",
+    "業務主管"
+  ],
+  "action_items": [
+    "填寫退貨明細單",
+    "填寫退貨通知單",
+    "審核退貨品",
+    "核收確認",
+    "退庫動作",
+    "重工處理",
+    "報廢處理"
+  ],
+  "related_documents": [
+    "退貨明細單",
+    "退貨通知單",
+    "成品提庫單",
+    "重工通知單",
+    "成品出庫單"
+  ],
+  "revision_info": "版本4，修訂日期2024/9/20",
+  "importance_level": "high"
+}

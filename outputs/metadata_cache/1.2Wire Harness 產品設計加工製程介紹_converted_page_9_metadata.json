@@ -1,0 +1,45 @@
+{
+  "topic": "線束材料",
+  "sub_topic": "鐵氟龍線與常規線材絕緣層",
+  "content_type": "introduction",
+  "keywords": [
+    "鐵氟龍線",
+    "絕緣材料",
+    "PFA",
+    "FEP",
+    "ETFE",
+    "PVC"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "PFA",
+    "FEP",
+    "ETFE",
+    "PVC"
+  ],
+  "document_section": "第1章第3節",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "聚氯乙烯",
+    "四氟乙烯與全氟烷基乙烯基醚的共聚物",
+    "四氟乙烯六氟化丙烯",
+    "四氟乙烯與乙烯的共聚物"
+  ],
+  "processes_mentioned": [],
+  "standards_mentioned": [
+    "環保要求"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "耐高温",
+    "耐油",
+    "耐化学药剂"
+  ],
+  "application_area": "電子、通信",
+  "target_audience": "工程師、技術員",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

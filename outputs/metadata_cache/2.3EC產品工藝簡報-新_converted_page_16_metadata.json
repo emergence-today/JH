@@ -1,0 +1,41 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "連接器安裝",
+  "content_type": "procedure",
+  "keywords": [
+    "DP制程",
+    "連接器",
+    "線槽",
+    "裝配"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "DP"
+  ],
+  "document_section": "DP 制程工藝介紹",
+  "equipment_mentioned": [
+    "連接器"
+  ],
+  "materials_mentioned": [
+    "連接器",
+    "線槽"
+  ],
+  "processes_mentioned": [
+    "裝連接器",
+    "連接器裝入線槽"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "連接器正確裝入線槽"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產技術員",
+  "action_items": [
+    "將連接器裝入線槽中"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

@@ -1,0 +1,75 @@
+{
+  "topic": "汽車電線束設計與製造",
+  "sub_topic": "電線束術語定義與基本要求",
+  "content_type": "specification",
+  "keywords": [
+    "護套",
+    "保護套",
+    "定位件",
+    "干區",
+    "湿區",
+    "電線束",
+    "端子"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "QC/T 29106—2014"
+  ],
+  "document_section": "第3章術語定義和第4章要求",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "電線",
+    "銅編織線",
+    "端子",
+    "軟聚氯乙烯管",
+    "塑料緊縮帶",
+    "橡膠製品",
+    "熱收縮雙壁管",
+    "壓敏膠粘帶",
+    "波紋管",
+    "熱縮管"
+  ],
+  "processes_mentioned": [
+    "電線束安裝",
+    "端子與護套安裝",
+    "熱縮管固定"
+  ],
+  "standards_mentioned": [
+    "QC/T 29106—2014",
+    "SL/T 11363",
+    "GB/T 25085",
+    "JB/T 6313.1",
+    "JB/T 6313.2",
+    "JB/T 6313.3",
+    "QC/T 417.1",
+    "QC/T 417.3～417.5",
+    "QC/T 29010",
+    "QC/T 29013",
+    "GB/T 13527.2",
+    "QC/T 349",
+    "HG/T 2196"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [
+    "電線束在湿區需做特殊防水防護處理"
+  ],
+  "quality_criteria": [
+    "電線及零部件不應有損傷、變形等缺陷",
+    "端子在護套中不應脫出",
+    "密封塞不應從護套中退出",
+    "電線不應從開口保護管的縫隙中串出",
+    "熱縮管應緊密套在連接位上，無位移、脫"
+  ],
+  "application_area": "汽車",
+  "target_audience": "汽車電氣工程師、電線束製造技術人員",
+  "action_items": [
+    "按經規定程序批准的圖樣及技術文件製造電線束",
+    "確保電線束用零部件材料符合相關標準"
+  ],
+  "related_documents": [
+    "附錄C",
+    "附錄D"
+  ],
+  "revision_info": "QC/T 29106—2014",
+  "importance_level": "high"
+}

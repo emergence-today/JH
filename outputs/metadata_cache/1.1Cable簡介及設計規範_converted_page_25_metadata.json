@@ -1,0 +1,52 @@
+{
+  "topic": "EMI處理方案",
+  "sub_topic": "降低產品EMI設計考慮",
+  "content_type": "procedure",
+  "keywords": [
+    "EMI",
+    "接地阻抗",
+    "連接器",
+    "編織層",
+    "灌錫"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Ω",
+    "MB",
+    "LCD",
+    "GB"
+  ],
+  "document_section": "第6章",
+  "equipment_mentioned": [
+    "連接器"
+  ],
+  "materials_mentioned": [
+    "接地裸線",
+    "鐵殼",
+    "接地片",
+    "編織層",
+    "錫"
+  ],
+  "processes_mentioned": [
+    "鍍錫",
+    "灌錫"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "歐姆"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "阻抗要求小於0.2歐姆"
+  ],
+  "application_area": "電子",
+  "target_audience": "電子工程師",
+  "action_items": [
+    "增加接地裸線",
+    "確保連接器鐵殼、GB、接地片、編織層良好接觸",
+    "控制兩端接地阻抗值"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

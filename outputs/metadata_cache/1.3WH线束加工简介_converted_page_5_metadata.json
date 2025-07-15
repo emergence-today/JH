@@ -1,0 +1,64 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "線束生產加工流程",
+  "content_type": "diagram",
+  "keywords": [
+    "生產加工",
+    "線束製造",
+    "端子鉚壓",
+    "熱縮管",
+    "測試檢驗"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "→",
+    "↓"
+  ],
+  "document_section": "生產加工流程圖",
+  "equipment_mentioned": [
+    "鉚壓設備",
+    "熱縮管烘烤設備",
+    "測試設備"
+  ],
+  "materials_mentioned": [
+    "熱縮管",
+    "地線熱縮管",
+    "端子",
+    "編織層",
+    "鋁箔"
+  ],
+  "processes_mentioned": [
+    "裁線",
+    "剝外皮",
+    "剪編織",
+    "挑鋁箔",
+    "套地線熱縮管",
+    "烘地線熱縮管",
+    "鉚壓端子",
+    "鉚端檢驗",
+    "套熱縮管",
+    "烘熱縮管",
+    "插端",
+    "測試",
+    "全檢",
+    "包裝"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "鉚端檢驗",
+    "全檢"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產技術員、製程工程師",
+  "action_items": [
+    "按流程圖執行線束生產加工"
+  ],
+  "related_documents": [
+    "線束生產規範",
+    "品質檢驗標準"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

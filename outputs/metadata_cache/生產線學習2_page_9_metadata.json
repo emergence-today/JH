@@ -1,0 +1,57 @@
+{
+  "topic": "電子製造工藝",
+  "sub_topic": "芯線割測工藝",
+  "content_type": "procedure",
+  "keywords": [
+    "芯線割測",
+    "電子鍋",
+    "預溫操作",
+    "削刮",
+    "半製品"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "℃",
+    "mm"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "控溫器爐"
+  ],
+  "materials_mentioned": [
+    "芯線",
+    "皮線"
+  ],
+  "processes_mentioned": [
+    "芯線割斷",
+    "削刮",
+    "預溫操作",
+    "打包"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "mm",
+    "℃"
+  ],
+  "safety_requirements": [
+    "特制上不可與氧化物接觸"
+  ],
+  "quality_criteria": [
+    "溫度應到適宜範圍內",
+    "預溫操作溫度設定為250℃±5℃"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "芯線割斷",
+    "削刮鑽針",
+    "預溫操作"
+  ],
+  "related_documents": [
+    "專用SOP"
+  ],
+  "revision_info": "版本4.0，上一版本為3.0，由高帜超吉於2011.11.23修訂",
+  "importance_level": "high"
+}

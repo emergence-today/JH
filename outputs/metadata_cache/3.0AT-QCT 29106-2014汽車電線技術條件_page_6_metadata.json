@@ -1,0 +1,51 @@
+{
+  "topic": "汽車線束設計",
+  "sub_topic": "電線束術語和定義",
+  "content_type": "specification",
+  "keywords": [
+    "電線束",
+    "干線",
+    "支線",
+    "分支點",
+    "接點",
+    "端子"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "QC/T 29106—2014"
+  ],
+  "document_section": "第3章 術語和定義",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "電工銅編織線",
+    "乙二醇型冷卻液",
+    "丙二醇型發動機冷卻液",
+    "橡膠材料"
+  ],
+  "processes_mentioned": [
+    "電線包扎"
+  ],
+  "standards_mentioned": [
+    "QC/T 29106—2014",
+    "QC/T 417.1—2001",
+    "IIC/T 2196",
+    "JB/T 6313.1",
+    "JB/T 6313.2",
+    "JB/T 6313.3",
+    "NB/SH/T 0521",
+    "SJ/T 11363"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [
+    "電子信息產品中有毒有害物質的限量要求"
+  ],
+  "quality_criteria": [],
+  "application_area": "汽車",
+  "target_audience": "汽車工程師、線束設計技術人員",
+  "action_items": [],
+  "related_documents": [
+    "QC/T 417.1—2001"
+  ],
+  "revision_info": "2014版",
+  "importance_level": "high"
+}

@@ -1,0 +1,74 @@
+{
+  "topic": "品質管理",
+  "sub_topic": "製程控制與品質保證",
+  "content_type": "table",
+  "keywords": [
+    "制程管制",
+    "數據分析",
+    "控制圖",
+    "Cp/Cpk",
+    "異常處理",
+    "檢驗",
+    "ESD防護"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Cp/Cpk",
+    "SPC"
+  ],
+  "document_section": "第6章 製程控制檢查項目",
+  "equipment_mentioned": [
+    "檢驗/量測治具"
+  ],
+  "materials_mentioned": [
+    "ESD敏感性材料",
+    "列管性物質",
+    "危險性物質",
+    "有害性物質"
+  ],
+  "processes_mentioned": [
+    "數據分析",
+    "異常處理",
+    "首件檢查",
+    "追溯程序",
+    "ESD防護"
+  ],
+  "standards_mentioned": [
+    "SPC統計製程控制",
+    "控制圖界限標準"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [
+    "ESD防護作業程序",
+    "列管性物質妥善定義與管制"
+  ],
+  "quality_criteria": [
+    "Cp/Cpk值",
+    "控制圖界限",
+    "檢驗標準",
+    "首件檢查"
+  ],
+  "application_area": "製造業",
+  "target_audience": [
+    "品質工程師",
+    "製程工程師",
+    "管理人員",
+    "檢驗員",
+    "作業員"
+  ],
+  "action_items": [
+    "定義關鍵製程參數",
+    "進行數據分析",
+    "訓練相關人員",
+    "異常處理",
+    "維護保養計劃執行"
+  ],
+  "related_documents": [
+    "SPC培訓文件",
+    "異常處理程序",
+    "檢驗標準",
+    "維護保養計劃"
+  ],
+  "revision_info": "Qisda Corporation",
+  "importance_level": "high"
+}

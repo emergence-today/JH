@@ -1,0 +1,61 @@
+{
+  "topic": "材料規格",
+  "sub_topic": "汽車電線束用熱收縮雙壁管",
+  "content_type": "specification",
+  "keywords": [
+    "熱收縮雙壁管",
+    "電線束",
+    "高分子聚合物",
+    "收縮率",
+    "性能要求"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "D",
+    "d",
+    "t",
+    "T",
+    "℃",
+    "MPa",
+    "%"
+  ],
+  "document_section": "附錄B",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "高分子聚合物",
+    "改性聚醚醚酮膠",
+    "輻射交聯改性聚烯烴膠"
+  ],
+  "processes_mentioned": [
+    "熱收縮",
+    "熱老化試驗"
+  ],
+  "standards_mentioned": [
+    "QC/T 29106—2014"
+  ],
+  "measurements_units": [
+    "℃",
+    "s",
+    "%",
+    "MPa",
+    "mm",
+    "h"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "內外表面應清潔、光滑",
+    "無肉眼可見的凹孔和疤痕",
+    "顏色應均勻一致",
+    "縱向收縮率≤10%",
+    "徑向收縮率≥30%",
+    "壁厚不均勻度<30%"
+  ],
+  "application_area": "汽車",
+  "target_audience": "工程師",
+  "action_items": [
+    "按照表B.2進行熱收縮雙壁管性能測試"
+  ],
+  "related_documents": [],
+  "revision_info": "QC/T 29106—2014",
+  "importance_level": "high"
+}

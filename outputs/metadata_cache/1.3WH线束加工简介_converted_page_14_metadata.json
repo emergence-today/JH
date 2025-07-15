@@ -1,0 +1,58 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "電子元件測試程序",
+  "content_type": "procedure",
+  "keywords": [
+    "測試",
+    "絕緣阻抗",
+    "導體阻抗",
+    "PASS",
+    "FAIL"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "Ω",
+    "V/DC"
+  ],
+  "document_section": "第十一章",
+  "equipment_mentioned": [
+    "測試機",
+    "顯示屏"
+  ],
+  "materials_mentioned": [
+    "成品",
+    "母座"
+  ],
+  "processes_mentioned": [
+    "上下45度擺動測試",
+    "平插平拔",
+    "參數設定"
+  ],
+  "standards_mentioned": [
+    "絕緣阻抗：5MΩ MIN 300V/DC",
+    "導體阻抗：1Ω MAX"
+  ],
+  "measurements_units": [
+    "Ω",
+    "V"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "絕緣阻抗：5MΩ MIN 300V/DC",
+    "導體阻抗：1Ω MAX",
+    "PASS表示通過"
+  ],
+  "application_area": "電子",
+  "target_audience": "技術員",
+  "action_items": [
+    "確認測試機參數",
+    "配套使用成品與母座",
+    "設定測試條件參數",
+    "上下45度擺動三次測試",
+    "觀察顯示屏結果",
+    "區分良品與不良品"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

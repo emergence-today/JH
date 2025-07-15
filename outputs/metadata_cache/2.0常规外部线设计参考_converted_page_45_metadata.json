@@ -1,0 +1,44 @@
+{
+  "topic": "連接器設計",
+  "sub_topic": "USB Type-C接口PIN角定義",
+  "content_type": "specification",
+  "keywords": [
+    "USB Type-C",
+    "PIN角定義",
+    "信號分配",
+    "3.5mm轉接器"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Vbus",
+    "GND",
+    "CC",
+    "SBU",
+    "TX",
+    "RX",
+    "D+",
+    "D-"
+  ],
+  "document_section": "第4章",
+  "equipment_mentioned": [
+    "3.5 mm to USB Type-C Adapter"
+  ],
+  "materials_mentioned": [],
+  "processes_mentioned": [],
+  "standards_mentioned": [
+    "USB Type-C規範"
+  ],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子",
+  "target_audience": "電子工程師",
+  "action_items": [],
+  "related_documents": [
+    "USB Type-C規範文件"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

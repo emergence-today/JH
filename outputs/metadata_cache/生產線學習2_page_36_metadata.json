@@ -1,0 +1,66 @@
+{
+  "topic": "線束製造",
+  "sub_topic": "外觀成型工藝",
+  "content_type": "procedure",
+  "keywords": [
+    "電子線束",
+    "外觀成型",
+    "模具",
+    "成型參數",
+    "連接器"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "℃",
+    "KG",
+    "s"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "自式線材成型機",
+    "成型模具",
+    "模條"
+  ],
+  "materials_mentioned": [
+    "電子線束",
+    "SATA連接器",
+    "HDMI連接器",
+    "USB連接器"
+  ],
+  "processes_mentioned": [
+    "外觀成型",
+    "合模",
+    "線材理順",
+    "成型",
+    "冷卻",
+    "保溫"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "℃",
+    "KG",
+    "s",
+    "度"
+  ],
+  "safety_requirements": [
+    "取出線材用力道中",
+    "手指離奔主成型側好"
+  ],
+  "quality_criteria": [
+    "產品成型後硬度：9±1度"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "外接成型時用材料盒暫放HISOP",
+    "特外線成型好之線材放入成型模條內",
+    "理順線材",
+    "按下左右自動成型",
+    "取出成型好後之線材"
+  ],
+  "related_documents": [],
+  "revision_info": "版本2.0，修訂人姚宗，修訂時間2013.07.03",
+  "importance_level": "high"
+}

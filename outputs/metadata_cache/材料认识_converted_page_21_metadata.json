@@ -1,0 +1,37 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "線束製作輔助材料",
+  "content_type": "introduction",
+  "keywords": [
+    "斑马纹胶带",
+    "训练线材",
+    "缠绕",
+    "划分区域"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "■"
+  ],
+  "document_section": "第21頁",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "斑马纹胶带"
+  ],
+  "processes_mentioned": [
+    "线材缠绕",
+    "划分区域"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子製造",
+  "target_audience": "技術員",
+  "action_items": [
+    "使用斑马纹胶带进行线材缠绕",
+    "使用斑马纹胶带划分区域"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

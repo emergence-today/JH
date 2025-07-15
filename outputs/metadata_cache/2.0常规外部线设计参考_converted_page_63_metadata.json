@@ -1,0 +1,47 @@
+{
+  "topic": "音頻連接",
+  "sub_topic": "音頻設備連接方案",
+  "content_type": "diagram",
+  "keywords": [
+    "音頻連接",
+    "3.5mm音頻線",
+    "設備連接",
+    "音頻信號傳輸"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "3.5A頭",
+    "←→"
+  ],
+  "document_section": "AUDIO 應用",
+  "equipment_mentioned": [
+    "手機",
+    "電腦",
+    "MP3",
+    "電視",
+    "DVD",
+    "音響",
+    "功放",
+    "車載AUX"
+  ],
+  "materials_mentioned": [
+    "3.5mm公公音頻線"
+  ],
+  "processes_mentioned": [
+    "音頻信號傳輸"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "3.5mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "消費電子",
+  "target_audience": "一般用戶、技術人員",
+  "action_items": [
+    "連接音頻設備"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

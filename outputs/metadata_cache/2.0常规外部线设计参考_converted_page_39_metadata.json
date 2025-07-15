@@ -1,0 +1,52 @@
+{
+  "topic": "連接器技術",
+  "sub_topic": "TYPE-C 應用與連接設備",
+  "content_type": "diagram",
+  "keywords": [
+    "TYPE-C",
+    "USB",
+    "連接器",
+    "主機端",
+    "外部設備"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "USB 3.1",
+    "USB 2.0"
+  ],
+  "document_section": "TYPE-C 應用",
+  "equipment_mentioned": [
+    "MacBook",
+    "筆記本",
+    "U盤",
+    "鍵盤",
+    "鼠標",
+    "手機",
+    "MP3",
+    "打印機"
+  ],
+  "materials_mentioned": [
+    "USB 連接線"
+  ],
+  "processes_mentioned": [
+    "設備連接"
+  ],
+  "standards_mentioned": [
+    "USB 3.1",
+    "USB 2.0"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子消費品",
+  "target_audience": "工程師、技術人員、一般用戶",
+  "action_items": [
+    "識別不同類型的USB連接器",
+    "了解TYPE-C適用設備"
+  ],
+  "related_documents": [
+    "USB規格文件"
+  ],
+  "revision_info": "",
+  "importance_level": "medium"
+}

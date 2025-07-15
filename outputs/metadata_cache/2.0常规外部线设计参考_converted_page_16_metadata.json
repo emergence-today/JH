@@ -1,0 +1,59 @@
+{
+  "topic": "線材設計與材料規格",
+  "sub_topic": "電纜結構與材料組成",
+  "content_type": "diagram with specifications",
+  "keywords": [
+    "電纜",
+    "外被",
+    "編織",
+    "鋁箔",
+    "芯線",
+    "電子線",
+    "地線",
+    "屏蔽"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "PVC",
+    "PE",
+    "PP",
+    "AL"
+  ],
+  "document_section": "電纜結構說明",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "PVC",
+    "PE",
+    "PP",
+    "無鹵材料",
+    "鋁鎂絲",
+    "鋁箔",
+    "聚酯薄膜",
+    "發泡線",
+    "鍍錫銅絞線",
+    "FPE料",
+    "HDPE",
+    "無鹵色母"
+  ],
+  "processes_mentioned": [
+    "編織",
+    "粘合",
+    "絞合"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "錠"
+  ],
+  "safety_requirements": [
+    "無鹵材料使用"
+  ],
+  "quality_criteria": [
+    "編織的錠數分為16錠和24錠"
+  ],
+  "application_area": "電子、通信",
+  "target_audience": "電纜設計工程師、製造技術人員",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

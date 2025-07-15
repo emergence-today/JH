@@ -1,0 +1,51 @@
+{
+  "topic": "線束製造",
+  "sub_topic": "闸塞插座比对方法",
+  "content_type": "procedure",
+  "keywords": [
+    "闸塞插座",
+    "电子线束",
+    "插座比对",
+    "对插治具",
+    "方孔",
+    "圆孔"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "SCS"
+  ],
+  "document_section": "作业标准书",
+  "equipment_mentioned": [
+    "对插治具"
+  ],
+  "materials_mentioned": [
+    "电子线束用三十孔",
+    "闸塞插座"
+  ],
+  "processes_mentioned": [
+    "插座比对",
+    "深度测试",
+    "塞住洞槽检查"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "有塞住与无塞住不可深浅",
+    "插读不可有接触感",
+    "有高性插座可插入",
+    "无高性插座不可插入"
+  ],
+  "application_area": "电子制造",
+  "target_audience": "生产线技术员",
+  "action_items": [
+    "检查闸塞插座",
+    "使用对插治具进行测试",
+    "区分有高性和无高性插座"
+  ],
+  "related_documents": [],
+  "revision_info": "版本1.0",
+  "importance_level": "high"
+}

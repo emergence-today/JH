@@ -1,0 +1,40 @@
+{
+  "topic": "電子元件設計",
+  "sub_topic": "電磁干擾防護",
+  "content_type": "specification",
+  "keywords": [
+    "鐵芯",
+    "地線",
+    "電磁波干擾",
+    "導通性能"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [],
+  "document_section": "未明確指出",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "鐵芯",
+    "地線"
+  ],
+  "processes_mentioned": [
+    "隔離電磁波干擾",
+    "加強導通性能"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [
+    "避免電磁波干擾"
+  ],
+  "quality_criteria": [
+    "良好的導通性能"
+  ],
+  "application_area": "電子",
+  "target_audience": "電子工程師",
+  "action_items": [
+    "使用鐵芯隔離電磁波干擾",
+    "使用地線加強導通性能"
+  ],
+  "related_documents": [],
+  "revision_info": "未提供",
+  "importance_level": "high"
+}

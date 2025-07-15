@@ -1,0 +1,58 @@
+{
+  "topic": "線束連接技術",
+  "sub_topic": "端子與電線連接要求",
+  "content_type": "specification",
+  "keywords": [
+    "絕緣層壓接",
+    "密封套",
+    "連接強度",
+    "拉力值",
+    "連箍"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "mm²",
+    "N"
+  ],
+  "document_section": "4.4.3-4.4.6",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "端子",
+    "電線",
+    "導體",
+    "絕緣層",
+    "密封套",
+    "連箍"
+  ],
+  "processes_mentioned": [
+    "絕緣層壓接",
+    "弯折試验",
+    "拉力測試"
+  ],
+  "standards_mentioned": [
+    "QC/T 29106—2014"
+  ],
+  "measurements_units": [
+    "mm²",
+    "N",
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "絕緣壓接後在連接B區應可見電線導體和電線絕緣層",
+    "連箍最大長度不應超過0.5mm",
+    "端子與電線的連接最小拉力值要求"
+  ],
+  "application_area": "汽車電子",
+  "target_audience": "線束製造工程師、品質檢驗人員",
+  "action_items": [
+    "進行絕緣壓接3個循環的弯折試驗",
+    "確保連箍不超傷電線絕緣層和密封套",
+    "測試端子與電線連接的拉力值"
+  ],
+  "related_documents": [
+    "附錄A"
+  ],
+  "revision_info": "QC/T 29106—2014",
+  "importance_level": "high"
+}

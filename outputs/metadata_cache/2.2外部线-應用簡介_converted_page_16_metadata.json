@@ -1,0 +1,39 @@
+{
+  "topic": "連接器規格",
+  "sub_topic": "USB延長線規格",
+  "content_type": "specification",
+  "keywords": [
+    "USB延長線",
+    "長度限制",
+    "連接器",
+    "5米"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "USB-A"
+  ],
+  "document_section": "未明確指出",
+  "equipment_mentioned": [
+    "USB延長線"
+  ],
+  "materials_mentioned": [],
+  "processes_mentioned": [],
+  "standards_mentioned": [
+    "USB規格"
+  ],
+  "measurements_units": [
+    "米"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "長度不應超過5米"
+  ],
+  "application_area": "電子",
+  "target_audience": "工程師、技術人員",
+  "action_items": [
+    "確保USB延長線長度不超過5米"
+  ],
+  "related_documents": [],
+  "revision_info": "未提供",
+  "importance_level": "medium"
+}

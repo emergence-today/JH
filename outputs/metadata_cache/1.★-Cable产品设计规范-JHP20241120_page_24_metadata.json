@@ -1,0 +1,58 @@
+{
+  "topic": "電子產品設計規範",
+  "sub_topic": "GND設計",
+  "content_type": "specification table",
+  "keywords": [
+    "GND設計",
+    "接地片",
+    "導電布",
+    "灌錫",
+    "裸線",
+    "鐵殼"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "GND",
+    "Pin"
+  ],
+  "document_section": "第14章",
+  "equipment_mentioned": [
+    "Conn",
+    "LCD",
+    "M/B"
+  ],
+  "materials_mentioned": [
+    "接地片",
+    "導電布",
+    "Coaxial線材",
+    "銅片",
+    "Teflon線",
+    "裸線",
+    "鐵殼",
+    "胶體"
+  ],
+  "processes_mentioned": [
+    "灌錫",
+    "混焊制程",
+    "短接",
+    "包覆"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "接地片與鐵殼連接方法規範",
+    "裸線焊接位置要求"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "電子產品設計工程師、製造工程師",
+  "action_items": [
+    "按規範進行GND與鐵殼連接",
+    "根據不同情況選擇適當的接地方式"
+  ],
+  "related_documents": [
+    "產品設計規範"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

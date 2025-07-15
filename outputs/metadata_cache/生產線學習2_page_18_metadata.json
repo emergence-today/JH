@@ -1,0 +1,61 @@
+{
+  "topic": "線束製造",
+  "sub_topic": "絞線作業流程",
+  "content_type": "procedure",
+  "keywords": [
+    "絞線",
+    "Housing",
+    "連接器",
+    "線材",
+    "天線",
+    "DD",
+    "測試"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Housing",
+    "DD",
+    "LED"
+  ],
+  "document_section": "作業標準書 SOP-02871",
+  "equipment_mentioned": [
+    "絞線機",
+    "測試設備"
+  ],
+  "materials_mentioned": [
+    "電子線",
+    "端子",
+    "連接器",
+    "LVDS線材"
+  ],
+  "processes_mentioned": [
+    "絞線",
+    "開線",
+    "安裝天線",
+    "測試",
+    "剪線",
+    "鑽孔"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "測試直線材"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "按照不同線材類型選擇適當的絞線方式",
+    "測試線材",
+    "記錄數據"
+  ],
+  "related_documents": [
+    "服務電話SOP"
+  ],
+  "revision_info": "當前版本7.0，最近修訂於2011.11.16",
+  "importance_level": "high"
+}

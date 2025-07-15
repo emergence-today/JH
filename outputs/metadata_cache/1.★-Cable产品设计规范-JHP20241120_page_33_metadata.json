@@ -1,0 +1,55 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "Conn預加工",
+  "content_type": "table",
+  "keywords": [
+    "Conn",
+    "Teflon焊接",
+    "Kapton",
+    "PAD",
+    "接地片",
+    "PIN"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "PAD",
+    "PIN"
+  ],
+  "document_section": "第17章",
+  "equipment_mentioned": [
+    "Conn"
+  ],
+  "materials_mentioned": [
+    "Teflon",
+    "Kapton",
+    "接地片",
+    "铁壳"
+  ],
+  "processes_mentioned": [
+    "焊接制程",
+    "贴覆"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [
+    "防止芯线与铁壳短路不良"
+  ],
+  "quality_criteria": [
+    "Kapton必须完全将接地片和Conn本体铁壳覆盖",
+    "Kapton长度必须超出两边缘PIN"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "製程工程師、技術員",
+  "action_items": [
+    "确保Kapton沿PAD下胶质边缘贴",
+    "确保Kapton超出铁壳约0.5mm",
+    "确保Kapton长度超出两边缘PIN"
+  ],
+  "related_documents": [
+    "产品设计规范"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

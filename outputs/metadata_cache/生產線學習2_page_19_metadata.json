@@ -1,0 +1,62 @@
+{
+  "topic": "線束製造",
+  "sub_topic": "電子線束貼片作業",
+  "content_type": "procedure",
+  "keywords": [
+    "電子線束",
+    "貼片",
+    "胶带",
+    "治夹具",
+    "Housing",
+    "連接器"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "SOP-02871"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "站立台具桩",
+    "功力",
+    "裁切板",
+    "敬簡器條"
+  ],
+  "materials_mentioned": [
+    "胶带",
+    "Housing",
+    "連接器",
+    "胶管"
+  ],
+  "processes_mentioned": [
+    "貼胶带",
+    "插接",
+    "卡压",
+    "固定線材"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [
+    "Housing不准加贴打整",
+    "Housing方向不可反",
+    "插拔不可断设"
+  ],
+  "quality_criteria": [
+    "胶带之胶管位不卡没胶管外管部",
+    "胶带的宽布于可卡又胶管外格特殊位卡的密封"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "放置電線",
+    "貼胶带",
+    "插接連接器",
+    "固定線材"
+  ],
+  "related_documents": [
+    "專用SOP"
+  ],
+  "revision_info": "版本1.0",
+  "importance_level": "high"
+}

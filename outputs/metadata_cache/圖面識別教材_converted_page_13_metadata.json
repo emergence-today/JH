@@ -1,0 +1,47 @@
+{
+  "topic": "技術圖面規範",
+  "sub_topic": "圖面識別與成品圖規範",
+  "content_type": "specification",
+  "keywords": [
+    "成品圖",
+    "材料",
+    "尺寸公差",
+    "檢驗",
+    "線位"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "±",
+    "紅色檢驗章"
+  ],
+  "document_section": "圖面識別",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "零部件"
+  ],
+  "processes_mentioned": [
+    "檢驗"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "M/M"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "重點檢驗尺寸",
+    "尺寸公差範圍"
+  ],
+  "application_area": "製造業",
+  "target_audience": [
+    "工程師",
+    "技術員",
+    "品質檢驗人員"
+  ],
+  "action_items": [
+    "檢查尺寸公差",
+    "注意紅色檢驗章標示的重點檢驗尺寸"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

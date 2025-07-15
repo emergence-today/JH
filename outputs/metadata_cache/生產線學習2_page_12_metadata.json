@@ -1,0 +1,58 @@
+{
+  "topic": "電子線束製造",
+  "sub_topic": "連接器KEY安裝工藝",
+  "content_type": "procedure",
+  "keywords": [
+    "電子線束",
+    "六角",
+    "Housing連接器",
+    "KEY",
+    "盖KEY"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "≥2.0"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "冲压装置"
+  ],
+  "materials_mentioned": [
+    "Housing連接器",
+    "KEY",
+    "白色盖扣",
+    "砂纸"
+  ],
+  "processes_mentioned": [
+    "盖KEY",
+    "冲压",
+    "物伤修复"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [
+    "無明確提及"
+  ],
+  "quality_criteria": [
+    "KEY毛边残留在2.0mm以内",
+    "盖KEY位置须正确",
+    "如果面有物伤,須用砂纸除去后再作封作"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "按专用SOP要求将KEY盖入Housing连接器内",
+    "白色盖扣用割到将装置內冲压",
+    "保CUSING物件正确使用",
+    "物伤修复"
+  ],
+  "related_documents": [
+    "专用SOP"
+  ],
+  "revision_info": "版本2.0，由朱红琪於2009.09.28修訂",
+  "importance_level": "high"
+}

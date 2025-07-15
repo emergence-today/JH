@@ -1,0 +1,34 @@
+{
+  "topic": "連接器技術",
+  "sub_topic": "焊接式連接器",
+  "content_type": "introduction",
+  "keywords": [
+    "焊接式連接器",
+    "同軸線",
+    "連接組件"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "■"
+  ],
+  "document_section": "焊接式連接器章節",
+  "equipment_mentioned": [
+    "連接器"
+  ],
+  "materials_mentioned": [
+    "同軸線"
+  ],
+  "processes_mentioned": [
+    "焊接"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子、通訊",
+  "target_audience": "電子工程師、技術員",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

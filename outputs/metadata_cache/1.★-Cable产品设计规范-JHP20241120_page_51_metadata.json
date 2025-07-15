@@ -1,0 +1,52 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "铝箔双绞线预加工",
+  "content_type": "procedure",
+  "keywords": [
+    "铝箔双绞线",
+    "预加工",
+    "外露",
+    "不外露",
+    "固定"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [],
+  "document_section": "第28章",
+  "equipment_mentioned": [
+    "烘套管设备"
+  ],
+  "materials_mentioned": [
+    "铝箔双绞线",
+    "套管",
+    "美纹胶带"
+  ],
+  "processes_mentioned": [
+    "去除铝箔",
+    "穿入套管",
+    "套管位置固定",
+    "烘套管",
+    "美纹胶带包覆"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "铝箔不易散开",
+    "外观美观",
+    "正转端均需固定"
+  ],
+  "application_area": "电子",
+  "target_audience": "工程师、技术员",
+  "action_items": [
+    "将镭射后之线材去除铝箔",
+    "穿入套管",
+    "套管位置固定",
+    "烘套管",
+    "用美纹胶带包覆"
+  ],
+  "related_documents": [
+    "产品设计规范"
+  ],
+  "revision_info": "",
+  "importance_level": "medium"
+}

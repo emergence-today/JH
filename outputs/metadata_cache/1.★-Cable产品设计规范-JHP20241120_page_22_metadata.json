@@ -1,0 +1,57 @@
+{
+  "topic": "接地设计",
+  "sub_topic": "接地片选用",
+  "content_type": "specification",
+  "keywords": [
+    "GND设计",
+    "接地片",
+    "冲型接地片",
+    "自冲式接地片",
+    "PIN位"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "GND",
+    "PIN"
+  ],
+  "document_section": "第14章",
+  "equipment_mentioned": [
+    "Conn"
+  ],
+  "materials_mentioned": [
+    "冲型接地片",
+    "自冲式接地片"
+  ],
+  "processes_mentioned": [
+    "焊接",
+    "冲切",
+    "定位"
+  ],
+  "standards_mentioned": [
+    "冲型接地片一览表"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "无毛刺",
+    "左右卡Conn定位槽",
+    "无错PIN不良"
+  ],
+  "application_area": "电子制造",
+  "target_audience": [
+    "产品工程师",
+    "零件工程师",
+    "工程人员"
+  ],
+  "action_items": [
+    "新机种首次打样可使用自冲式接地片",
+    "第二次打样必须使用冲型接地片",
+    "每周六前更新冲型接地片一览表",
+    "新增及变更料号需提供图面至零件工程师处作GND pin位登记"
+  ],
+  "related_documents": [
+    "\\docserver\\工程部\\02 样品段共用资料查询\\02 冲型接地片一览表.xls"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

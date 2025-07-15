@@ -1,0 +1,44 @@
+{
+  "topic": "連接技術",
+  "sub_topic": "USB3.0接口應用",
+  "content_type": "introduction",
+  "keywords": [
+    "USB 3.0",
+    "數據傳輸",
+    "后向兼容",
+    "即插即用"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "USB 3.0"
+  ],
+  "document_section": "USB3.0 應用",
+  "equipment_mentioned": [
+    "電腦",
+    "打印機",
+    "摄像機",
+    "傳真機",
+    "掃描儀",
+    "U盤",
+    "MP3",
+    "MP4"
+  ],
+  "materials_mentioned": [
+    "USB 3.0 數據線"
+  ],
+  "processes_mentioned": [
+    "數據傳輸"
+  ],
+  "standards_mentioned": [
+    "USB 3.0標準"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子",
+  "target_audience": "技術人員",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

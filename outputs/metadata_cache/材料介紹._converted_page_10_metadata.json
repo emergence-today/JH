@@ -1,0 +1,40 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "同軸線結構",
+  "content_type": "diagram",
+  "keywords": [
+    "同軸線",
+    "電纜結構",
+    "40AWG",
+    "芯線",
+    "絕緣體"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "AWG"
+  ],
+  "document_section": "線材規格說明",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "芯線",
+    "絕緣體",
+    "銅箔",
+    "編織",
+    "外被"
+  ],
+  "processes_mentioned": [],
+  "standards_mentioned": [
+    "AWG規格"
+  ],
+  "measurements_units": [
+    "AWG"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子",
+  "target_audience": "工程師",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

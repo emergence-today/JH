@@ -1,0 +1,53 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "贴平跳线设计规范",
+  "content_type": "table",
+  "keywords": [
+    "贴平跳线",
+    "PIN1",
+    "线色排列",
+    "贴平胶带",
+    "CONN"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "PIN1"
+  ],
+  "document_section": "第11章",
+  "equipment_mentioned": [
+    "MB端"
+  ],
+  "materials_mentioned": [
+    "跳线",
+    "贴平胶带",
+    "Teflon"
+  ],
+  "processes_mentioned": [
+    "贴平跳线",
+    "上CONN作业"
+  ],
+  "standards_mentioned": [
+    "国际线色排列"
+  ],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "线材贴平出线需规则",
+    "避免Pin位跑掉",
+    "防止辐射"
+  ],
+  "application_area": "电子",
+  "target_audience": "工程师",
+  "action_items": [
+    "MB端贴平跳线时PIN1需设定在左手边",
+    "线材贴平需规则",
+    "新机种时建议客户考虑外形调整"
+  ],
+  "related_documents": [
+    "产品设计规范"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

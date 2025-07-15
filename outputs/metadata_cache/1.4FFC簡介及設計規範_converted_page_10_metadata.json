@@ -1,0 +1,66 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "UL規格與間距(Pitch)規範",
+  "content_type": "specification table",
+  "keywords": [
+    "UL規格",
+    "Pitch",
+    "額定溫度",
+    "額定電壓",
+    "絕緣厚度",
+    "導體規格",
+    "導體芯數"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "°C",
+    "V",
+    "mil",
+    "AWG"
+  ],
+  "document_section": "技術規格章節",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "絕緣材料",
+    "導體"
+  ],
+  "processes_mentioned": [],
+  "standards_mentioned": [
+    "UL2643",
+    "UL2896",
+    "UL20624",
+    "UL20696",
+    "UL20706",
+    "UL20798",
+    "UL20861",
+    "UL20890",
+    "UL20941"
+  ],
+  "measurements_units": [
+    "mm",
+    "°C",
+    "V",
+    "mil",
+    "AWG"
+  ],
+  "safety_requirements": [
+    "額定溫度限制",
+    "額定電壓限制"
+  ],
+  "quality_criteria": [
+    "絕緣厚度最小值",
+    "導體規格範圍"
+  ],
+  "application_area": "電子、電氣連接器製造",
+  "target_audience": "線束設計工程師、製造工程師、品質工程師",
+  "action_items": [
+    "根據應用選擇適當的UL規格",
+    "確認Pitch尺寸符合設計要求"
+  ],
+  "related_documents": [
+    "線束設計指南",
+    "UL標準規範文件"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

@@ -1,0 +1,52 @@
+{
+  "topic": "電子線束製造",
+  "sub_topic": "端子插入檢查",
+  "content_type": "procedure",
+  "keywords": [
+    "顯微鏡檢查",
+    "端子插入",
+    "電子線束",
+    "品質檢驗",
+    "制成式料號"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "★"
+  ],
+  "document_section": "作業標準書 SOP-02871",
+  "equipment_mentioned": [
+    "顯微鏡",
+    "挫針"
+  ],
+  "materials_mentioned": [
+    "電子線束",
+    "端子",
+    "塑料",
+    "三芯材質",
+    "電鍍料芯材質"
+  ],
+  "processes_mentioned": [
+    "顯微鏡檢查",
+    "端子插入"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "端子不可插入過深",
+    "端子不可斜插",
+    "端子與塑料不可干擾"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "品質檢驗人員",
+  "action_items": [
+    "所有制成式料號均須要求作顯微鏡檢查",
+    "三芯材質全部用顯微鏡檢查",
+    "電鍍料芯材質須全部用顯微鏡檢查"
+  ],
+  "related_documents": [],
+  "revision_info": "版本4.0，2014.08.22更新，增加說明:所有制成式料號均須要求作顯微鏡檢查",
+  "importance_level": "high"
+}

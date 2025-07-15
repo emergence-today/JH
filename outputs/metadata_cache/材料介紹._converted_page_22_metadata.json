@@ -1,0 +1,38 @@
+{
+  "topic": "材料規格",
+  "sub_topic": "外部材料分類",
+  "content_type": "diagram",
+  "keywords": [
+    "外部材料",
+    "EMI材料",
+    "絕緣材料",
+    "輔助材料"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "分類樹狀圖"
+  ],
+  "document_section": "第22頁",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "EMI材料",
+    "絕緣材料",
+    "輔助材料",
+    "外部材料"
+  ],
+  "processes_mentioned": [],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子製造",
+  "target_audience": "工程師、材料專員",
+  "action_items": [
+    "了解外部材料分類系統"
+  ],
+  "related_documents": [
+    "材料規格手冊"
+  ],
+  "revision_info": "未提供",
+  "importance_level": "medium"
+}

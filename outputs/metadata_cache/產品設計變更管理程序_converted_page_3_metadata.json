@@ -1,0 +1,59 @@
+{
+  "topic": "變更管理",
+  "sub_topic": "工程變更需求流程",
+  "content_type": "procedure",
+  "keywords": [
+    "工程變更需求單",
+    "ECR",
+    "變更管理",
+    "供應商材料承認",
+    "庫存管理"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "ECR"
+  ],
+  "document_section": "5.0作業程序",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "供應商材料"
+  ],
+  "processes_mentioned": [
+    "工程變更需求流程",
+    "供應商材料承認程序",
+    "立即變更",
+    "待查料用完"
+  ],
+  "standards_mentioned": [
+    "KSEN-017 00"
+  ],
+  "measurements_units": [
+    "工作日"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "供應商材料承認",
+    "環保資料承認"
+  ],
+  "application_area": "製造業",
+  "target_audience": [
+    "工程師",
+    "管理人員",
+    "採購人員",
+    "生產管理人員",
+    "品保人員"
+  ],
+  "action_items": [
+    "填寫工程變更需求單",
+    "會簽相關部門",
+    "通知供應商變更",
+    "提交供應商材料承認書",
+    "確認庫存狀況"
+  ],
+  "related_documents": [
+    "供應商材料承認程序",
+    "供應商材料承認書"
+  ],
+  "revision_info": "版本/修訂: 13, 修訂日期: 2024/5/30",
+  "importance_level": "high"
+}

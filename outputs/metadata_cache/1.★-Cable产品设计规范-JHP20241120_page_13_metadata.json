@@ -1,0 +1,53 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "绞线设计与工艺要求",
+  "content_type": "specification",
+  "keywords": [
+    "绞线",
+    "讯号线",
+    "接地Pin",
+    "LCD Cable",
+    "省线方式",
+    "绞线方向"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "GND",
+    "Pin"
+  ],
+  "document_section": "第8章",
+  "equipment_mentioned": [
+    "端子"
+  ],
+  "materials_mentioned": [
+    "Teflon线材",
+    "裸线",
+    "讯号线"
+  ],
+  "processes_mentioned": [
+    "绞线",
+    "穿线",
+    "省线",
+    "穿端子"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "绞线不可松散",
+    "外被不可被端子刮伤"
+  ],
+  "application_area": "电子",
+  "target_audience": "线束生产技术员",
+  "action_items": [
+    "绞线时需确认两端housing下边缘约5mm内绞线不可松散",
+    "发现松散须手持"
+  ],
+  "related_documents": [
+    "产品设计规范"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

@@ -1,0 +1,44 @@
+{
+  "topic": "接口定義",
+  "sub_topic": "HDMI端子PIN腳定義",
+  "content_type": "specification",
+  "keywords": [
+    "HDMI",
+    "PIN腳",
+    "TMDS",
+    "DDC",
+    "CEC"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "TMDS",
+    "DDC",
+    "CEC",
+    "SCL",
+    "SDA"
+  ],
+  "document_section": "第4章 PIN角定義",
+  "equipment_mentioned": [
+    "HDMI端子"
+  ],
+  "materials_mentioned": [
+    "電纜"
+  ],
+  "processes_mentioned": [
+    "熱插拔"
+  ],
+  "standards_mentioned": [
+    "HDMI標準"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子",
+  "target_audience": "電子工程師",
+  "action_items": [],
+  "related_documents": [
+    "HDMI規格文件"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

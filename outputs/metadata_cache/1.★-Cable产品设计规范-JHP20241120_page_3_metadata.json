@@ -1,0 +1,49 @@
+{
+  "topic": "產品設計規範",
+  "sub_topic": "設計規範前言",
+  "content_type": "introduction",
+  "keywords": [
+    "產品設計",
+    "客戶規格",
+    "成本節約",
+    "品質提升",
+    "生產效率"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "\\\\"
+  ],
+  "document_section": "前言",
+  "equipment_mentioned": [],
+  "materials_mentioned": [],
+  "processes_mentioned": [
+    "產品設計"
+  ],
+  "standards_mentioned": [
+    "PEGA產品設計要求",
+    "Compal EMI設計規範",
+    "HP設計要求"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "提升產品品質"
+  ],
+  "application_area": "電子製造",
+  "target_audience": [
+    "產品設計人員",
+    "工程師"
+  ],
+  "action_items": [
+    "認真閱讀規範",
+    "參照客戶專用規範",
+    "查看指定路徑的參考資料"
+  ],
+  "related_documents": [
+    "PEGA產品設計要求",
+    "Compal EMI設計規範",
+    "HP設計要求"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

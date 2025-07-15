@@ -1,0 +1,63 @@
+{
+  "topic": "標籤管理",
+  "sub_topic": "客戶條碼標籤範例與流程",
+  "content_type": "procedure",
+  "keywords": [
+    "條碼標籤",
+    "標籤確認流程",
+    "客戶條碼規則",
+    "標籤制作SOP"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "條碼"
+  ],
+  "document_section": "第31章",
+  "equipment_mentioned": [
+    "條碼打印設備"
+  ],
+  "materials_mentioned": [
+    "標籤"
+  ],
+  "processes_mentioned": [
+    "標籤確認流程",
+    "標籤制作流程",
+    "條碼規則設定",
+    "標籤打印"
+  ],
+  "standards_mentioned": [
+    "產品設計規範",
+    "標籤制作SOP"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "標籤與圖面一致性",
+    "客戶確認"
+  ],
+  "application_area": "製造業",
+  "target_audience": [
+    "工程師",
+    "營業人員",
+    "品保人員",
+    "製造人員"
+  ],
+  "action_items": [
+    "營業與客戶確認條碼規則",
+    "工程部增加條碼規則於產品設計規範",
+    "工程師設定標籤內容",
+    "工程副科以上主管確認並簽名",
+    "提供條碼標籤打樣確認",
+    "制作標籤制作SOP",
+    "製造/品保進行標籤打印及確認"
+  ],
+  "related_documents": [
+    "客戶圖面規格審查表",
+    "工程總圖",
+    "標籤制作SOP",
+    "標籤制作流程",
+    "產品設計規範"
+  ],
+  "revision_info": "第53頁",
+  "importance_level": "high"
+}

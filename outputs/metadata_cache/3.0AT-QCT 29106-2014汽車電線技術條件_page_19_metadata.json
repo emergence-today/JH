@@ -1,0 +1,65 @@
+{
+  "topic": "線束測試與檢驗",
+  "sub_topic": "耐液體試驗與出廠檢驗規則",
+  "content_type": "specification",
+  "keywords": [
+    "耐液體試驗",
+    "出廠檢驗",
+    "試驗條件",
+    "檢驗規則",
+    "試驗樣件"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "℃",
+    "mm",
+    "min",
+    "√",
+    "*"
+  ],
+  "document_section": "5.14 耐液體試驗與第6章檢驗規則",
+  "equipment_mentioned": [
+    "芯棒"
+  ],
+  "materials_mentioned": [
+    "玻璃清洗劑",
+    "車用機氧",
+    "柴油",
+    "汽缸機油",
+    "柴油機油",
+    "發動機冷卻液"
+  ],
+  "processes_mentioned": [
+    "缩管",
+    "弯向芯棒",
+    "液體浸泡試驗",
+    "滴落試驗"
+  ],
+  "standards_mentioned": [
+    "QC/T 29106—2014",
+    "GB/T 4086"
+  ],
+  "measurements_units": [
+    "mm",
+    "℃",
+    "min",
+    "h"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "樣件長度不小於450mm",
+    "試驗後在23℃±5℃環境下放置72h"
+  ],
+  "application_area": "汽車",
+  "target_audience": "品質檢驗工程師、線束製造技術人員",
+  "action_items": [
+    "按表6規定順序進行試驗",
+    "檢驗項目應全部合格",
+    "出廠檢驗符合表7規定"
+  ],
+  "related_documents": [
+    "GB/T 4086"
+  ],
+  "revision_info": "QC/T 29106—2014",
+  "importance_level": "high"
+}

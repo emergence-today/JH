@@ -1,0 +1,54 @@
+{
+  "topic": "線束製造工藝",
+  "sub_topic": "線材夾具安裝與熱縮套管處理",
+  "content_type": "procedure",
+  "keywords": [
+    "夾具",
+    "線材",
+    "熱縮套管",
+    "固定",
+    "烘緊"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "5～10CM"
+  ],
+  "document_section": "第七章、第八章",
+  "equipment_mentioned": [
+    "夾具",
+    "熱風機"
+  ],
+  "materials_mentioned": [
+    "線板",
+    "熱縮套管",
+    "壓線塊"
+  ],
+  "processes_mentioned": [
+    "線材夾具安裝",
+    "外被覆射",
+    "熱縮套管烘緊"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "CM"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "熱縮套管按圖面要求位置定位"
+  ],
+  "application_area": "電子線束製造",
+  "target_audience": "生產線操作員、技術員",
+  "action_items": [
+    "將夾具平放在桌面上",
+    "打開蓋子及壓線塊",
+    "將線板卡入夾具的左邊固定槽",
+    "按下壓線塊固定到位",
+    "將熱縮套管按圖面要求位置定位",
+    "放到熱風機上方約離口5～10CM處烘緊"
+  ],
+  "related_documents": [
+    "線束製造圖面"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

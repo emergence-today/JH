@@ -1,0 +1,56 @@
+{
+  "topic": "電子線製造工藝",
+  "sub_topic": "量子線共用SOP變更履歷",
+  "content_type": "change log",
+  "keywords": [
+    "量子線",
+    "電子線",
+    "SOP",
+    "變更履歷",
+    "工藝",
+    "纳纤",
+    "測試"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "SOP-02871",
+    "S-808C"
+  ],
+  "document_section": "變更履歷",
+  "equipment_mentioned": [
+    "HD 123胶",
+    "DVOM UV胶",
+    "MIC检验模"
+  ],
+  "materials_mentioned": [
+    "UV胶",
+    "HD 123胶"
+  ],
+  "processes_mentioned": [
+    "纳纤备存",
+    "干燥",
+    "电流急测温",
+    "铃路",
+    "松検"
+  ],
+  "standards_mentioned": [
+    "S-808C"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "MIC检验模"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "製造工程師、技術員",
+  "action_items": [
+    "更新SOP版本",
+    "修改工艺流程",
+    "增加主营事项"
+  ],
+  "related_documents": [
+    "SOP-02871"
+  ],
+  "revision_info": "版本65.0，包含多次SOP更新記錄",
+  "importance_level": "high"
+}

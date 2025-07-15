@@ -1,0 +1,61 @@
+{
+  "topic": "材料規格",
+  "sub_topic": "汽車電線束用波紋管",
+  "content_type": "specification",
+  "keywords": [
+    "波紋管",
+    "電線束",
+    "溫度等級",
+    "波形結構",
+    "性能要求"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "℃",
+    "h",
+    "mm",
+    "g"
+  ],
+  "document_section": "附錄D",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "波紋管",
+    "PVC電線"
+  ],
+  "processes_mentioned": [
+    "熱老化",
+    "熱時效",
+    "低溫衝擊"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "℃",
+    "h",
+    "mm",
+    "g"
+  ],
+  "safety_requirements": [
+    "無脆化",
+    "無粉化",
+    "無裂紋和斷裂"
+  ],
+  "quality_criteria": [
+    "表面不應有影響使用的缺陷",
+    "標識應清晰",
+    "無脆化",
+    "無粉化",
+    "無裂紋和斷裂"
+  ],
+  "application_area": "汽車",
+  "target_audience": "工程師",
+  "action_items": [
+    "檢查波紋管溫度等級",
+    "確認波紋管波形結構",
+    "驗證波紋管性能"
+  ],
+  "related_documents": [
+    "圖樣和技術文件"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

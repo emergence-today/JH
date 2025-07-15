@@ -1,0 +1,60 @@
+{
+  "topic": "電子線測試",
+  "sub_topic": "LED測試程序",
+  "content_type": "procedure",
+  "keywords": [
+    "LED測試",
+    "自動測試",
+    "手動測試",
+    "參數設定",
+    "電流測試"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "V",
+    "mA",
+    "A"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "直流電源器WH-330AI",
+    "萬用表",
+    "LED測試裝置"
+  ],
+  "materials_mentioned": [
+    "電子線"
+  ],
+  "processes_mentioned": [
+    "普測管測端測試LED",
+    "自動測試",
+    "手動測試",
+    "參數設定",
+    "資料錄取"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "V",
+    "mA",
+    "A"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "正向測試輸出電流：10mA",
+    "正向測試電壓：5V",
+    "反向測試輸出電流：5V"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "測試技術員",
+  "action_items": [
+    "按Para鍵選擇網絡標識",
+    "設定測試參數",
+    "按Learn鍵進行資料錄取"
+  ],
+  "related_documents": [
+    "SOP-02871"
+  ],
+  "revision_info": "版本5.0，由宋峰於2014.06.17修訂，增加電流測試",
+  "importance_level": "high"
+}

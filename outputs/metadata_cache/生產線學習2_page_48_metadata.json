@@ -1,0 +1,68 @@
+{
+  "topic": "電子線束製造",
+  "sub_topic": "電性測試流程",
+  "content_type": "procedure",
+  "keywords": [
+    "電性測試",
+    "導通測試",
+    "絕緣測試",
+    "測試參數",
+    "良品判定"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Ω",
+    "MΩ",
+    "V",
+    "DC"
+  ],
+  "document_section": "作業標準書 SOP-02871",
+  "equipment_mentioned": [
+    "RL-8681測試機",
+    "BT-9160電器",
+    "螺絲起子",
+    "測試治具"
+  ],
+  "materials_mentioned": [
+    "電子線束",
+    "連接器"
+  ],
+  "processes_mentioned": [
+    "電性測試",
+    "導通測試",
+    "絕緣測試",
+    "阻抗測試",
+    "高壓測試"
+  ],
+  "standards_mentioned": [
+    "SOP-02871",
+    "ISOP"
+  ],
+  "measurements_units": [
+    "MΩ",
+    "V",
+    "S"
+  ],
+  "safety_requirements": [
+    "高壓測試安全操作"
+  ],
+  "quality_criteria": [
+    "導通阻抗值",
+    "絕緣阻抗值",
+    "測試結果合格標準"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "按照測試流程操作",
+    "判斷測試結果",
+    "處理不良品",
+    "記錄測試數據"
+  ],
+  "related_documents": [
+    "RL-8681測試機使用說明書",
+    "BT-9160電器使用說明書"
+  ],
+  "revision_info": "版本7.0，最近修訂於2014.08.20",
+  "importance_level": "high"
+}

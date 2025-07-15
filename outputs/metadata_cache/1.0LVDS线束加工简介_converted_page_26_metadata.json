@@ -1,0 +1,66 @@
+{
+  "topic": "品質檢驗",
+  "sub_topic": "尺寸全檢",
+  "content_type": "procedure",
+  "keywords": [
+    "尺寸全檢",
+    "外觀檢驗",
+    "連接器檢查",
+    "PIN針清潔"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "PIN針",
+    "FPC"
+  ],
+  "document_section": "第三十四章",
+  "equipment_mentioned": [
+    "放大鏡"
+  ],
+  "materials_mentioned": [
+    "導電布",
+    "醋酸布",
+    "膠帶",
+    "無塵布",
+    "清洗劑",
+    "標簽",
+    "拉帶",
+    "離型紙"
+  ],
+  "processes_mentioned": [
+    "外觀檢驗",
+    "PIN針清潔",
+    "縫繞",
+    "貼覆"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "導電布需貼緊不可張開",
+    "線材不可外露",
+    "連接器不可撕汙破損",
+    "標簽位置內容正確",
+    "膠帶貼覆不可傾斜",
+    "線材不可打結",
+    "連接器不可變形",
+    "PIN針無沾膠污",
+    "無翹PIN現象"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "品質檢驗人員",
+  "action_items": [
+    "檢查導電布與醋酸布貼合情況",
+    "檢查連接器完整性",
+    "檢查標簽貼附情況",
+    "檢查膠帶縫繞位置",
+    "檢查連接器及鐵殼形狀",
+    "檢查FPC形狀",
+    "檢查拉手離型紙",
+    "清潔CONN pin針",
+    "用放大鏡檢查pin針清潔度"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

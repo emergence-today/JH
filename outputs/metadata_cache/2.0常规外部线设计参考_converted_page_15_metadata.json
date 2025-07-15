@@ -1,0 +1,37 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "DVI線材結構",
+  "content_type": "diagram",
+  "keywords": [
+    "半成品線圈",
+    "DVI線材",
+    "Twinax信號線",
+    "線材結構"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "4P",
+    "1P",
+    "2P"
+  ],
+  "document_section": "第2章",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "被覆",
+    "編織鋁箔",
+    "Twinax信號線"
+  ],
+  "processes_mentioned": [
+    "數字信號傳輸"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子",
+  "target_audience": "工程師",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

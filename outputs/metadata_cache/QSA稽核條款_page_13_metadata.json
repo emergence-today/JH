@@ -1,0 +1,70 @@
+{
+  "topic": "品質管理",
+  "sub_topic": "檢驗規範與執行",
+  "content_type": "checklist",
+  "keywords": [
+    "檢驗規範",
+    "QSA",
+    "品質稽核",
+    "檢驗員",
+    "校驗",
+    "材料追溯"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "#DIV/0!",
+    "Y=1",
+    "N=0",
+    "NA=*"
+  ],
+  "document_section": "檢驗規範評估部分",
+  "equipment_mentioned": [
+    "檢驗設備",
+    "仪器"
+  ],
+  "materials_mentioned": [
+    "原材料",
+    "样品",
+    "材料/产品"
+  ],
+  "processes_mentioned": [
+    "檢驗流程",
+    "材料追溯",
+    "校驗",
+    "化件分析"
+  ],
+  "standards_mentioned": [
+    "行業標準",
+    "QVL系統"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [
+    "檢驗環境特殊要求",
+    "材料於檢驗中安全"
+  ],
+  "quality_criteria": [
+    "檢驗規範執行",
+    "檢驗結果記錄完整",
+    "材料標示清楚",
+    "定期檢物料分析"
+  ],
+  "application_area": "製造業",
+  "target_audience": [
+    "品質管理人員",
+    "檢驗員",
+    "稽核人員"
+  ],
+  "action_items": [
+    "確認檢驗規範完整性",
+    "抽樣檢驗執行情況",
+    "確認樣品保存狀態",
+    "檢查儀器校驗狀態"
+  ],
+  "related_documents": [
+    "檢驗規範",
+    "作業指導書",
+    "QVL系統文件"
+  ],
+  "revision_info": "Qisda QSA Check List",
+  "importance_level": "high"
+}

@@ -1,0 +1,55 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "HDMI線材結構",
+  "content_type": "diagram",
+  "keywords": [
+    "HDMI",
+    "線材",
+    "連接器",
+    "線位表",
+    "材料表"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "P1",
+    "P2",
+    "VW-1"
+  ],
+  "document_section": "線材蓝图",
+  "equipment_mentioned": [
+    "HDMI連接器"
+  ],
+  "materials_mentioned": [
+    "FH-B877-WM STYLE 20276",
+    "無卤素材料"
+  ],
+  "processes_mentioned": [
+    "線材組裝"
+  ],
+  "standards_mentioned": [
+    "RoHS 2.0",
+    "80°C 30V VW-1"
+  ],
+  "measurements_units": [
+    "°C",
+    "V"
+  ],
+  "safety_requirements": [
+    "無卤素",
+    "VW-1阻燃等級"
+  ],
+  "quality_criteria": [
+    "RoHS 2.0合規"
+  ],
+  "application_area": "電子",
+  "target_audience": "工程師",
+  "action_items": [
+    "觀察線材成品藍圖",
+    "確認線材組裝規格"
+  ],
+  "related_documents": [
+    "線材規格書"
+  ],
+  "revision_info": "未明確標示",
+  "importance_level": "high"
+}

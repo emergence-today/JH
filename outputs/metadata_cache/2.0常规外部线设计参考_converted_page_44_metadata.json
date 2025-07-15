@@ -1,0 +1,52 @@
+{
+  "topic": "電子元件材料規格",
+  "sub_topic": "PCB板組件材料規格",
+  "content_type": "diagram",
+  "keywords": [
+    "PCB板",
+    "鐵殼",
+    "膠芯",
+    "卡扣",
+    "焊錫",
+    "材質規格"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "PCB",
+    "LCP"
+  ],
+  "document_section": "第44頁",
+  "equipment_mentioned": [
+    "PCB板"
+  ],
+  "materials_mentioned": [
+    "馬口鐵",
+    "LCP",
+    "無鉛環保錫絲"
+  ],
+  "processes_mentioned": [
+    "焊接"
+  ],
+  "standards_mentioned": [
+    "環保無鉛標準"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [
+    "使用無鉛環保錫絲"
+  ],
+  "quality_criteria": [
+    "材質規格符合要求"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "電子工程師、製造技術人員",
+  "action_items": [
+    "按規格選用材料",
+    "確認材質符合要求"
+  ],
+  "related_documents": [
+    "材料規格表",
+    "組裝指南"
+  ],
+  "revision_info": "未提供",
+  "importance_level": "medium"
+}

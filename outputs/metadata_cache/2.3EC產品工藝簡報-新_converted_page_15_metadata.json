@@ -1,0 +1,47 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "預錫",
+  "content_type": "introduction",
+  "keywords": [
+    "預錫",
+    "導體",
+    "助焊劑",
+    "錫爐"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "2+/-1s"
+  ],
+  "document_section": "DP 制程工藝介紹",
+  "equipment_mentioned": [
+    "錫爐"
+  ],
+  "materials_mentioned": [
+    "導體",
+    "助焊劑",
+    "錫"
+  ],
+  "processes_mentioned": [
+    "預錫",
+    "浸入錫爐"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "秒"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "導體全部浸入錫爐內預錫2+/-1s秒鐘"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "製程工程師、技術員",
+  "action_items": [
+    "導體沾少許助焊劑",
+    "將導體全部浸入錫爐內",
+    "預錫2+/-1s秒鐘",
+    "取出"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

@@ -1,0 +1,42 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "USB TO Housing 制程",
+  "content_type": "introduction",
+  "keywords": [
+    "USB TO Housing",
+    "繞線",
+    "修毛邊",
+    "Production Flow"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "260+5/-0MM"
+  ],
+  "document_section": "第26頁",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "USB",
+    "Housing",
+    "cables",
+    "wires"
+  ],
+  "processes_mentioned": [
+    "繞線",
+    "修毛邊"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "MM"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子",
+  "target_audience": "製造工程師",
+  "action_items": [
+    "繞線",
+    "修毛邊"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

@@ -1,0 +1,55 @@
+{
+  "topic": "線束材料規格",
+  "sub_topic": "電線外被材料與特性",
+  "content_type": "specification",
+  "keywords": [
+    "外被",
+    "絕緣",
+    "保護",
+    "材料選擇",
+    "表面處理"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "PVC",
+    "PU",
+    "FEP",
+    "TFE",
+    "PE"
+  ],
+  "document_section": "2.5 外被 Jacket",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "PVC",
+    "PU",
+    "NYLON",
+    "FEP",
+    "TFE",
+    "PE"
+  ],
+  "processes_mentioned": [
+    "絕緣",
+    "保護"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [
+    "保護電線不受機器之傷害"
+  ],
+  "quality_criteria": [
+    "耐溫",
+    "耐壓",
+    "耐濕",
+    "耐油",
+    "耐燃",
+    "抗UV"
+  ],
+  "application_area": "電子、電氣工程",
+  "target_audience": "線束設計工程師、製造技術人員",
+  "action_items": [
+    "根據使用環境選擇適當外被材料"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

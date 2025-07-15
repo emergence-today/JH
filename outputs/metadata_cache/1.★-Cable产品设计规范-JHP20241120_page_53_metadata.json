@@ -1,0 +1,52 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "裸線绞主線線材位置確認",
+  "content_type": "procedure",
+  "keywords": [
+    "裸線绞",
+    "主線",
+    "線材位置",
+    "HP機種",
+    "導電布",
+    "機構干涉"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "HP"
+  ],
+  "document_section": "第30章",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "裸線",
+    "導電布"
+  ],
+  "processes_mentioned": [
+    "裸線绞線",
+    "樣品確認"
+  ],
+  "standards_mentioned": [
+    "HP機種要求裸線绞線材外至少3圈"
+  ],
+  "measurements_units": [
+    "圈"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "裸線绞線材外至少3圈",
+    "避開機構干涉"
+  ],
+  "application_area": "電子",
+  "target_audience": [
+    "工程師",
+    "技術員"
+  ],
+  "action_items": [
+    "在樣品階段與客戶端確認绞裸線位置是否與機構有干涉",
+    "若有干涉需調整绞裸線位置"
+  ],
+  "related_documents": [
+    "產品設計規範"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

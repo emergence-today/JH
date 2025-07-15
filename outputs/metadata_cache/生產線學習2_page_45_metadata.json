@@ -1,0 +1,60 @@
+{
+  "topic": "電子線製造",
+  "sub_topic": "電性測試流程",
+  "content_type": "procedure",
+  "keywords": [
+    "電性測試",
+    "金屬品測試",
+    "接觸器",
+    "測試治具",
+    "良品判定"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "○",
+    "×"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "電測機",
+    "萬用表",
+    "測試治具",
+    "接觸器"
+  ],
+  "materials_mentioned": [
+    "電子線",
+    "PCB",
+    "金屬接觸位",
+    "排線"
+  ],
+  "processes_mentioned": [
+    "電性測試",
+    "金屬品試位測試",
+    "接觸器配PIN腳線測試",
+    "水平線等商布測試"
+  ],
+  "standards_mentioned": [
+    "SOP-02871-01"
+  ],
+  "measurements_units": [
+    "水平線等商布測試（<5.0）"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "金屬接觸上之線位控制面用作件控制路器顯像物計算器,為具品",
+    "金屬接觸上之線位控制面用不控作制器顯器不等物計算,為不良品"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "電測前檢查金屬品",
+    "使用萬用表測試治具無負載電阻值",
+    "確認連接器對插到位",
+    "檢查PCB上的四芯孔"
+  ],
+  "related_documents": [
+    "SOP-02871-01 金屬品正確檢品發生"
+  ],
+  "revision_info": "當前版本6.0，最近修訂於2014.08.20",
+  "importance_level": "high"
+}

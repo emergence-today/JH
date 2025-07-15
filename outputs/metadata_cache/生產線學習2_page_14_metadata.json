@@ -1,0 +1,58 @@
+{
+  "topic": "線束製造工藝",
+  "sub_topic": "套管烘烤工藝",
+  "content_type": "procedure",
+  "keywords": [
+    "套管",
+    "烘烤",
+    "紅外線乾燥爐",
+    "端子芯體",
+    "線束"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "℃",
+    "mm/分"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "紅外線乾燥爐",
+    "電烘爐",
+    "鋼套台拉板"
+  ],
+  "materials_mentioned": [
+    "端子芯體",
+    "套管",
+    "電子線",
+    "薄型套管"
+  ],
+  "processes_mentioned": [
+    "烘烤",
+    "編套管",
+    "調適端子芯體",
+    "紅外線乾燥"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "℃",
+    "mm/分"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "溫度:100±5℃ 轉速:600±30mm/分",
+    "溫度:100±40℃ 轉速:270±30mm/分"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "調適端子芯體編管",
+    "編選編子芯體編套管",
+    "線束編好對編料排鋼",
+    "持鋼編好之對材排放於鋼板上"
+  ],
+  "related_documents": [],
+  "revision_info": "當前版本4.0，最近修訂於2011.12.14",
+  "importance_level": "high"
+}

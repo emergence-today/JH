@@ -1,0 +1,59 @@
+{
+  "topic": "電子線束測試",
+  "sub_topic": "LED測試設定與操作流程",
+  "content_type": "procedure",
+  "keywords": [
+    "電子線束",
+    "LED測試",
+    "測試設定",
+    "操作流程",
+    "測試參數"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "V",
+    "mA"
+  ],
+  "document_section": "作業流程",
+  "equipment_mentioned": [
+    "脫維線編SSAL",
+    "靜電環"
+  ],
+  "materials_mentioned": [
+    "電子線束用三十八"
+  ],
+  "processes_mentioned": [
+    "LED測試",
+    "參數設定",
+    "測試數據保存",
+    "正向測試",
+    "反向測試"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "V",
+    "mA"
+  ],
+  "safety_requirements": [
+    "靜電防護"
+  ],
+  "quality_criteria": [
+    "LED正確性測試",
+    "電壓測試標準"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "測試技術員",
+  "action_items": [
+    "設定測試參數",
+    "保存測試數據",
+    "執行LED測試",
+    "檢查測試結果"
+  ],
+  "related_documents": [
+    "測試LED相關SOP文件"
+  ],
+  "revision_info": "當前版本5.0，最近由容譽於2014.06.17修訂",
+  "importance_level": "high"
+}

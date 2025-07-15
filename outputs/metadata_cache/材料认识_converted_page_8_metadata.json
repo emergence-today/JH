@@ -1,0 +1,36 @@
+{
+  "topic": "材料規格",
+  "sub_topic": "絕緣膠帶",
+  "content_type": "introduction",
+  "keywords": [
+    "胶带",
+    "绝缘",
+    "保护线材",
+    "耐高温"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "■"
+  ],
+  "document_section": "未明確指出",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "KA00胶带"
+  ],
+  "processes_mentioned": [
+    "绝缘",
+    "保护线材"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "耐高温"
+  ],
+  "application_area": "電子、線束製造",
+  "target_audience": "技術員、工程師",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "未提供",
+  "importance_level": "medium"
+}

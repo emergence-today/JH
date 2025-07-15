@@ -1,0 +1,68 @@
+{
+  "topic": "焊接工藝",
+  "sub_topic": "排線焊接方法",
+  "content_type": "procedure",
+  "keywords": [
+    "圓點焊",
+    "十字排線",
+    "按壓式排線",
+    "焊接溫度",
+    "助焊劑"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Φ",
+    "GND"
+  ],
+  "document_section": "作業流程",
+  "equipment_mentioned": [
+    "放大鏡",
+    "錫爐",
+    "焊錫溫控器",
+    "剪線溫控器",
+    "拔序前章"
+  ],
+  "materials_mentioned": [
+    "焊錫絲",
+    "助焊劑",
+    "圓點端子",
+    "排線",
+    "FPC連接器",
+    "PIN連接器"
+  ],
+  "processes_mentioned": [
+    "圓點焊十字排線",
+    "按壓式排線接方式",
+    "浸泡",
+    "探伸",
+    "導控"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "mm",
+    "Φ",
+    "度"
+  ],
+  "safety_requirements": [
+    "確保接觸面正確"
+  ],
+  "quality_criteria": [
+    "焊接溫度規格",
+    "焊錫絲直徑規格"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "焊接技術員",
+  "action_items": [
+    "將圓點端子擺放於擺料區",
+    "使用助焊劑",
+    "控制焊接溫度",
+    "確保接觸面正確"
+  ],
+  "related_documents": [
+    "電子線共用十七"
+  ],
+  "revision_info": "版本2.0",
+  "importance_level": "high"
+}

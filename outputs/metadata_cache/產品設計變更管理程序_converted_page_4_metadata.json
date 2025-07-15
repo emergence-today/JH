@@ -1,0 +1,70 @@
+{
+  "topic": "工程變更管理",
+  "sub_topic": "工程變更需求項(ECR)與工程變更通知單(ECN)流程",
+  "content_type": "procedure",
+  "keywords": [
+    "工程變更需求項",
+    "ECR",
+    "工程變更通知單",
+    "ECN",
+    "變更管理",
+    "4M變動點",
+    "可靠性評估"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "PPK≥1.67",
+    "CPK≥1.33"
+  ],
+  "document_section": "第5節 工程變更流程",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "光纖"
+  ],
+  "processes_mentioned": [
+    "變更申請",
+    "可靠性分析",
+    "功能性分析",
+    "HSF評估",
+    "教育訓練",
+    "資料修正"
+  ],
+  "standards_mentioned": [
+    "REACH"
+  ],
+  "measurements_units": [
+    "PPK",
+    "CPK"
+  ],
+  "safety_requirements": [
+    "HSF(包括H)進行評估及檢驗"
+  ],
+  "quality_criteria": [
+    "PPK≥1.67",
+    "CPK≥1.33",
+    "良率達到KPI要求"
+  ],
+  "application_area": "電子製造",
+  "target_audience": [
+    "工程師",
+    "品保人員",
+    "生產管理人員",
+    "物料管理人員"
+  ],
+  "action_items": [
+    "填寫工程變更需求項",
+    "進行可靠性評估",
+    "填寫4M變動點確認書",
+    "客戶確認",
+    "修正工程技術資料",
+    "進行教育訓練",
+    "追蹤變更狀況"
+  ],
+  "related_documents": [
+    "4M變動點可回答確認書",
+    "工程變更狀況追蹤表",
+    "文件控制程序"
+  ],
+  "revision_info": "版本13，修訂日期2024/5/30",
+  "importance_level": "high"
+}

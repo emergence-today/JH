@@ -1,0 +1,55 @@
+{
+  "topic": "條碼標籤規範",
+  "sub_topic": "Quanta(廣達)LVDS Cable條碼標籤規則",
+  "content_type": "specification",
+  "keywords": [
+    "條碼標籤",
+    "LVDS Cable",
+    "NB5條碼",
+    "NB4條碼",
+    "廣達",
+    "Quanta"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "HLN",
+    "DD0ZRPLC010",
+    "YYMMDD"
+  ],
+  "document_section": "第31章 各客戶條碼標籤範例",
+  "equipment_mentioned": [
+    "LVDS Cable"
+  ],
+  "materials_mentioned": [
+    "標籤"
+  ],
+  "processes_mentioned": [
+    "條碼標示",
+    "產品標識"
+  ],
+  "standards_mentioned": [
+    "NB5條碼規則",
+    "NB4條碼規則"
+  ],
+  "measurements_units": [
+    "碼",
+    "尺寸(50x5)",
+    "尺寸(25x15)"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "字體要求:Arial",
+    "條碼長度規範:8碼/20碼"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "製造工程師、品質檢驗人員、生產線操作員",
+  "action_items": [
+    "按規定格式製作條碼標籤",
+    "確保條碼內容符合客戶要求"
+  ],
+  "related_documents": [
+    "產品設計規範"
+  ],
+  "revision_info": "NB5 New Model Material Barcode-rev 3",
+  "importance_level": "high"
+}

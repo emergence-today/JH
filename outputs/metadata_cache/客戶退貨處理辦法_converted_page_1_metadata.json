@@ -1,0 +1,52 @@
+{
+  "topic": "品質管理",
+  "sub_topic": "客戶退貨處理",
+  "content_type": "procedure",
+  "keywords": [
+    "客戶退貨",
+    "品質管理",
+    "客訴處理",
+    "退貨流程"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "◆"
+  ],
+  "document_section": "第1頁，包含制/修訂紀錄管理、目的、範圍、職責部分",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "退貨品"
+  ],
+  "processes_mentioned": [
+    "客戶退貨處理",
+    "退品接收",
+    "退品重工"
+  ],
+  "standards_mentioned": [
+    "ISO9001:2015",
+    "ISO14001:2015"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "客戶退貨處理模式"
+  ],
+  "application_area": "製造業",
+  "target_audience": [
+    "業務人員",
+    "品質工程師",
+    "倉庫管理人員",
+    "生產管理人員"
+  ],
+  "action_items": [
+    "退貨訊息蒐集",
+    "退品確認",
+    "退品接收",
+    "退品重工排程"
+  ],
+  "related_documents": [
+    "客訴單"
+  ],
+  "revision_info": "版本4，修訂日期2024/9/20，整體修訂，明確各責任人職責劃分",
+  "importance_level": "high"
+}

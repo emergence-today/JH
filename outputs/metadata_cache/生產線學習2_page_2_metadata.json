@@ -1,0 +1,57 @@
+{
+  "topic": "電子線製造與測試",
+  "sub_topic": "電子線測試與品質控制",
+  "content_type": "table",
+  "keywords": [
+    "變更履歷",
+    "電性測試",
+    "SOP",
+    "站別屬層",
+    "版本變更"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "SOP-02871",
+    "版本號"
+  ],
+  "document_section": "變更履歷",
+  "equipment_mentioned": [
+    "電阻控制器",
+    "電壓設備",
+    "間隙波測電阻設備"
+  ],
+  "materials_mentioned": [
+    "電子線",
+    "龍牙網"
+  ],
+  "processes_mentioned": [
+    "電性測試",
+    "插揉測試",
+    "間隙波測電阻訓練",
+    "首放入線"
+  ],
+  "standards_mentioned": [
+    "SOP-02871",
+    "數據發揮手冊學標準"
+  ],
+  "measurements_units": [
+    "電阻",
+    "電壓"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "電性測試標準",
+    "間隙電阻控制值"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產技術人員",
+  "action_items": [
+    "按照更新的SOP執行測試程序",
+    "遵循版本變更要求"
+  ],
+  "related_documents": [
+    "數據發揮手冊學標準"
+  ],
+  "revision_info": "當前版本65.0，包含多次版本更新歷史，從1.0至16.0",
+  "importance_level": "high"
+}

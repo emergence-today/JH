@@ -1,0 +1,51 @@
+{
+  "topic": "連接技術",
+  "sub_topic": "USB接口標準",
+  "content_type": "introduction",
+  "keywords": [
+    "USB",
+    "通用串行总线",
+    "数据传输",
+    "接口类型",
+    "连接设备"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "USB",
+    "Mbps"
+  ],
+  "document_section": "未明確標示",
+  "equipment_mentioned": [
+    "PC",
+    "鼠标",
+    "键盘",
+    "移动硬盘",
+    "数码相机",
+    "VoIP电话",
+    "打印机",
+    "USB host控制器"
+  ],
+  "materials_mentioned": [
+    "USB连接线"
+  ],
+  "processes_mentioned": [
+    "数据传输"
+  ],
+  "standards_mentioned": [
+    "USB1.1",
+    "USB2.0"
+  ],
+  "measurements_units": [
+    "Mbps",
+    "V",
+    "mA"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子",
+  "target_audience": "工程師、技術人員",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "未提供",
+  "importance_level": "medium"
+}

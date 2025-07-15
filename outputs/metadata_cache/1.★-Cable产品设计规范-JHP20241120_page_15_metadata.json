@@ -1,0 +1,51 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "導電布缠绕技術",
+  "content_type": "specification",
+  "keywords": [
+    "導電布",
+    "铝箔双绞线",
+    "缠绕",
+    "Housing",
+    "TDR"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "TDR"
+  ],
+  "document_section": "第9章",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "導電布",
+    "铝箔双绞线",
+    "醋酸",
+    "Housing"
+  ],
+  "processes_mentioned": [
+    "缠绕",
+    "包覆",
+    "正转（顺时针）",
+    "反转（逆时针）"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "导电布缠绕离Housing边缘小于10mm",
+    "防止导电布毛边",
+    "防止铝箔双绞线松散造成TDR不良"
+  ],
+  "application_area": "電子",
+  "target_audience": "製造工程師",
+  "action_items": [
+    "铝箔双绞线反转端放置缠绕末端",
+    "Housing边缘须包覆醋酸"
+  ],
+  "related_documents": [
+    "产品设计规范"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

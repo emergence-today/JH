@@ -1,0 +1,55 @@
+{
+  "topic": "電子線束測試",
+  "sub_topic": "電子線束檢測程序",
+  "content_type": "procedure",
+  "keywords": [
+    "電子線束",
+    "檢測",
+    "電測",
+    "測試仪",
+    "參數設定"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "V",
+    "mA"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "測試仪",
+    "CS50系列"
+  ],
+  "materials_mentioned": [
+    "電子線束"
+  ],
+  "processes_mentioned": [
+    "檢測電測",
+    "參數設定",
+    "數據輸入",
+    "元件檢測"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "V",
+    "mA"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "標準值定義",
+    "參數傳值0.72V",
+    "高次對編傳換定為>3.0V<5.0mA"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "技術員",
+  "action_items": [
+    "連接測試儀",
+    "按Enter鍵進行測試",
+    "輸入參數設定",
+    "編輯各組數據"
+  ],
+  "related_documents": [],
+  "revision_info": "版本3.0，上一版本2.0由朱紅連於2010.01.28修訂",
+  "importance_level": "high"
+}

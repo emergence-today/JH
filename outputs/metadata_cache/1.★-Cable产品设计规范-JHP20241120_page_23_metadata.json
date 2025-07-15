@@ -1,0 +1,48 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "GND設計",
+  "content_type": "table",
+  "keywords": [
+    "LCD cable",
+    "GND加工",
+    "Coaxial",
+    "Teflon",
+    "焊接"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "GND",
+    "Pin to Pin"
+  ],
+  "document_section": "第14章",
+  "equipment_mentioned": [
+    "Connector",
+    "Housing"
+  ],
+  "materials_mentioned": [
+    "Coaxial線",
+    "Teflon線",
+    "接地片",
+    "裸線"
+  ],
+  "processes_mentioned": [
+    "焊接",
+    "Pin to Pin連接",
+    "一體式接地片連接",
+    "省線焊裸線"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子",
+  "target_audience": "工程師",
+  "action_items": [
+    "選擇適合的GND加工方法"
+  ],
+  "related_documents": [
+    "產品設計規範"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

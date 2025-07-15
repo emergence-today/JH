@@ -1,0 +1,65 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "點UV膠工藝規範",
+  "content_type": "specification",
+  "keywords": [
+    "點UV膠",
+    "連接器",
+    "PCB",
+    "FPC",
+    "線材固定",
+    "厚度要求"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "CONN",
+    "PCB",
+    "FPC",
+    "G/B"
+  ],
+  "document_section": "第13章",
+  "equipment_mentioned": [
+    "專用卡槽治具"
+  ],
+  "materials_mentioned": [
+    "UV膠",
+    "線材",
+    "PCB",
+    "FPC",
+    "CONN連接器"
+  ],
+  "processes_mentioned": [
+    "點膠",
+    "雙面點膠",
+    "GO NO GO量測"
+  ],
+  "standards_mentioned": [
+    "高度不可超過CONN平面",
+    "高度不可超過PCB平面"
+  ],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "胶量不可超出Conn边缘",
+    "宽度约1-2mm",
+    "长度超出两边线线材约0.5~1mm",
+    "高度不可超过CONN平面",
+    "高度不可超过PCB平面"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "製程工程師、技術員",
+  "action_items": [
+    "確保點膠高度不超過CONN平面",
+    "確保點膠寬度約1-2mm",
+    "確保點膠長度超出兩邊線材約0.5~1mm",
+    "確保PCB板邊緣點膠高度不超過PCB平面",
+    "使用專用卡槽治具量測FPC產品點膠厚度"
+  ],
+  "related_documents": [
+    "產品設計規範"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

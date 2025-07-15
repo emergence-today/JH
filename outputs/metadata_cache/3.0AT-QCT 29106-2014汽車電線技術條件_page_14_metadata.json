@@ -1,0 +1,79 @@
+{
+  "topic": "汽車線束測試與性能要求",
+  "sub_topic": "線束性能測試標準",
+  "content_type": "specification",
+  "keywords": [
+    "撕裂力",
+    "防水性能",
+    "耐溫度性能",
+    "耐振動性能",
+    "耐盐雾性能",
+    "耐化學性能"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "MPa",
+    "N",
+    "mm²",
+    "Tmin",
+    "Tmax"
+  ],
+  "document_section": "4.6-4.12節",
+  "equipment_mentioned": [
+    "水壓測試設備",
+    "振動測試設備",
+    "盐雾測試設備"
+  ],
+  "materials_mentioned": [
+    "橡膠件",
+    "電線",
+    "電線保護管",
+    "柴油",
+    "清洗劑",
+    "汽油",
+    "機油",
+    "發動機冷卻液"
+  ],
+  "processes_mentioned": [
+    "撕裂力測試",
+    "防水測試",
+    "通電檢測",
+    "溫度循環測試",
+    "振動測試",
+    "盐雾測試",
+    "化學性能測試"
+  ],
+  "standards_mentioned": [
+    "QC/T 29106—2014"
+  ],
+  "measurements_units": [
+    "N",
+    "mm²",
+    "MPa",
+    "℃"
+  ],
+  "safety_requirements": [
+    "無短路、斷路、錯路現象"
+  ],
+  "quality_criteria": [
+    "最小撕裂力值要求",
+    "橡膠件不應有水滲透",
+    "電線無直接可見的磨損現象"
+  ],
+  "application_area": "汽車",
+  "target_audience": "汽車線束工程師、品質檢驗人員",
+  "action_items": [
+    "進行撕裂力測試",
+    "進行防水性能測試",
+    "進行通電檢測",
+    "進行溫度性能測試",
+    "進行振動性能測試",
+    "進行盐雾性能測試",
+    "進行化學性能測試"
+  ],
+  "related_documents": [
+    "電線束技術圖樣及技術文件"
+  ],
+  "revision_info": "2014版",
+  "importance_level": "high"
+}

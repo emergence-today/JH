@@ -1,0 +1,50 @@
+{
+  "topic": "供應商管理",
+  "sub_topic": "外包商管理與評估",
+  "content_type": "table",
+  "keywords": [
+    "外包",
+    "檢測",
+    "評價",
+    "管理",
+    "標準"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [],
+  "document_section": "供應商評估章節",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "網絡資材料"
+  ],
+  "processes_mentioned": [
+    "外包商評估",
+    "外包記錄檢測",
+    "外包商審約"
+  ],
+  "standards_mentioned": [
+    "外包指南標準"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "外包包裝性質指標",
+    "檢測評價"
+  ],
+  "application_area": "製造業供應鏈管理",
+  "target_audience": [
+    "採購管理人員",
+    "供應鏈管理人員",
+    "品質管理人員"
+  ],
+  "action_items": [
+    "對外包記錄進行檢測",
+    "分析外包包裝性質指標",
+    "管理外包網絡資材料",
+    "定期約束外包商"
+  ],
+  "related_documents": [
+    "外包指南標準文件"
+  ],
+  "revision_info": "Qisda Corporation",
+  "importance_level": "high"
+}

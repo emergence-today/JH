@@ -1,0 +1,39 @@
+{
+  "topic": "線材技術",
+  "sub_topic": "USB Type-C線材介紹",
+  "content_type": "introduction",
+  "keywords": [
+    "USB Type-C",
+    "USB 3.1",
+    "傳輸速度",
+    "連接介面"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "USB 3.1",
+    "Type-C"
+  ],
+  "document_section": "TYPE-C 線材簡介",
+  "equipment_mentioned": [],
+  "materials_mentioned": [],
+  "processes_mentioned": [
+    "數據傳輸",
+    "充電",
+    "顯示輸出"
+  ],
+  "standards_mentioned": [
+    "USB 3.1"
+  ],
+  "measurements_units": [
+    "Gbps",
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子",
+  "target_audience": "工程師",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

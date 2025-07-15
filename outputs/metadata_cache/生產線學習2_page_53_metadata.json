@@ -1,0 +1,58 @@
+{
+  "topic": "電子線束測試",
+  "sub_topic": "接觸電阻測試",
+  "content_type": "procedure",
+  "keywords": [
+    "電子線束",
+    "接觸電阻測試",
+    "直流低阻值測試",
+    "CONN",
+    "測試治具"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "mΩ",
+    "PASS",
+    "HIGH"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "直流低電阻測試儀",
+    "電氣治具"
+  ],
+  "materials_mentioned": [
+    "電子線束",
+    "CONN端"
+  ],
+  "processes_mentioned": [
+    "可靠接觸電阻測試",
+    "直流低阻值測試"
+  ],
+  "standards_mentioned": [
+    "上限值：100mΩ",
+    "下限值：0.1mΩ"
+  ],
+  "measurements_units": [
+    "mΩ"
+  ],
+  "safety_requirements": [
+    "確認機械的機和台機能部標準常態"
+  ],
+  "quality_criteria": [
+    "測試結果在PASS範圍內",
+    "上限值：100mΩ",
+    "下限值：0.1mΩ"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "依據產品CONN規格說明進行測試",
+    "確認測試結果",
+    "區分良品與不良品"
+  ],
+  "related_documents": [
+    "產品CONN規格說明"
+  ],
+  "revision_info": "版本1.0",
+  "importance_level": "high"
+}

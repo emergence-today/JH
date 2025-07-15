@@ -1,0 +1,62 @@
+{
+  "topic": "接地設計",
+  "sub_topic": "省線焊接技術規範",
+  "content_type": "table",
+  "keywords": [
+    "GND設計",
+    "省線焊接",
+    "導電布",
+    "剝皮",
+    "焊錫"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "GND",
+    "Teflon"
+  ],
+  "document_section": "第14章",
+  "equipment_mentioned": [
+    "焊接工具"
+  ],
+  "materials_mentioned": [
+    "Teflon",
+    "銅箔",
+    "半導電布",
+    "導電布",
+    "膠帶",
+    "線材",
+    "裸線"
+  ],
+  "processes_mentioned": [
+    "剝皮",
+    "焊接",
+    "預沾錫",
+    "包覆",
+    "打扭"
+  ],
+  "standards_mentioned": [
+    "8*8mm對折規格",
+    "15*15mm導電布規格"
+  ],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [
+    "焊接點不可在纏繞彎折處"
+  ],
+  "quality_criteria": [
+    "剝皮端平貼在一起沿錫成扁平狀",
+    "外包覆一圈半導電布",
+    "焊錫面不可朝向線材"
+  ],
+  "application_area": "電子產品製造",
+  "target_audience": "電子產品工程師、製造技術人員",
+  "action_items": [
+    "需請業務同客戶確認過Hinge位置來設計"
+  ],
+  "related_documents": [
+    "產品設計規範"
+  ],
+  "revision_info": "未提供",
+  "importance_level": "high"
+}

@@ -1,0 +1,61 @@
+{
+  "topic": "電子元件測試",
+  "sub_topic": "LED測試參數設定與操作流程",
+  "content_type": "procedure",
+  "keywords": [
+    "LED測試",
+    "雷測",
+    "參數設定",
+    "電流測試",
+    "微電FT"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "μA",
+    "mA",
+    "V",
+    "KΩ"
+  ],
+  "document_section": "作業流程",
+  "equipment_mentioned": [
+    "雷測雷測雷-35KW",
+    "微電FT"
+  ],
+  "materials_mentioned": [
+    "電子線"
+  ],
+  "processes_mentioned": [
+    "正向測試",
+    "反向測試",
+    "資料測取",
+    "通斷測試"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "μA",
+    "mA",
+    "V",
+    "KΩ",
+    "秒"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "測值≤1KΩ"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "測試技術員",
+  "action_items": [
+    "設定推進值",
+    "按Run鍵",
+    "檢查測試電流",
+    "按Exit鍵退出",
+    "按Lean鍵進行資料測取"
+  ],
+  "related_documents": [
+    "SOP-02871"
+  ],
+  "revision_info": "版本5.0，最近修訂於2014.06.17",
+  "importance_level": "high"
+}

@@ -1,0 +1,42 @@
+{
+  "topic": "連接器規格",
+  "sub_topic": "連接器間距分類",
+  "content_type": "table",
+  "keywords": [
+    "連接器",
+    "Pitch",
+    "焊接式",
+    "壓接式",
+    "拉接式",
+    "刺破式",
+    "穿端式"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "Pitch"
+  ],
+  "document_section": "第18頁",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "連接器"
+  ],
+  "processes_mentioned": [
+    "焊接",
+    "壓接",
+    "拉接",
+    "刺破",
+    "穿端"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "Pitch"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子製造",
+  "target_audience": "工程師、技術員",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

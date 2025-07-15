@@ -1,0 +1,57 @@
+{
+  "topic": "線束設計與製程工藝",
+  "sub_topic": "各類線束產品設計規範與加工製程",
+  "content_type": "table, introduction, specification",
+  "keywords": [
+    "LVDS",
+    "Wire Harness",
+    "PFC",
+    "DC CABLE",
+    "汽車電線",
+    "高電壓產品"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "LVDS",
+    "PFC",
+    "EC",
+    "AT-QCT 2910G-2014"
+  ],
+  "document_section": "產品類別與製程概覽",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "Cable",
+    "Wire",
+    "外壳",
+    "汽车电线"
+  ],
+  "processes_mentioned": [
+    "线束加工",
+    "Wire Harness 产品设计加工",
+    "WIRE束加工",
+    "EC产品工艺"
+  ],
+  "standards_mentioned": [
+    "AT-QCT 2910G-2014汽车电线技术条件",
+    "Cable产品设计规範",
+    "外壳设计规範"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [
+    "高电压产品安全要求(隱含)"
+  ],
+  "quality_criteria": [
+    "设计规範"
+  ],
+  "application_area": "電子3C、工控自動化、汽車產業",
+  "target_audience": "工程師、技術員、製造人員",
+  "action_items": [
+    "參考各類線束設計規範",
+    "遵循汽車電線技術條件"
+  ],
+  "related_documents": [
+    "AT-QCT 2910G-2014"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

@@ -1,0 +1,55 @@
+{
+  "topic": "品質管理",
+  "sub_topic": "供應商品質評估",
+  "content_type": "checklist",
+  "keywords": [
+    "QSA",
+    "品質保證",
+    "供應商評估",
+    "審核",
+    "合規性"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "%",
+    "#DIV/0!"
+  ],
+  "document_section": "QSA Check List",
+  "equipment_mentioned": [],
+  "materials_mentioned": [],
+  "processes_mentioned": [
+    "品質保證系統",
+    "文件和資料管制",
+    "合同審查與客戶服務",
+    "新產品轉移與工程變更",
+    "供應商和分包商管理",
+    "制程管制",
+    "品質管制",
+    "庫房管理",
+    "儀器校驗"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "%"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "Approved: ≥85%(單項≥70%)",
+    "Conditional Approved: 80% ~ 85%(單項≥70%)",
+    "Fail: <80 %"
+  ],
+  "application_area": "製造業",
+  "target_audience": [
+    "品質管理人員",
+    "供應商",
+    "審核員"
+  ],
+  "action_items": [
+    "完成供應商品質評估",
+    "評分各個品質系統項目",
+    "獲得廠商簽名"
+  ],
+  "related_documents": [],
+  "revision_info": "Form NO:MSMV-0D-002-1(090102)",
+  "importance_level": "high"
+}

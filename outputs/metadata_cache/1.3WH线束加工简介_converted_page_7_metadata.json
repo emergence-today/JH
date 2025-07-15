@@ -1,0 +1,40 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "線束編織處理",
+  "content_type": "procedure",
+  "keywords": [
+    "編織",
+    "剪",
+    "外被口",
+    "線束處理"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [],
+  "document_section": "三、剪編織",
+  "equipment_mentioned": [
+    "剪刀"
+  ],
+  "materials_mentioned": [
+    "編織",
+    "線束"
+  ],
+  "processes_mentioned": [
+    "挑開編織",
+    "剪去編織"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "沿外被口根部剪去全部編織"
+  ],
+  "application_area": "電子線束製造",
+  "target_audience": "技術員",
+  "action_items": [
+    "將編織挑开",
+    "用剪刀沿外被口根部剪去全部編織"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

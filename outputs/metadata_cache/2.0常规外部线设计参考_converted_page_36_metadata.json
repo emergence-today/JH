@@ -1,0 +1,47 @@
+{
+  "topic": "接口連接器設計",
+  "sub_topic": "DisplayPort標準線纜PIN腳定義",
+  "content_type": "specification table",
+  "keywords": [
+    "DisplayPort",
+    "PIN腳定義",
+    "Source",
+    "Sink",
+    "Cable Wiring",
+    "ML_Lane",
+    "AUX_CH",
+    "Hot Plug Detect"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "ML_Lane",
+    "GND",
+    "CONFIG",
+    "AUX_CH(p)",
+    "AUX_CH(n)",
+    "Hot Plug Detect",
+    "DP_PWR"
+  ],
+  "document_section": "第4章 PIN角定義",
+  "equipment_mentioned": [
+    "DisplayPort Standard Cable"
+  ],
+  "materials_mentioned": [],
+  "processes_mentioned": [],
+  "standards_mentioned": [
+    "DisplayPort Standard"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子、顯示技術",
+  "target_audience": "電子工程師、接口設計工程師、系統整合工程師",
+  "action_items": [
+    "依照PIN腳定義進行線纜連接"
+  ],
+  "related_documents": [
+    "DisplayPort規格文件"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

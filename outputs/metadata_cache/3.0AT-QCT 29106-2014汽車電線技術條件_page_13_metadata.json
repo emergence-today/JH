@@ -1,0 +1,61 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "無焊料焊接方法",
+  "content_type": "specification",
+  "keywords": [
+    "無焊料焊接",
+    "電線組合",
+    "接點",
+    "分線形式",
+    "絕緣處理"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "MΩ",
+    "mm²"
+  ],
+  "document_section": "4.5.3-4.5.4",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "電纜",
+    "電線",
+    "絕緣材料"
+  ],
+  "processes_mentioned": [
+    "無焊料焊接",
+    "兩側分線形式焊接",
+    "單側分線形式焊接",
+    "絕緣處理",
+    "絕水試驗"
+  ],
+  "standards_mentioned": [
+    "QC/T 29106—2014"
+  ],
+  "measurements_units": [
+    "mm²",
+    "MΩ"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "接點應平固",
+    "接點的拉力值應符合表2的規定",
+    "接點的斷裂力應符合表5的規定",
+    "接點表面應整潔",
+    "絕緣電阻應大於100MΩ"
+  ],
+  "application_area": "汽車",
+  "target_audience": "線束工程師、製造技術人員",
+  "action_items": [
+    "按表4選擇電線組合",
+    "確保兩側分線形式每側最多5根電線",
+    "確保單側分線形式最多15根電線",
+    "確保絕緣材料聚集在接點部位",
+    "進行絕水試驗"
+  ],
+  "related_documents": [
+    "表2",
+    "表5"
+  ],
+  "revision_info": "QC/T 29106—2014",
+  "importance_level": "high"
+}

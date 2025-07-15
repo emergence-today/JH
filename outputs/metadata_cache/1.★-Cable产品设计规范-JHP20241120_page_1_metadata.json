@@ -1,0 +1,29 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "Cable產品設計規範",
+  "content_type": "specification",
+  "keywords": [
+    "Cable",
+    "產品設計",
+    "規範"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [],
+  "document_section": "封面/首頁",
+  "equipment_mentioned": [],
+  "materials_mentioned": [],
+  "processes_mentioned": [],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子",
+  "target_audience": [
+    "工程師",
+    "技術員"
+  ],
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "版本3.0，更新日期：2024-11-20",
+  "importance_level": "high"
+}

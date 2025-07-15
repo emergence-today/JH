@@ -1,0 +1,71 @@
+{
+  "topic": "線束測試方法",
+  "sub_topic": "電線束試驗方法與檢測標準",
+  "content_type": "specification",
+  "keywords": [
+    "試驗方法",
+    "外觀檢查",
+    "尺寸檢查",
+    "端子連接",
+    "壓接",
+    "連接強度"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "℃",
+    "kPa",
+    "%"
+  ],
+  "document_section": "第5章 試驗方法",
+  "equipment_mentioned": [
+    "拉力試驗機",
+    "卡尺",
+    "專用橫斷面檢驗試驗裝置",
+    "顯微鏡",
+    "專用檢具"
+  ],
+  "materials_mentioned": [
+    "電線束",
+    "端子",
+    "導體",
+    "絕緣層"
+  ],
+  "processes_mentioned": [
+    "目視檢查",
+    "尺寸測量",
+    "壓接檢驗",
+    "橫斷面檢驗",
+    "連接強度試驗",
+    "研磨",
+    "拋光"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "℃",
+    "kPa",
+    "%",
+    "mm/min"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "環境溫度：18℃～23℃",
+    "空氣相對濕度：45%～75%",
+    "大氣壓力：86kPa～106kPa",
+    "拉力試驗機示值誤差不大於±1%"
+  ],
+  "application_area": "電子線束製造",
+  "target_audience": "品質檢驗人員、工程師、技術員",
+  "action_items": [
+    "試驗前樣品穩定24小時",
+    "進行外觀檢查",
+    "測量尺寸",
+    "檢查端子與電線連接",
+    "進行絕緣層壓接試驗",
+    "進行連接強度試驗"
+  ],
+  "related_documents": [
+    "表A (文中提及但未在此頁顯示)"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

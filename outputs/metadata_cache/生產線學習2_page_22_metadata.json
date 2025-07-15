@@ -1,0 +1,53 @@
+{
+  "topic": "線束製造",
+  "sub_topic": "GND線包導電布工藝",
+  "content_type": "procedure",
+  "keywords": [
+    "GND線",
+    "導電布",
+    "針織外皮",
+    "包覆",
+    "線材處理"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "GND"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "專用工具"
+  ],
+  "materials_mentioned": [
+    "GND線",
+    "導電布",
+    "針織外皮",
+    "紅色導電布"
+  ],
+  "processes_mentioned": [
+    "針織外皮處理",
+    "導電布包覆",
+    "線材打齊"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "GND線需打齊",
+    "導電布需包紧",
+    "線需滿蓋於導電布內"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "對GND線的針織外皮進行處理",
+    "將導電布包覆GND線",
+    "確保線材完全被導電布覆蓋"
+  ],
+  "related_documents": [
+    "專用SOP"
+  ],
+  "revision_info": "版本1.0",
+  "importance_level": "high"
+}

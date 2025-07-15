@@ -19,7 +19,16 @@ class Config:
     # OpenAI API 設定 - 從 .env 讀取
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
     OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")
-    OPENAI_EMBEDDING_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
+    OPENAI_EMBEDDING_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-large")
+
+    # Zerox 視覺處理模型
+    ZEROX_MODEL = os.getenv("ZEROX_MODEL", "gpt-4o")
+
+    # AWS Bedrock 設定 - 從 .env 讀取
+    AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID", "")
+    AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY", "")
+    AWS_REGION = os.getenv("AWS_REGION", "us-east-1")
+    BEDROCK_MODEL = os.getenv("BEDROCK_MODEL", "us.anthropic.claude-sonnet-4-20250514-v1:0")
 
     # RAG檢索參數 - 從 .env 讀取，如果沒有則使用預設值
     DEFAULT_TOP_K = int(os.getenv("TOP_K_RETRIEVAL", "3"))
@@ -37,11 +46,17 @@ class Config:
     MEMORY_WINDOW_SIZE = int(os.getenv("MEMORY_WINDOW_SIZE", "10"))  # 保留最近N輪對話
 
     # 向量檢索設定
-    EMBEDDING_DIMENSION = int(os.getenv("EMBEDDING_DIMENSION", "1536"))  # text-embedding-3-small
+    EMBEDDING_DIMENSION = int(os.getenv("EMBEDDING_DIMENSION", "3072"))  # text-embedding-3-large
 
     # Chain 設定
     CHAIN_TYPE = os.getenv("CHAIN_TYPE", "stuff")  # stuff, map_reduce, refine, map_rerank
     RETURN_SOURCE_DOCUMENTS = os.getenv("RETURN_SOURCE_DOCUMENTS", "true").lower() == "true"
+
+    # RAG系統類型 - 固定使用 LangChain
+    RAG_SYSTEM_TYPE = "langchain"
+
+    # API 基礎 URL 設定
+    API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:8006")
 
 # 環境變數檢查
 def check_environment():

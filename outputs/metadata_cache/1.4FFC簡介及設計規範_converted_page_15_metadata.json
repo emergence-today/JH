@@ -1,0 +1,53 @@
+{
+  "topic": "連接器設計規格",
+  "sub_topic": "1.0Pitch FFC連接器規格設計",
+  "content_type": "specification",
+  "keywords": [
+    "FFC",
+    "ZIF Connector",
+    "導體寬度",
+    "導體厚度",
+    "PCB焊點",
+    "PAD設計"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "mm",
+    "A",
+    "Pitch"
+  ],
+  "document_section": "第二章",
+  "equipment_mentioned": [
+    "ZIF Connector"
+  ],
+  "materials_mentioned": [
+    "FFC",
+    "PCB",
+    "Wire",
+    "錫"
+  ],
+  "processes_mentioned": [
+    "焊接",
+    "焊入"
+  ],
+  "standards_mentioned": [
+    "0.5Pitch ZIF Connector規格"
+  ],
+  "measurements_units": [
+    "mm",
+    "A",
+    "Pitch"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "避免冷空焊現象"
+  ],
+  "application_area": "電子連接器製造",
+  "target_audience": "連接器設計工程師",
+  "action_items": [
+    "當客戶要求耐電流超過2.0A時建議改用Wire"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

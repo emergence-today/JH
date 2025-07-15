@@ -1,0 +1,10 @@
+{
+  "total_pages": 6,
+  "total_input_tokens": 38496,
+  "total_output_tokens": 3605,
+  "total_cost_usd": 0.13229,
+  "model_used": "bedrock/us.anthropic.claude-sonnet-4-20250514-v1:0",
+  "processing_time": 81.69048523902893,
+  "cost_per_page": 0.022048333333333333,
+  "estimated_full_document_cost": 1.653625
+}

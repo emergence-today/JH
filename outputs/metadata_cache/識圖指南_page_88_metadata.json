@@ -1,0 +1,42 @@
+{
+  "topic": "測量規格",
+  "sub_topic": "尺寸測量要求",
+  "content_type": "specification",
+  "keywords": [
+    "溫度",
+    "直徑",
+    "厚度",
+    "重點尺寸",
+    "查測"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "-196.3°"
+  ],
+  "document_section": "第88頁",
+  "equipment_mentioned": [],
+  "materials_mentioned": [],
+  "processes_mentioned": [
+    "查測"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "度",
+    "直徑",
+    "厚度"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "重點尺寸查測要求"
+  ],
+  "application_area": "製造業",
+  "target_audience": "品質檢驗人員、工程師",
+  "action_items": [
+    "查測-196.3°溫度",
+    "查測直徑",
+    "查測厚度"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

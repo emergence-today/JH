@@ -1,0 +1,48 @@
+{
+  "topic": "技術文件管理",
+  "sub_topic": "圖面識別與成品圖管理",
+  "content_type": "procedure",
+  "keywords": [
+    "成品圖",
+    "圖面識別",
+    "發行流程",
+    "有效圖面"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "發行章",
+    "確認章",
+    "檢驗章"
+  ],
+  "document_section": "圖面識別章節",
+  "equipment_mentioned": [],
+  "materials_mentioned": [],
+  "processes_mentioned": [
+    "圖面發行流程",
+    "圖面確認流程"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "須蓋有工程部發行章",
+    "須有工程部經手人及主管確認章",
+    "須有檢驗章"
+  ],
+  "application_area": "製造業",
+  "target_audience": [
+    "工程師",
+    "品質檢驗人員",
+    "製造部門人員"
+  ],
+  "action_items": [
+    "確認成品圖來源",
+    "檢查圖面有效性",
+    "確認圖面上必要的章印"
+  ],
+  "related_documents": [
+    "工程部發行文件"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

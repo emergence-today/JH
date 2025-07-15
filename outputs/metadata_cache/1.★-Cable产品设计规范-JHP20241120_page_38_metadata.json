@@ -1,0 +1,52 @@
+{
+  "topic": "外观加工",
+  "sub_topic": "导电材料与绝缘处理",
+  "content_type": "table",
+  "keywords": [
+    "导电布",
+    "拉带",
+    "绝缘材料",
+    "Housing",
+    "视频信号"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "M/B",
+    "CLK"
+  ],
+  "document_section": "第20章",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "导电拉带",
+    "导电布",
+    "醋酸",
+    "Housing"
+  ],
+  "processes_mentioned": [
+    "贴平",
+    "缠绕",
+    "包覆"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "导电拉带与贴平或缠绕的导电布导通",
+    "导电布延伸至Housing边缘包覆",
+    "导电布包覆距Housing下边缘至少保持3mm"
+  ],
+  "application_area": "电子",
+  "target_audience": "工程师",
+  "action_items": [
+    "确保导电拉带与导电布导通",
+    "确保M/B端导电布延伸至Housing边缘包覆",
+    "保持导电布包覆距Housing下边缘至少3mm"
+  ],
+  "related_documents": [
+    "产品设计规范"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

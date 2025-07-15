@@ -1,0 +1,80 @@
+{
+  "topic": "線束製造工藝",
+  "sub_topic": "焊接品質檢查與測試",
+  "content_type": "procedure",
+  "keywords": [
+    "焊點檢查",
+    "焊線檢修",
+    "半成品測試",
+    "虛焊",
+    "冷焊",
+    "導通測試"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Ω",
+    "DC200V",
+    "AC100V",
+    "mA",
+    "MΩ"
+  ],
+  "document_section": "第二十三章、第二十四章",
+  "equipment_mentioned": [
+    "實體顯微鏡",
+    "電烙鐵",
+    "鑷子",
+    "測試治具"
+  ],
+  "materials_mentioned": [
+    "線材",
+    "連接器",
+    "焊錫",
+    "絕緣皮"
+  ],
+  "processes_mentioned": [
+    "焊點檢查",
+    "焊線檢修",
+    "半成品測試",
+    "導通測試",
+    "絕緣測試",
+    "耐壓測試"
+  ],
+  "standards_mentioned": [
+    "導通阻抗3Ω",
+    "絕緣DC200V/0.1S/10MΩ",
+    "耐壓AC100V/0.1S/1mA"
+  ],
+  "measurements_units": [
+    "Ω",
+    "V",
+    "S",
+    "MΩ",
+    "mA"
+  ],
+  "safety_requirements": [
+    "測試前檢查連接器pin針狀態"
+  ],
+  "quality_criteria": [
+    "無虛焊",
+    "無冷焊",
+    "無化錫不良",
+    "無芯線散亂",
+    "無連錫",
+    "無焊點過高",
+    "無絕緣皮下滑"
+  ],
+  "application_area": "電子線束製造",
+  "target_audience": "線束製造技術員",
+  "action_items": [
+    "檢查焊點品質",
+    "修復不良焊點",
+    "進行半成品測試",
+    "處理測試不良品"
+  ],
+  "related_documents": [
+    "線材圖紙",
+    "客戶樣品規格"
+  ],
+  "revision_info": "未提供",
+  "importance_level": "high"
+}

@@ -1,0 +1,72 @@
+{
+  "topic": "線束設計與製造",
+  "sub_topic": "識圖指南與材料知識",
+  "content_type": "introduction, specification, table",
+  "keywords": [
+    "成品圖",
+    "線材",
+    "同軸線",
+    "連接器",
+    "材料分類",
+    "客戶代號"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "P/N",
+    "REV",
+    "OD",
+    "ID",
+    "AWG",
+    "GND",
+    "NC"
+  ],
+  "document_section": "識圖指南第1-5節",
+  "equipment_mentioned": [
+    "LCD",
+    "M/B",
+    "INV",
+    "PCB",
+    "FPC"
+  ],
+  "materials_mentioned": [
+    "電子線",
+    "同軸線",
+    "雙絞線",
+    "鐵氟龍",
+    "銅箔",
+    "EMI材料",
+    "絕緣膠帶",
+    "Kapton tape",
+    "Paper tape",
+    "EM1 tape"
+  ],
+  "processes_mentioned": [
+    "工程部發行",
+    "主管確認"
+  ],
+  "standards_mentioned": [
+    "公差標準"
+  ],
+  "measurements_units": [
+    "外徑",
+    "內徑",
+    "厚度",
+    "尺寸"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "有效圖面須簽有工程部發行章、工程部經手人及主管確認章"
+  ],
+  "application_area": "電子製造業",
+  "target_audience": "工程師、技術員、品質檢驗人員",
+  "action_items": [
+    "確認圖面有效性",
+    "識別客戶代號",
+    "理解材料規格"
+  ],
+  "related_documents": [
+    "成品圖"
+  ],
+  "revision_info": "未明確標示",
+  "importance_level": "high"
+}

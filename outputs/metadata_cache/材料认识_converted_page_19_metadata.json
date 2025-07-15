@@ -1,0 +1,39 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "連接器設計元素",
+  "content_type": "instruction",
+  "keywords": [
+    "拉带",
+    "連接器",
+    "插拔",
+    "標籤"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "FIC T1+"
+  ],
+  "document_section": "連接器設計章節",
+  "equipment_mentioned": [
+    "連接器"
+  ],
+  "materials_mentioned": [
+    "拉带"
+  ],
+  "processes_mentioned": [
+    "連接器插拔"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "便于连接器插拔"
+  ],
+  "application_area": "電子",
+  "target_audience": "線束設計工程師",
+  "action_items": [
+    "確保連接器設計包含拉帶"
+  ],
+  "related_documents": [],
+  "revision_info": "VER:2.0 01/12/21",
+  "importance_level": "medium"
+}

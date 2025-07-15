@@ -1,0 +1,57 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "UV膠應用規範",
+  "content_type": "table",
+  "keywords": [
+    "UV膠",
+    "端子",
+    "Housing",
+    "鐵氟龍",
+    "SATA線",
+    "同軸線"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Pin",
+    "Conn"
+  ],
+  "document_section": "第13章 点UV胶",
+  "equipment_mentioned": [
+    "端子機"
+  ],
+  "materials_mentioned": [
+    "UV膠",
+    "銅氟線",
+    "鐵氟龍",
+    "同軸線",
+    "SATA線"
+  ],
+  "processes_mentioned": [
+    "點膠",
+    "打端子",
+    "焊接",
+    "固定"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [
+    "防止外被下滑"
+  ],
+  "quality_criteria": [
+    "Housing邊緣必須點膠",
+    "制破式Conn壓鐵氟降材質的線材均需雙面點膠",
+    "同軸線焊接後需將G/B下邊緣點UV膠固定"
+  ],
+  "application_area": "電子",
+  "target_audience": "製造工程師、技術員",
+  "action_items": [
+    "銅氟線打端子時Housing邊緣點膠",
+    "制破式Conn壓鐵氟降材質線材雙面點膠",
+    "SATA線同軸線焊接後G/B下邊緣點UV膠固定"
+  ],
+  "related_documents": [
+    "產品設計規範"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

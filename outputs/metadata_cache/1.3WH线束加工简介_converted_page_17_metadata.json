@@ -1,0 +1,61 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "產品包裝",
+  "content_type": "procedure",
+  "keywords": [
+    "包装",
+    "纸箱",
+    "标签",
+    "橡皮筋",
+    "气泡袋"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "NOT FULL",
+    "GP.PASS",
+    "ROHS"
+  ],
+  "document_section": "第十四章",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "橡皮筋",
+    "气泡袋",
+    "纸箱",
+    "防水袋",
+    "标签"
+  ],
+  "processes_mentioned": [
+    "成品分束",
+    "扎束",
+    "纸箱对折",
+    "封底",
+    "装箱",
+    "贴标签"
+  ],
+  "standards_mentioned": [
+    "SOP"
+  ],
+  "measurements_units": [
+    "重量"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "首尾对应整齐",
+    "规定数理一把"
+  ],
+  "application_area": "製造業",
+  "target_audience": "生產線操作人員",
+  "action_items": [
+    "将成品定为规定数理一把",
+    "用橡皮筋及气泡袋扎一束",
+    "纸箱对折后封底",
+    "加入防水袋",
+    "按顺序装入箱中",
+    "贴上对应标签"
+  ],
+  "related_documents": [
+    "SOP"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

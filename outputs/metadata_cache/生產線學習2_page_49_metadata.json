@@ -1,0 +1,60 @@
+{
+  "topic": "電子線束測試",
+  "sub_topic": "實機測試程序",
+  "content_type": "procedure",
+  "keywords": [
+    "電子線束",
+    "實機測試",
+    "TMC測試台",
+    "靜電防護",
+    "測試程序"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "測試點",
+    "測試開關"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "TMC測試台",
+    "電子式萬用表",
+    "測試台具",
+    "靜電環"
+  ],
+  "materials_mentioned": [
+    "電子線束",
+    "MIC接線器"
+  ],
+  "processes_mentioned": [
+    "靜電防護",
+    "測試開機",
+    "產品插入測試",
+    "測試結果顯示",
+    "良品不良品分類"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [
+    "將靜電環戴到左手腕上",
+    "用萬子夾靜電環另一端夾在水平接地端上"
+  ],
+  "quality_criteria": [
+    "依據產品的理論值進行測試",
+    "測試良品置於下半行作業",
+    "測試不良品放於品盒中"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "測試技術員",
+  "action_items": [
+    "戴靜電環",
+    "按壓測試開關",
+    "安裝測試台具",
+    "插入待測產品",
+    "分類良品不良品"
+  ],
+  "related_documents": [],
+  "revision_info": "版本2.0，由戴阿思白於2011.2.21修訂，按需重新編制文檔修改為MIC接線器",
+  "importance_level": "high"
+}

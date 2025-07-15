@@ -1,0 +1,49 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "台式機內部線材配置",
+  "content_type": "specification, diagram",
+  "keywords": [
+    "台式機",
+    "cable",
+    "SATA",
+    "Front IO",
+    "風扇"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "*"
+  ],
+  "document_section": "第1章第1節",
+  "equipment_mentioned": [
+    "台式機",
+    "HDD",
+    "ODD",
+    "風扇",
+    "Front IO"
+  ],
+  "materials_mentioned": [
+    "Power SATA cable",
+    "HDD sata",
+    "ODD cable",
+    "風扇 cable",
+    "USB cable",
+    "Audio Cable"
+  ],
+  "processes_mentioned": [
+    "內部線材連接"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "pcs"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子、電腦硬體",
+  "target_audience": "電腦組裝技術員、硬體工程師",
+  "action_items": [
+    "確認台式機7條主要線材"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

@@ -1,0 +1,59 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "連接線纜組件規格",
+  "content_type": "technical drawing, specification, table",
+  "keywords": [
+    "連接器",
+    "線束",
+    "接線表",
+    "JWT",
+    "6-pin",
+    "屏蔽線"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Ω",
+    "±",
+    "MIN",
+    "MAX"
+  ],
+  "document_section": "工程图/Technical Drawing",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "NYLON 66",
+    "鍍青銅鍍錫",
+    "鋁箔",
+    "P.V.C.",
+    "熱縮管"
+  ],
+  "processes_mentioned": [
+    "絕緣",
+    "屏蔽",
+    "測試開路短路"
+  ],
+  "standards_mentioned": [
+    "UL 94V-0",
+    "UL2725"
+  ],
+  "measurements_units": [
+    "mm",
+    "Ω",
+    "V/DC"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "100% 測試開路短路",
+    "絕緣阻抗: 5MΩ MIN 300V/DC",
+    "導體阻抗: 1Ω MAX"
+  ],
+  "application_area": "電子",
+  "target_audience": "工程師, 製造技術人員",
+  "action_items": [
+    "測試開路短路",
+    "測試絕緣阻抗",
+    "測試導體阻抗"
+  ],
+  "related_documents": [],
+  "revision_info": "Part Number: 14G030014810H2, Drawing No: 012",
+  "importance_level": "high"
+}

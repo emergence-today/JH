@@ -1,0 +1,76 @@
+{
+  "topic": "電磁干擾管控",
+  "sub_topic": "線束EMI屏蔽製程管控",
+  "content_type": "specification_table",
+  "keywords": [
+    "EMI",
+    "馬口鐵",
+    "網尾",
+    "屏蔽",
+    "低電阻",
+    "鋁箔",
+    "編織網"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "mΩ",
+    "mm",
+    "%"
+  ],
+  "document_section": "重點製程EMI管控",
+  "equipment_mentioned": [
+    "低電阻測試設備"
+  ],
+  "materials_mentioned": [
+    "馬口鐵",
+    "鍍錫鐵",
+    "銅箔",
+    "鋁箔",
+    "編織網"
+  ],
+  "processes_mentioned": [
+    "鋭壓",
+    "點焊",
+    "神合",
+    "低電阻測試",
+    "覆蓋率檢測",
+    "編織網密度檢測"
+  ],
+  "standards_mentioned": [
+    "間隙 ≤ 0.1mm",
+    "低電阻 ≤ 100mΩ",
+    "鋁箔覆蓋率MIN 40%",
+    "編織覆蓋 ≥ 85%"
+  ],
+  "measurements_units": [
+    "mm",
+    "mΩ",
+    "%"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "馬口鐵領域不可變形",
+    "神件無異樣",
+    "線材與鐵殼無間隙",
+    "上下鐵殼完全貼附",
+    "網尾銅箔露外漏0.5-2mm"
+  ],
+  "application_area": "電子線束製造",
+  "target_audience": "製造工程師、品質檢驗人員、生產技術員",
+  "action_items": [
+    "檢驗馬口鐵結構",
+    "測量神合高度",
+    "進行90°搖擺檢驗",
+    "檢查鐵殼貼合間隙",
+    "測量銅箔外漏尺寸",
+    "執行低電阻測試",
+    "檢測鋁箔覆蓋率",
+    "檢測編織網密度"
+  ],
+  "related_documents": [
+    "線束EMI設計規範",
+    "屏蔽效能測試標準"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

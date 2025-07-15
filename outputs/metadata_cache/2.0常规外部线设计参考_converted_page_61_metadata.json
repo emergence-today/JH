@@ -1,0 +1,48 @@
+{
+  "topic": "接口技術",
+  "sub_topic": "USB接口標準比較",
+  "content_type": "introduction",
+  "keywords": [
+    "USB3.0",
+    "USB2.0",
+    "帶寬",
+    "傳輸速率",
+    "全雙工",
+    "半雙工"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "Gbps",
+    "Mbps"
+  ],
+  "document_section": "第4章",
+  "equipment_mentioned": [
+    "閃存驅動器",
+    "手機",
+    "消費類電子器件"
+  ],
+  "materials_mentioned": [],
+  "processes_mentioned": [
+    "數據傳輸",
+    "下載",
+    "存儲",
+    "共享"
+  ],
+  "standards_mentioned": [
+    "USB3.0",
+    "USB2.0"
+  ],
+  "measurements_units": [
+    "Gbps",
+    "Mbps",
+    "秒"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子、消費電子",
+  "target_audience": "工程師、技術人員",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

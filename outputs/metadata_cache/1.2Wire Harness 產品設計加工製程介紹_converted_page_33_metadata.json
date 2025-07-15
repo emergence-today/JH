@@ -1,0 +1,61 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "筆記型電腦連接器特點",
+  "content_type": "specification and diagram",
+  "keywords": [
+    "連接器",
+    "雙絞線",
+    "EMI防護",
+    "筆記型電腦",
+    "導電布"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "➤",
+    "AWG"
+  ],
+  "document_section": "6-2-1. 特點",
+  "equipment_mentioned": [
+    "NOTE BOOK PC",
+    "XGA LCD",
+    "INVERTER",
+    "MiniPCI",
+    "CPU/MMO",
+    "HDD",
+    "BATTERY",
+    "BABY CARD",
+    "PCMCIA",
+    "CD-ROM",
+    "DVD-FDD"
+  ],
+  "materials_mentioned": [
+    "雙絞線",
+    "導電布",
+    "28-34AWG wire"
+  ],
+  "processes_mentioned": [
+    "EMI防護",
+    "外貼導電布"
+  ],
+  "standards_mentioned": [
+    "28-34AWG"
+  ],
+  "measurements_units": [
+    "AWG"
+  ],
+  "safety_requirements": [
+    "EMI防護"
+  ],
+  "quality_criteria": [
+    "相容連接器"
+  ],
+  "application_area": "電子、筆記型電腦",
+  "target_audience": "電子工程師、線束設計工程師",
+  "action_items": [
+    "使用28-34AWG線材",
+    "外貼導電布作EMI防護"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

@@ -1,0 +1,33 @@
+{
+  "topic": "連接頭設計",
+  "sub_topic": "連接頭組件結構",
+  "content_type": "diagram",
+  "keywords": [
+    "連接頭",
+    "成型外殼",
+    "鐵殼",
+    "PCB板",
+    "端子"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [],
+  "document_section": "第3章",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "PVC",
+    "TPE",
+    "馬口鐵",
+    "PCB"
+  ],
+  "processes_mentioned": [],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子",
+  "target_audience": "工程師",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

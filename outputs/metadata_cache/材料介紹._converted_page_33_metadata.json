@@ -1,0 +1,43 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "輔助材料",
+  "content_type": "introduction",
+  "keywords": [
+    "標籤",
+    "拉帶",
+    "套管",
+    "輔助材料",
+    "識別",
+    "平衡",
+    "保護"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "＿"
+  ],
+  "document_section": "輔助材料",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "標籤",
+    "拉帶",
+    "套管"
+  ],
+  "processes_mentioned": [
+    "收縮",
+    "保護線材"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子製造",
+  "target_audience": "線束設計工程師、技術員",
+  "action_items": [
+    "識別標籤用途",
+    "了解拉帶平衡作用",
+    "選擇適當套管保護線材"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

@@ -1,0 +1,55 @@
+{
+  "topic": "電子線束測試",
+  "sub_topic": "LED測試操作程序",
+  "content_type": "procedure",
+  "keywords": [
+    "電子線束",
+    "LED測試",
+    "測量界面",
+    "品質檢測",
+    "操作步驟"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "LED",
+    "FAIL"
+  ],
+  "document_section": "作業標準書第10頁",
+  "equipment_mentioned": [
+    "電腦振荡器350M",
+    "静電壓",
+    "LED測試設備"
+  ],
+  "materials_mentioned": [
+    "電子線束"
+  ],
+  "processes_mentioned": [
+    "LED測試",
+    "品質檢測",
+    "測量操作",
+    "校准測量"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [
+    "静電防護"
+  ],
+  "quality_criteria": [
+    "LED呈方形",
+    "綠色發光",
+    "品質良品標準"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "測試技術員",
+  "action_items": [
+    "按Exit鍵退出",
+    "點擊停止所在程控測量",
+    "設定合格振動台",
+    "檢查LED發光狀態"
+  ],
+  "related_documents": [],
+  "revision_info": "版本5.0，由管鋒於2014.06.17修訂",
+  "importance_level": "high"
+}

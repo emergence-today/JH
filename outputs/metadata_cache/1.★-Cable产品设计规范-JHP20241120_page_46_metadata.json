@@ -1,0 +1,63 @@
+{
+  "topic": "電子元件加工",
+  "sub_topic": "LED加工工藝",
+  "content_type": "procedure",
+  "keywords": [
+    "LED",
+    "焊接",
+    "點膠",
+    "剝皮",
+    "破錫"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Φ0.4mm",
+    "310±10℃",
+    "1mmREF",
+    "2~3mm"
+  ],
+  "document_section": "第24章",
+  "equipment_mentioned": [
+    "烙鐵"
+  ],
+  "materials_mentioned": [
+    "LED",
+    "助焊劑",
+    "錫絲",
+    "UV膠",
+    "電子線",
+    "絕緣皮"
+  ],
+  "processes_mentioned": [
+    "剝皮",
+    "破錫",
+    "焊接",
+    "點膠",
+    "固定"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm",
+    "℃"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "絕緣皮要搭上焊腳1mmREF",
+    "UV膠要搭上電子線絕緣皮2~3mm",
+    "考慮不同等級間之亮度差異"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "電子組裝技術員",
+  "action_items": [
+    "使用長短腳設計",
+    "剝皮1mm",
+    "銅絲部分破錫",
+    "焊接",
+    "點UV膠固定"
+  ],
+  "related_documents": [
+    "產品設計規範"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

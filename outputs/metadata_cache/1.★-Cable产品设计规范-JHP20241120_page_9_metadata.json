@@ -1,0 +1,51 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "自动布线",
+  "content_type": "table",
+  "keywords": [
+    "镀锡铜线",
+    "布线",
+    "美纹胶带",
+    "预沾",
+    "修剪"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "mm",
+    "PCS"
+  ],
+  "document_section": "第4章",
+  "equipment_mentioned": [
+    "自动布线设备"
+  ],
+  "materials_mentioned": [
+    "镀锡铜线",
+    "美纹胶带"
+  ],
+  "processes_mentioned": [
+    "自动布线",
+    "预沾",
+    "修剪"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm",
+    "PCS"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "预沾后沿差纹肋线修剪"
+  ],
+  "application_area": "电子制造",
+  "target_audience": "线束生产技术员",
+  "action_items": [
+    "一次并排布线30PCS",
+    "使用规定尺寸美纹胶带",
+    "预沾后进行修剪"
+  ],
+  "related_documents": [
+    "产品设计规范"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

@@ -1,0 +1,48 @@
+{
+  "topic": "材料規格",
+  "sub_topic": "USB連接器組件材料規格",
+  "content_type": "specification",
+  "keywords": [
+    "USB連接器",
+    "材料規格",
+    "鋅合金",
+    "LCP",
+    "磷氯銅"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "±",
+    "mm"
+  ],
+  "document_section": "第26頁",
+  "equipment_mentioned": [
+    "USB連接器"
+  ],
+  "materials_mentioned": [
+    "鋅合金",
+    "LCP",
+    "無鉛環保錫絲",
+    "C5191",
+    "磷氯銅"
+  ],
+  "processes_mentioned": [
+    "表面處理"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [
+    "無鉛環保錫絲"
+  ],
+  "quality_criteria": [
+    "C5191(HV180-210)",
+    "T=0.20 ± 0.02"
+  ],
+  "application_area": "電子",
+  "target_audience": "工程師",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

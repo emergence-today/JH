@@ -1,0 +1,59 @@
+{
+  "topic": "供應商管理",
+  "sub_topic": "供應商品質系統審核",
+  "content_type": "checklist",
+  "keywords": [
+    "供應商評價",
+    "合格供應商",
+    "材料檢測",
+    "可靠度管理",
+    "外包商管理"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "CPK"
+  ],
+  "document_section": "QSA Check List 第5章節",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "次級材料"
+  ],
+  "processes_mentioned": [
+    "供應商選擇評價",
+    "材料首次檢測",
+    "供應商品質系統檢核",
+    "IAI執行"
+  ],
+  "standards_mentioned": [
+    "GRAR",
+    "PFMEA"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "制程參數",
+    "制程能力",
+    "品質系統",
+    "良率"
+  ],
+  "application_area": "製造業",
+  "target_audience": [
+    "品質管理人員",
+    "採購人員",
+    "供應鏈管理人員"
+  ],
+  "action_items": [
+    "制定供應商選擇評價標準",
+    "建立合格供應商清單",
+    "執行材料首次檢測",
+    "定期檢核供應商品質系統",
+    "對供應商表現進行統計分析"
+  ],
+  "related_documents": [
+    "制程管控計劃",
+    "制造流程圖",
+    "CAT檢驗"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

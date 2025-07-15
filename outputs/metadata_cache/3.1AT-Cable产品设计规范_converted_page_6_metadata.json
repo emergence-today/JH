@@ -1,0 +1,47 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "Housing確認",
+  "content_type": "table",
+  "keywords": [
+    "Housing",
+    "線束",
+    "插件",
+    "端子",
+    "仪表线束"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "BP01",
+    "0457204",
+    "PP0137506",
+    "PP0137508",
+    "PP0137507"
+  ],
+  "document_section": "3.Housing 确认",
+  "equipment_mentioned": [
+    "仪表线束"
+  ],
+  "materials_mentioned": [
+    "端子",
+    "插件"
+  ],
+  "processes_mentioned": [
+    "门线束对接仪表线束"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm²"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "端子规格匹配线径"
+  ],
+  "application_area": "汽車",
+  "target_audience": "線束工程師",
+  "action_items": [
+    "确认Housing功能、厂商、插件号、端子号等信息"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

@@ -1,0 +1,72 @@
+{
+  "topic": "線束製造",
+  "sub_topic": "內鑲成型工藝",
+  "content_type": "procedure",
+  "keywords": [
+    "內鑲成型",
+    "線材成型",
+    "模具",
+    "鑲條",
+    "成型參數"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "℃",
+    "KG",
+    "s"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "首式封計成型機",
+    "成型鑲具"
+  ],
+  "materials_mentioned": [
+    "線材",
+    "SATA",
+    "HDMI系列"
+  ],
+  "processes_mentioned": [
+    "內鑲成型",
+    "計算機程序操作",
+    "線材裝入成型鑲條",
+    "上下模工作",
+    "合線",
+    "分開鑲條"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "℃",
+    "KG",
+    "s"
+  ],
+  "safety_requirements": [
+    "合模主動機",
+    "封計作業頂測"
+  ],
+  "quality_criteria": [
+    "第一前逮度：10±10℃",
+    "第一前逮度：120±10℃",
+    "硬度：4545KG",
+    "硬度：10±5KG",
+    "硬度：90±5KG",
+    "保持時間：2±0.2s",
+    "保瞄時間：1.5±0.2s",
+    "令沖時間：2.5±0.2s"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "將待計算成型之線材裝入成型鑲條內",
+    "線材鑲條放入模具內",
+    "理順線材",
+    "上下模工作置材",
+    "按下左右自動裝鉗合線工封",
+    "分開鑲條後即出計算封材",
+    "雙手接住鑲條取出鑲條"
+  ],
+  "related_documents": [],
+  "revision_info": "版本2.0，由程軍於2013.07.03修訂，變更內容為線材成型參數",
+  "importance_level": "high"
+}

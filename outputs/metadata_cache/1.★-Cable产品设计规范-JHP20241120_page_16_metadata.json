@@ -1,0 +1,55 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "開窗處設計",
+  "content_type": "specification",
+  "keywords": [
+    "開窗",
+    "線材",
+    "束圓",
+    "銅條",
+    "電源線"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "mm",
+    "Min"
+  ],
+  "document_section": "第10章",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "銅條",
+    "電源線",
+    "鐵氟隆線",
+    "銅箔",
+    "導電布",
+    "鋁箔"
+  ],
+  "processes_mentioned": [
+    "開窗",
+    "焊接",
+    "束圓作業"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [
+    "避免電源線受損",
+    "防止開機烧機"
+  ],
+  "quality_criteria": [
+    "開窗位置離束圓處至少距離10mm",
+    "開窗寬度大於銅條寬度不可超過1mm以上"
+  ],
+  "application_area": "電子",
+  "target_audience": "工程師",
+  "action_items": [
+    "電源線用鋁箔包覆，避免開窗時線材受損",
+    "將銅箔改為導電布包覆"
+  ],
+  "related_documents": [
+    "產品設計規範"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

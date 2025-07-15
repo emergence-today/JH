@@ -1,0 +1,47 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "DP制程工藝",
+  "content_type": "procedure",
+  "keywords": [
+    "翻地线",
+    "编织",
+    "贴铜箔",
+    "DP制程"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "W=5mm",
+    "L=30~32mm"
+  ],
+  "document_section": "DP 制程工藝介紹",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "铜箔",
+    "地线",
+    "编织"
+  ],
+  "processes_mentioned": [
+    "翻地线",
+    "编织",
+    "贴铜箔",
+    "环包铜箔"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "铜箔 W=5mm L=30~32mm",
+    "环包铜箔一圈半"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "製程工程師",
+  "action_items": [
+    "将编织及地线后翻",
+    "在编织上环包铜箔一圈半"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

@@ -1,0 +1,41 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "端子加工製程",
+  "content_type": "comparison table",
+  "keywords": [
+    "打端子",
+    "Beat Terminal",
+    "端子機",
+    "生產流程",
+    "Production Flow"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [],
+  "document_section": "Production Flow Comparison",
+  "equipment_mentioned": [
+    "端子機",
+    "terminal machine"
+  ],
+  "materials_mentioned": [
+    "端子",
+    "terminal"
+  ],
+  "processes_mentioned": [
+    "打端子",
+    "Beat Terminal"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子製造",
+  "target_audience": [
+    "工程師",
+    "技術員",
+    "生產人員"
+  ],
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

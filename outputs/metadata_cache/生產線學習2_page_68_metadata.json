@@ -1,0 +1,58 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "端子芯線切片處理",
+  "content_type": "procedure",
+  "keywords": [
+    "端子切片",
+    "電子烟",
+    "端子芯線",
+    "打磨方式"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "mm"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "切刀",
+    "切片機",
+    "微調爐"
+  ],
+  "materials_mentioned": [
+    "端子",
+    "電線",
+    "芯線"
+  ],
+  "processes_mentioned": [
+    "端子線路加熱",
+    "修剪端子",
+    "整理電線",
+    "端子切片",
+    "冷卻"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [
+    "不可用過大的芯線聯繫高度"
+  ],
+  "quality_criteria": [
+    "整洁美观",
+    "確保石硫魔發面"
+  ],
+  "application_area": "電子",
+  "target_audience": "技術員",
+  "action_items": [
+    "端子線路加熱後打開端子",
+    "修剪端子",
+    "整理電線和端子",
+    "將端子放入端子切片梳上",
+    "用微調爐處理"
+  ],
+  "related_documents": [],
+  "revision_info": "版本2.0，變更端子切片打磨方式，修訂人：堂锋，修訂時間：2011.03.28",
+  "importance_level": "high"
+}

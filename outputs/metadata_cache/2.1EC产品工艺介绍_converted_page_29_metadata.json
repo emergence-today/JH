@@ -1,0 +1,40 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "USB TO Housing阻抗高频测试",
+  "content_type": "test_report",
+  "keywords": [
+    "USB TO Housing",
+    "阻抗高频测试",
+    "Attenuation",
+    "Differential Impedance",
+    "Common Mode Impedance"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Differential Delay",
+    "Intra Pair Skew"
+  ],
+  "document_section": "USB TO Housing 制程工藝介紹",
+  "equipment_mentioned": [
+    "高频测试设备"
+  ],
+  "materials_mentioned": [
+    "USB TO Housing"
+  ],
+  "processes_mentioned": [
+    "阻抗高频测试",
+    "Production Flow"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "Pass/Fail criteria for high frequency tests"
+  ],
+  "application_area": "電子",
+  "target_audience": "工程師",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

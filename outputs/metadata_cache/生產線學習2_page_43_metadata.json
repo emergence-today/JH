@@ -1,0 +1,59 @@
+{
+  "topic": "線束製造",
+  "sub_topic": "線束組裝與標籤貼附",
+  "content_type": "procedure",
+  "keywords": [
+    "半導帽",
+    "標籤",
+    "聚氨酯條",
+    "線束",
+    "壓線"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "SOP-02871",
+    "HFC"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "結線器",
+    "壓線台",
+    "短線答台膠板"
+  ],
+  "materials_mentioned": [
+    "黑半導帽",
+    "聚氨酯條",
+    "標籤",
+    "Housing"
+  ],
+  "processes_mentioned": [
+    "標籤內貼",
+    "壓線",
+    "聚氨酯條手法"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "384.0"
+  ],
+  "safety_requirements": [
+    "防止調涧膠"
+  ],
+  "quality_criteria": [
+    "不可有黑探到部拟",
+    "不可有偏差調開現象"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "黑半導帽以探條高亮",
+    "將結線器的Housing以人體標記法貼住按壓",
+    "用手指夾向台與大型案例蓋"
+  ],
+  "related_documents": [
+    "HFC標條知形圖"
+  ],
+  "revision_info": "版本4.0，最近修訂於2014.01.02，增加聚氨酯探條手法",
+  "importance_level": "high"
+}

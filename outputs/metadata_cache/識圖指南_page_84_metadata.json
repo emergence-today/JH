@@ -1,0 +1,58 @@
+{
+  "topic": "技術文件識別與使用",
+  "sub_topic": "圖面識別與應用",
+  "content_type": "procedure",
+  "keywords": [
+    "圖面識別",
+    "金線品",
+    "外觀檢查治具板",
+    "PCB",
+    "檢測"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "△",
+    "P.Q.R"
+  ],
+  "document_section": "百的識別",
+  "equipment_mentioned": [
+    "外觀檢查治具板",
+    "金線品"
+  ],
+  "materials_mentioned": [
+    "PCB",
+    "泡棉",
+    "標簽"
+  ],
+  "processes_mentioned": [
+    "圖面識別",
+    "檢測",
+    "外觀檢查"
+  ],
+  "standards_mentioned": [
+    "工程部發行章規範"
+  ],
+  "measurements_units": [
+    "未明確指定"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "金線品需跟圖面完全一致",
+    "重點量測尺寸需在外觀檢查治具板上體現"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "品質檢驗人員",
+  "action_items": [
+    "檢查圖面發行章",
+    "檢查材號一致性",
+    "檢查尺寸標示",
+    "檢查單位",
+    "檢查零部件",
+    "檢查版本"
+  ],
+  "related_documents": [
+    "工程部發行文件"
+  ],
+  "revision_info": "P1.01.18 變更INV端CONN及標簽版本",
+  "importance_level": "high"
+}

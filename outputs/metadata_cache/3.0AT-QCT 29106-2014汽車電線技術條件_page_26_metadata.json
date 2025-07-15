@@ -1,0 +1,72 @@
+{
+  "topic": "汽車線束材料規格",
+  "sub_topic": "壓敏膠粘帶規格與性能要求",
+  "content_type": "specification",
+  "keywords": [
+    "壓敏膠粘帶",
+    "汽車電線束",
+    "規格",
+    "性能要求",
+    "剝離強度",
+    "拉伸強度"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "℃",
+    "mm",
+    "N/cm",
+    "kV/min",
+    "%"
+  ],
+  "document_section": "附錄C",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "塑料壓敏膠粘帶",
+    "絨布壓敏膠粘帶",
+    "布基壓敏膠粘帶",
+    "纖維布壓敏膠粘帶",
+    "聚酰胺布壓敏膠粘帶",
+    "PVC",
+    "PET",
+    "PA"
+  ],
+  "processes_mentioned": [
+    "平率式包扎"
+  ],
+  "standards_mentioned": [
+    "QC/T 29106—2014",
+    "GB 8410—2006"
+  ],
+  "measurements_units": [
+    "℃",
+    "mm",
+    "N/cm",
+    "kV/min",
+    "%",
+    "mm/min"
+  ],
+  "safety_requirements": [
+    "阻燃性能（燃燒速率）≤100 mm/min"
+  ],
+  "quality_criteria": [
+    "無缺膠",
+    "無溢膠",
+    "無凹陷",
+    "無折痕",
+    "無色差",
+    "無膠粘劑過移",
+    "柔韌性要求",
+    "耐電壓要求"
+  ],
+  "application_area": "汽車",
+  "target_audience": "汽車線束工程師、品質檢驗人員、材料工程師",
+  "action_items": [
+    "檢查壓敏膠粘帶外觀質量",
+    "測試壓敏膠粘帶性能指標"
+  ],
+  "related_documents": [
+    "GB 8410—2006"
+  ],
+  "revision_info": "QC/T 29106—2014",
+  "importance_level": "high"
+}

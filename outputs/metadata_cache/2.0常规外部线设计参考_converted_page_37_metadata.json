@@ -1,0 +1,43 @@
+{
+  "topic": "接口技術",
+  "sub_topic": "HDMI與DP接口比較",
+  "content_type": "introduction",
+  "keywords": [
+    "HDMI",
+    "DisplayPort",
+    "數據傳輸",
+    "高清晰度",
+    "接口技術"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "GB/s",
+    "Gbps"
+  ],
+  "document_section": "第5章",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "接頭",
+    "接線"
+  ],
+  "processes_mentioned": [
+    "音視頻傳輸"
+  ],
+  "standards_mentioned": [
+    "2X速率標準(21.6Gbps)"
+  ],
+  "measurements_units": [
+    "GB/s",
+    "Gbps",
+    "米",
+    "帧"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子、多媒體",
+  "target_audience": "工程師、技術人員",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

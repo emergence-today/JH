@@ -1,0 +1,55 @@
+{
+  "topic": "線束製造工藝",
+  "sub_topic": "線束包裝與標識",
+  "content_type": "procedure",
+  "keywords": [
+    "醋酸布",
+    "導電布",
+    "標籤",
+    "雙面膠",
+    "LCD端",
+    "MB端"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "PIN 1",
+    "PIN 40"
+  ],
+  "document_section": "第二十九章至第三十章",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "醋酸布",
+    "導電布",
+    "黑色導電布",
+    "標籤",
+    "導電雙面膠"
+  ],
+  "processes_mentioned": [
+    "缠绕醋酸布",
+    "贴标签",
+    "贴双面胶",
+    "划线"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "醋酸布沿LCD端包头导电布边缘开始卷包",
+    "卷包至黑色导电布贴平边缘裁止",
+    "标签居中贴于MB端包头正面",
+    "距离黑色导电布贴平边缘18mm处画一圈白线"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "缠绕醋酸布",
+    "贴标签",
+    "在距离黑色导电布贴平边缘18mm处画一圈白线",
+    "导电双面胶贴于背面"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

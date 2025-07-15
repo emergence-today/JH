@@ -1,0 +1,67 @@
+{
+  "topic": "電氣連接測試",
+  "sub_topic": "電壓降試驗與接點試驗",
+  "content_type": "specification, procedure, diagram",
+  "keywords": [
+    "電壓降試驗",
+    "接點試驗",
+    "壓接",
+    "熱平衡",
+    "導體壓接區"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "UAN",
+    "UAC",
+    "UCD",
+    "UCD₁",
+    "UBE",
+    "UEF"
+  ],
+  "document_section": "5.4.6 電壓降試驗與 5.5 接點試驗",
+  "equipment_mentioned": [
+    "數字筆伏表",
+    "溫度測量儀表",
+    "熱電偶",
+    "輸出電流設備"
+  ],
+  "materials_mentioned": [
+    "電線",
+    "導體",
+    "端子"
+  ],
+  "processes_mentioned": [
+    "電壓降測量",
+    "熱平衡確認",
+    "壓接接點電壓降計算",
+    "對接處理"
+  ],
+  "standards_mentioned": [
+    "QC/T 29106—2014"
+  ],
+  "measurements_units": [
+    "A (安培)",
+    "mV (毫伏)",
+    "mm (毫米)",
+    "℃ (攝氏度)"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "輸出電流最大允許偏差≤±1%",
+    "儀表精度等級不低於0.5級",
+    "連續3次讀數的最大溫度差小於±2℃"
+  ],
+  "application_area": "汽車電氣連接系統",
+  "target_audience": "電氣工程師、質量檢測人員、製造工程師",
+  "action_items": [
+    "進行電壓降試驗",
+    "確認熱平衡",
+    "計算導體壓接區電壓降",
+    "進行接點試驗"
+  ],
+  "related_documents": [
+    "表3 (試驗電流參考表)"
+  ],
+  "revision_info": "QC/T 29106—2014",
+  "importance_level": "high"
+}

@@ -1,0 +1,45 @@
+{
+  "topic": "電子產品製造",
+  "sub_topic": "電子烟品質檢查",
+  "content_type": "procedure",
+  "keywords": [
+    "電子烟",
+    "焊點",
+    "沾錫",
+    "放大鏡",
+    "品質檢查"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "NG"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "放大鏡",
+    "行燈",
+    "剪刀"
+  ],
+  "materials_mentioned": [
+    "電子烟"
+  ],
+  "processes_mentioned": [
+    "置放大鏡",
+    "焊點檢查"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "焊點與焊點之間不可沾錫"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "品質檢查人員",
+  "action_items": [
+    "使用放大鏡檢查焊點"
+  ],
+  "related_documents": [],
+  "revision_info": "版本5.0，最近修訂於2012.08.09，增加主要事項中第8點",
+  "importance_level": "high"
+}

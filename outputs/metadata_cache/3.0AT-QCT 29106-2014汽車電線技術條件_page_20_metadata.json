@@ -1,0 +1,51 @@
+{
+  "topic": "汽車零部件檢驗",
+  "sub_topic": "檢驗方法與標準",
+  "content_type": "specification",
+  "keywords": [
+    "型式檢驗",
+    "出廠檢驗",
+    "抽檢",
+    "檢驗項目",
+    "壓接接點"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "*",
+    "AOL"
+  ],
+  "document_section": "6.4-6.5節及表7、表8",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "電鍍"
+  ],
+  "processes_mentioned": [
+    "壓接",
+    "電鍍"
+  ],
+  "standards_mentioned": [
+    "QC/T 29106—2014",
+    "GB/T 2828.1—2012"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "鐵點檢驗",
+    "電鍍檢驗",
+    "鍍層附著牢固",
+    "耐振動性能",
+    "接點電阻值"
+  ],
+  "application_area": "汽車",
+  "target_audience": "質量檢驗人員、工程師",
+  "action_items": [
+    "進行型式檢驗",
+    "從出廠檢驗合格產品中抽取樣本",
+    "按表8規定進行檢驗"
+  ],
+  "related_documents": [
+    "GB/T 2828.1—2012"
+  ],
+  "revision_info": "QC/T 29106—2014",
+  "importance_level": "high"
+}

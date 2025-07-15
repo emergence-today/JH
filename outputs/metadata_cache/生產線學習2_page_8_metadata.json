@@ -1,0 +1,63 @@
+{
+  "topic": "製造工藝",
+  "sub_topic": "線材載切作業",
+  "content_type": "procedure",
+  "keywords": [
+    "載切",
+    "電子線",
+    "作業標準",
+    "送線機",
+    "載切機"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "SOP-02871"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "載切機",
+    "送線機",
+    "送線架"
+  ],
+  "materials_mentioned": [
+    "電子線",
+    "線材",
+    "刀片",
+    "上/下模"
+  ],
+  "processes_mentioned": [
+    "載切",
+    "送線",
+    "自檢",
+    "整理存放"
+  ],
+  "standards_mentioned": [
+    "專用SOP"
+  ],
+  "measurements_units": [
+    "尺寸"
+  ],
+  "safety_requirements": [
+    "手不可放入載切口內",
+    "刀片及時更換"
+  ],
+  "quality_criteria": [
+    "載切尺寸須正確",
+    "線材載切無毛刺",
+    "上/下模無磨損"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "技術操作員",
+  "action_items": [
+    "打開載切機和送線機電源",
+    "線材裝材於送線架",
+    "設定載材規格/皮數量",
+    "按下啟動按鈕",
+    "確認載切後整理存放"
+  ],
+  "related_documents": [
+    "載切液體及長度專用SOP"
+  ],
+  "revision_info": "版本1.0",
+  "importance_level": "high"
+}

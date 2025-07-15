@@ -1,0 +1,47 @@
+{
+  "topic": "線束連接技術規格",
+  "sub_topic": "端子與電線連接強度要求",
+  "content_type": "specification, table",
+  "keywords": [
+    "連接強度",
+    "拉力值",
+    "端子連接",
+    "導體截面積"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "mm²",
+    "N"
+  ],
+  "document_section": "第6章 加工拉拔力, 4.4.6節 連接強度",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "導體",
+    "電線",
+    "端子",
+    "絕緣層"
+  ],
+  "processes_mentioned": [
+    "壓接",
+    "拉力測試"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm²",
+    "N"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "端子與電線的連接應牢固",
+    "最小拉力值應符合表2的規定"
+  ],
+  "application_area": "電子線束製造",
+  "target_audience": "線束製造工程師, 品質檢驗人員",
+  "action_items": [
+    "測量端子與電線連接的拉力值",
+    "確保拉力值符合表2規定"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

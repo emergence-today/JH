@@ -1,0 +1,61 @@
+{
+  "topic": "PCB設計與連接器規格",
+  "sub_topic": "LCD面板連接器引腳分配",
+  "content_type": "specification",
+  "keywords": [
+    "PCB-PAD",
+    "PIN Assignment",
+    "LCD",
+    "連接器",
+    "SAMSUNG",
+    "引腳配置"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "VDD",
+    "GND",
+    "RXIN",
+    "TWIN",
+    "SMB_DAT",
+    "SMB_CLK"
+  ],
+  "document_section": "PCB-PAD PIN ASSIGNMENT",
+  "equipment_mentioned": [
+    "SAMSUNG 12.1",
+    "LCD面板"
+  ],
+  "materials_mentioned": [
+    "TWIN COAX AWG#36",
+    "Mylar",
+    "FE-1-20230-T.20B",
+    "AMP 917621-2",
+    "HONDA LVC-D201PMS6"
+  ],
+  "processes_mentioned": [
+    "背面貼合組裝"
+  ],
+  "standards_mentioned": [
+    "IEEE-G011282D"
+  ],
+  "measurements_units": [
+    "mm",
+    "Ω",
+    "EA"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "THE DC RESISTANCE BETWEEN A AND B = 1.0Ω MAX",
+    "THE DC RESISTANCE BETWEEN D AND E = 0.01Ω MAX"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "電子工程師、PCB設計師、製造技術人員",
+  "action_items": [
+    "確認引腳分配",
+    "檢查電阻值符合規格"
+  ],
+  "related_documents": [
+    "50.42P01.003"
+  ],
+  "revision_info": "REV:A03 D.C YY/MM/DD",
+  "importance_level": "high"
+}

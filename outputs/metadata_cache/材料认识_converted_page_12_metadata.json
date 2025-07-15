@@ -1,0 +1,41 @@
+{
+  "topic": "材料規格",
+  "sub_topic": "膠帶產品介紹",
+  "content_type": "introduction",
+  "keywords": [
+    "3M5#",
+    "胶带",
+    "固定线材",
+    "贴平",
+    "ET-24"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "■"
+  ],
+  "document_section": "未明確指出",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "3M5#胶带",
+    "ET-24 15mm"
+  ],
+  "processes_mentioned": [
+    "固定线材",
+    "贴平"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "15mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子製造、線束加工",
+  "target_audience": "技術員、生產操作人員",
+  "action_items": [
+    "使用膠帶固定線材",
+    "使用膠帶貼平"
+  ],
+  "related_documents": [],
+  "revision_info": "未提供",
+  "importance_level": "medium"
+}

@@ -1,0 +1,40 @@
+{
+  "topic": "連接器應用",
+  "sub_topic": "USB FFC應用產品",
+  "content_type": "introduction",
+  "keywords": [
+    "USB FFC",
+    "筆記本電腦",
+    "LCD TV",
+    "多功能事務機",
+    "連接器"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "USB"
+  ],
+  "document_section": "USB FFC應用產品章節",
+  "equipment_mentioned": [
+    "筆記本電腦",
+    "高畫質LCD TV",
+    "多功能事務機"
+  ],
+  "materials_mentioned": [
+    "FFC (柔性扁平線纜)"
+  ],
+  "processes_mentioned": [],
+  "standards_mentioned": [
+    "USB"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "高畫質"
+  ],
+  "application_area": "電子消費品",
+  "target_audience": "工程師、產品設計師、技術銷售人員",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

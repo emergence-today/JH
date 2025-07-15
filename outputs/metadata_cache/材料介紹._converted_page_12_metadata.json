@@ -1,0 +1,34 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "電子線基本構造",
+  "content_type": "diagram",
+  "keywords": [
+    "電子線",
+    "導體",
+    "芯線",
+    "外被",
+    "構架"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "Conductor",
+    "Jacket"
+  ],
+  "document_section": "電子線章節",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "導體",
+    "外被"
+  ],
+  "processes_mentioned": [],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子",
+  "target_audience": "工程師、技術員",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

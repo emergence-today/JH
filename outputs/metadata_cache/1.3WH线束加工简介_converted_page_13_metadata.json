@@ -1,0 +1,63 @@
+{
+  "topic": "線束組裝",
+  "sub_topic": "端子插入技術",
+  "content_type": "procedure",
+  "keywords": [
+    "HSG",
+    "端子",
+    "插端",
+    "卡點",
+    "接線表"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "PIN",
+    "J1",
+    "J2",
+    "P1",
+    "P6"
+  ],
+  "document_section": "第十章",
+  "equipment_mentioned": [
+    "HSG連接器"
+  ],
+  "materials_mentioned": [
+    "端子",
+    "線材",
+    "紅色線",
+    "灰色線",
+    "黃色線",
+    "白色線",
+    "綠色線",
+    "地線"
+  ],
+  "processes_mentioned": [
+    "插端",
+    "回拉測試",
+    "端子定位"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "回彈聲音發出",
+    "回拉端子不能從HSG內退PIN"
+  ],
+  "application_area": "電子連接器組裝",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "左手拿住HSG",
+    "右手拇指和食指沿端子根部拿持線材",
+    "將端子插入HSG",
+    "確認端子已插入到位",
+    "進行回拉測試"
+  ],
+  "related_documents": [
+    "接線表",
+    "技術規格圖"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

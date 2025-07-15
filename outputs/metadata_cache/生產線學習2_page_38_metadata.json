@@ -1,0 +1,59 @@
+{
+  "topic": "線束製造",
+  "sub_topic": "連接器壓排工藝",
+  "content_type": "procedure",
+  "keywords": [
+    "連接器",
+    "壓排",
+    "排線",
+    "HSOP",
+    "模具",
+    "D-SUB"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "A1",
+    "1.27&1.0PITCH"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "壓排機",
+    "壓排模具"
+  ],
+  "materials_mentioned": [
+    "連接器",
+    "排線",
+    "線材",
+    "電子線束"
+  ],
+  "processes_mentioned": [
+    "壓排",
+    "排線對準",
+    "連接器安裝"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "mm",
+    "kg"
+  ],
+  "safety_requirements": [
+    "氣壓3-4kg"
+  ],
+  "quality_criteria": [
+    "排列針與塞針對準",
+    "紅線對應A1"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "持線材與連接器",
+    "將連接器放入壓排模具",
+    "將排線平放於壓排模具",
+    "操作壓排機"
+  ],
+  "related_documents": [],
+  "revision_info": "版本1.0",
+  "importance_level": "high"
+}

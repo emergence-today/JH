@@ -3,7 +3,7 @@ FastAPI 服務器 - 提供 RAG 查詢 API
 支援 Qdrant 知識庫檢索和圖片 URL 回傳
 """
 
-from fastapi import FastAPI, HTTPException, Query, UploadFile, File
+from fastapi import FastAPI, HTTPException, Query, UploadFile, File, Form
 from fastapi.responses import JSONResponse, StreamingResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
@@ -21,8 +21,12 @@ import time
 import tiktoken
 import json
 import asyncio
+import pandas as pd
+import zipfile
+import io
 
-from src.core.rag_system import TeachingRAGSystem
+
+from src.core.langchain_rag_system import LangChainParentChildRAG
 from config.config import Config
 from src.processors.pdf_processor import PDFProcessor
 from src.processors.file_converter import FileConverter
@@ -35,39 +39,33 @@ logger = logging.getLogger(__name__)
 rag_system = None
 memory_manager = None
 
+# 圖片目錄路徑
+IMAGES_DIR = "outputs/images/zerox_output"
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """應用生命週期管理"""
     # 啟動時初始化
     global rag_system, memory_manager
     try:
-        logger.info("正在初始化 RAG 系統...")
-        rag_system = TeachingRAGSystem()
+        logger.info("正在初始化 LangChain Parent-Child RAG 系統...")
+        rag_system = LangChainParentChildRAG(Config.QDRANT_COLLECTION_NAME)
 
-        # 檢查是否需要載入處理後的文件段落
-        # 只有在 Qdrant 集合不存在或為空時才載入本地檔案
-        if rag_system.should_load_local_chunks():
-            if os.path.exists("processed_chunks.jsonl"):
-                rag_system.load_processed_chunks("processed_chunks.jsonl")
-                logger.info(f"已載入 {len(rag_system.chunks)} 個文件段落")
-                # 確保向量已生成
-                rag_system.create_embeddings()
-            else:
-                logger.warning("未找到 processed_chunks.jsonl 檔案，且 Qdrant 集合為空")
-        else:
-            logger.info("Qdrant 集合已存在且包含資料，跳過本地檔案載入")
-
-        logger.info("RAG 系統初始化完成")
+        logger.info("LANGCHAIN RAG 系統初始化完成")
+        logger.info(f"  系統類型: {rag_system.get_system_info()['system_type']}")
+        if hasattr(rag_system, 'child_collection_name'):
+            logger.info(f"  子段落集合: {rag_system.child_collection_name}")
+            logger.info(f"  父段落集合: {rag_system.parent_collection_name}")
 
         # 初始化記憶管理器
         memory_manager = MemoryManager()
         logger.info("記憶管理器初始化完成")
 
         # 檢查圖片目錄
-        if os.path.exists("images"):
-            logger.info(f"圖片目錄存在: images/ - 將通過 /images/{{filename}} 端點提供")
+        if os.path.exists(IMAGES_DIR):
+            logger.info(f"圖片目錄存在: {IMAGES_DIR}/ - 將通過 /images/{{filename}} 端點提供")
         else:
-            logger.warning("images 目錄不存在")
+            logger.warning(f"{IMAGES_DIR} 目錄不存在")
 
     except Exception as e:
         logger.error(f"系統初始化失敗: {e}")
@@ -254,6 +252,28 @@ class ChatRequest(BaseModel):
     use_rag: bool = True
     top_k: int = 3
 
+class TestFolderRequest(BaseModel):
+    """資料夾測試請求模型"""
+    folder_name: str
+    num_images_per_category: int = 1
+
+class TestResult(BaseModel):
+    """測試結果模型"""
+    image_name: str
+    category: str
+    question: str
+    rag_answer: str
+    evaluation: Dict[str, Any]
+    cost_info: Dict[str, float]
+
+class TestResponse(BaseModel):
+    """測試回應模型"""
+    test_id: str
+    total_tests: int
+    results: List[TestResult]
+    summary: Dict[str, Any]
+    html_report_url: str
+
 class ChatResponse(BaseModel):
     """聊天回應模型"""
     response: str
@@ -295,8 +315,8 @@ def get_image_url(image_path: str) -> Optional[str]:
     # 提取檔案名稱，處理可能的路徑分隔符問題
     filename = os.path.basename(image_path.replace('\\', '/'))
 
-    # 後端 API 基礎 URL
-    api_base_url = "https://uat.heph-ai.net/api/v1/JH"
+    # 從配置文件讀取 API 基礎 URL
+    api_base_url = f"{Config.API_BASE_URL}/api/v1/JH"
 
     # 檔案名稱需要 URL 編碼（因為包含中文）
     from urllib.parse import quote
@@ -306,6 +326,52 @@ def get_image_url(image_path: str) -> Optional[str]:
     image_url = f"{api_base_url}/images/{encoded_filename}"
 
     return image_url
+
+def format_answer_with_images(answer: str) -> str:
+    """將回答中的圖片 URL 轉換為實際的圖片顯示"""
+    import re
+
+    # 先處理 "📷 相關圖片：" 部分的編號URL
+    if "📷 相關圖片" in answer:
+        # 收集編號的圖片URL
+        numbered_url_pattern = r'\d+\.\s*(https?://[^\s]+\.(?:png|jpg|jpeg|gif|bmp))'
+        urls = re.findall(numbered_url_pattern, answer)
+
+        if urls:
+            # 移除整個編號URL行
+            answer = re.sub(r'\d+\.\s*https?://[^\s]+\.(?:png|jpg|jpeg|gif|bmp)', '', answer)
+
+            # 創建並排的圖片容器 - 適中大小，確保完整顯示
+            images_html = '<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; margin: 20px 0; justify-content: center; align-items: flex-start;">'
+            for url in urls:
+                images_html += f'''
+                <div style="flex: 1; max-width: 400px; min-width: 300px; text-align: center;">
+                    <img src="{url}" alt="相關圖片"
+                         style="width: 100%; max-width: 400px; height: auto; border: 2px solid #2c3e50; border-radius: 8px;
+                                box-shadow: 0 4px 12px rgba(0,0,0,0.15); cursor: pointer; transition: transform 0.2s;
+                                object-fit: contain;"
+                         onclick="window.open('{url}', '_blank')"
+                         onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 20px rgba(52, 152, 219, 0.3)'"
+                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.15)'">
+                </div>'''
+            images_html += '</div>'
+
+            # 替換到原位置
+            answer = answer.replace('📷 相關圖片：', f'📷 相關圖片：{images_html}')
+
+            # 直接返回，不再處理其他URL（避免重複處理）
+            return answer
+
+    # 處理其他單獨的圖片URL（只有在沒有相關圖片區塊時才執行）
+    url_pattern = r'https?://[^\s]+\.(?:png|jpg|jpeg|gif|bmp)'
+    def replace_url_with_img(match):
+        url = match.group(0)
+        return f'<br><img src="{url}" alt="相關圖片" style="width: 100%; max-width: 600px; height: auto; margin: 15px 0; border: 2px solid #2c3e50; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); cursor: pointer; object-fit: contain;" onclick="window.open(\'{url}\', \'_blank\')">'
+
+    # 替換剩餘的 URL 為圖片標籤
+    formatted_answer = re.sub(url_pattern, replace_url_with_img, answer)
+
+    return formatted_answer
 
 async def stream_chat_response(request: NewChatRequest):
     """串流聊天回應生成器"""
@@ -328,25 +394,44 @@ async def stream_chat_response(request: NewChatRequest):
         sources = []
         rag_used = False
         image_urls = []
+        rag_message = None
 
         # 檢索相關內容 (預設啟用RAG)
         # 檢查 Qdrant 集合是否有資料，而不是檢查本地 chunks
         if rag_system.has_vector_data():
             try:
-                # 檢索相關文件段落
+                # 檢索相關文件段落 - 增加檢索數量以確保有足夠圖片
                 retrieval_results = rag_system.retrieve_relevant_chunks(
                     query=request.user_query,
-                    top_k=3  # 預設使用3個相關文件
+                    top_k=10  # 增加檢索數量以確保有足夠圖片
                 )
 
                 if retrieval_results:
                     rag_used = True
 
                     # 準備RAG上下文
-                    rag_context = "\n\n".join([
-                        f"【{result.chunk.topic} - {result.chunk.sub_topic}】\n{result.chunk.content}"
-                        for result in retrieval_results
-                    ])
+                    rag_context_parts = []
+                    for result in retrieval_results:
+                        context_part = f"【{result.parent_chunk.topic}】\n{result.parent_chunk.content}"
+
+                        # 添加相關圖片
+                        if result.parent_chunk.has_images and result.parent_chunk.image_paths:
+                            current_image_urls = []
+                            for image_path in result.parent_chunk.image_paths:
+                                # 使用統一的 URL 生成函數
+                                image_url = get_image_url(image_path)
+                                if image_url:
+                                    current_image_urls.append(image_url)
+                                    # 添加到全局圖片URL列表（最多3張）
+                                    if image_url not in image_urls and len(image_urls) < 3:
+                                        image_urls.append(image_url)
+
+                            if current_image_urls:
+                                context_part += f"\n\n相關圖片：\n" + "\n".join(current_image_urls)
+
+                        rag_context_parts.append(context_part)
+
+                    rag_context = "\n\n".join(rag_context_parts)
 
                     # 添加RAG上下文到對話
                     rag_message = f"""基於以下教材內容回答問題：
@@ -357,13 +442,7 @@ async def stream_chat_response(request: NewChatRequest):
 
 請結合教材內容和對話歷史，用清楚友善的方式回答問題。如果教材中有相關圖片，請在回答中提及。"""
 
-                    # 收集圖片 URL
-                    for result in retrieval_results:
-                        chunk = result.chunk
-                        if hasattr(chunk, 'image_path') and chunk.image_path:
-                            image_url = get_image_url(chunk.image_path)
-                            if image_url and image_url not in image_urls:
-                                image_urls.append(image_url)
+                    # 收集圖片 URL (已在上面的循環中處理)
 
             except Exception as e:
                 logger.error(f"RAG檢索失敗: {e}")
@@ -371,7 +450,7 @@ async def stream_chat_response(request: NewChatRequest):
 
         # 準備對話訊息
         temp_messages = messages.copy()
-        if rag_used:
+        if rag_used and rag_message:
             temp_messages.append({"role": "user", "content": rag_message})
         else:
             # 如果沒有RAG內容，直接使用原始問題
@@ -454,6 +533,7 @@ async def get_current_collection():
 
 @app.get("/images/{filename}")
 @app.head("/images/{filename}")
+@app.options("/images/{filename}")
 async def serve_image(filename: str):
     """手動提供圖片檔案"""
     try:
@@ -468,17 +548,17 @@ async def serve_image(filename: str):
         # 處理可能的路徑問題
         # 如果檔案名稱包含路徑分隔符，只取檔案名稱部分
         clean_filename = os.path.basename(decoded_filename.replace('\\', '/'))
-        file_path = os.path.join("images", clean_filename)
+        file_path = os.path.join(IMAGES_DIR, clean_filename)
 
         logger.info(f"清理後的檔案名稱: {clean_filename}")
         logger.info(f"完整檔案路徑: {file_path}")
 
         # 檢查檔案是否存在
         if not os.path.exists(file_path):
-            # 列出images目錄中的相似檔案
+            # 列出IMAGES_DIR目錄中的相似檔案
             similar_files = []
-            if os.path.exists("images"):
-                for f in os.listdir("images"):
+            if os.path.exists(IMAGES_DIR):
+                for f in os.listdir(IMAGES_DIR):
                     if clean_filename.lower() in f.lower() or f.lower() in clean_filename.lower():
                         similar_files.append(f)
 
@@ -494,7 +574,18 @@ async def serve_image(filename: str):
             raise HTTPException(status_code=400, detail="不支援的檔案格式")
 
         logger.info(f"成功提供圖片檔案: {file_path}")
-        return FileResponse(file_path)
+
+        # 創建FileResponse並添加CORS標頭
+        response = FileResponse(
+            file_path,
+            headers={
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
+                "Access-Control-Allow-Headers": "*",
+                "Cache-Control": "public, max-age=3600"
+            }
+        )
+        return response
 
     except HTTPException:
         raise
@@ -506,14 +597,14 @@ async def serve_image(filename: str):
 async def debug_images():
     """調試圖片檔案端點"""
     try:
-        if not os.path.exists("images"):
-            return {"error": "images目錄不存在"}
+        if not os.path.exists(IMAGES_DIR):
+            return {"error": f"{IMAGES_DIR}目錄不存在"}
 
         # 列出所有圖片檔案
         image_files = []
-        for file in os.listdir("images"):
+        for file in os.listdir(IMAGES_DIR):
             if file.endswith(('.png', '.jpg', '.jpeg')):
-                file_path = os.path.join("images", file)
+                file_path = os.path.join(IMAGES_DIR, file)
                 file_size = os.path.getsize(file_path)
                 image_files.append({
                     "filename": file,
@@ -554,13 +645,24 @@ async def health_check():
 
         # 統計圖片數量
         images_count = 0
-        if os.path.exists("images"):
-            images_count = len([f for f in os.listdir("images") if f.endswith(('.png', '.jpg', '.jpeg'))])
+        if os.path.exists(IMAGES_DIR):
+            images_count = len([f for f in os.listdir(IMAGES_DIR) if f.endswith(('.png', '.jpg', '.jpeg'))])
+
+        # 檢查向量資料庫中的資料量
+        chunks_loaded = 0
+        if qdrant_connected and rag_system.has_vector_data():
+            try:
+                # 獲取子段落集合的資料量
+                child_info = rag_system.qdrant_client.get_collection(rag_system.child_collection_name)
+                chunks_loaded = child_info.vectors_count or child_info.points_count or 0
+            except Exception as e:
+                logger.warning(f"無法獲取向量資料量: {e}")
+                chunks_loaded = 0
 
         return HealthResponse(
             status="healthy" if qdrant_connected else "degraded",
             qdrant_connected=qdrant_connected,
-            chunks_loaded=len(rag_system.chunks) if rag_system.chunks else 0,
+            chunks_loaded=chunks_loaded,
             images_available=images_count
         )
 
@@ -587,23 +689,31 @@ async def query_rag(request: FlowiseRequest):
 
         logger.info(f"收到查詢: {request.question} (chatId: {request.chatId})")
 
-        # 使用 RAG 系統生成回答
-        response = rag_system.generate_teaching_response(
+        # 使用 Parent-Child RAG 系統生成回答
+        response = rag_system.generate_answer(
             query=request.question,
-            mode="qa",  # 固定使用問答模式
-            topic_filter=None
+            top_k=10  # 增加檢索數量以確保有足夠圖片
         )
 
-        # 收集所有圖片 URL
+        # 收集最多三張圖片 URL
         image_urls = []
+        seen_urls = set()
         for source in response.get("sources", []):
-            if source.get("has_images", False) and source.get("image_path"):
-                image_url = get_image_url(source["image_path"])
-                if image_url:
-                    image_urls.append(image_url)
+            if source.get("has_images", False) and source.get("image_paths"):
+                for image_path in source["image_paths"]:
+                    image_url = get_image_url(image_path)
+                    if image_url and image_url not in seen_urls:
+                        image_urls.append(image_url)
+                        seen_urls.add(image_url)
+                        if len(image_urls) >= 3:  # 最多收集3張圖片
+                            break
+            if len(image_urls) >= 3:  # 如果已經收集到3張圖片，停止搜索
+                break
 
-        # 在回答後面添加圖片 URL
+        # 準備回應，將圖片 URL 作為單獨字段返回
         answer = response["answer"]
+
+        # 可選：仍然在文本中添加圖片 URL 以保持向後兼容
         if image_urls:
             answer += "\n\n📷 相關圖片："
             for i, url in enumerate(image_urls, 1):
@@ -614,7 +724,7 @@ async def query_rag(request: FlowiseRequest):
         chat_message_id = str(uuid.uuid4())
 
         return FlowiseResponse(
-            text=answer,
+            text=answer,  # 只返回純文字，不進行HTML轉換
             question=request.question,
             chatId=request.chatId,
             sessionId=session_id,
@@ -666,6 +776,7 @@ async def query_flowise_with_memory(request: NewChatRequest):
         response_content = ""
         sources = []
         rag_used = False
+        image_urls = []
 
         # 檢索相關內容 (預設啟用RAG)
         if rag_system.has_vector_data():
@@ -680,10 +791,28 @@ async def query_flowise_with_memory(request: NewChatRequest):
                     rag_used = True
 
                     # 準備RAG上下文
-                    rag_context = "\n\n".join([
-                        f"【{result.chunk.topic} - {result.chunk.sub_topic}】\n{result.chunk.content}"
-                        for result in retrieval_results
-                    ])
+                    rag_context_parts = []
+                    for result in retrieval_results:
+                        context_part = f"【{result.parent_chunk.topic}】\n{result.parent_chunk.content}"
+
+                        # 添加相關圖片
+                        if result.parent_chunk.has_images and result.parent_chunk.image_paths:
+                            current_image_urls = []
+                            for image_path in result.parent_chunk.image_paths:
+                                # 使用統一的 URL 生成函數
+                                image_url = get_image_url(image_path)
+                                if image_url:
+                                    current_image_urls.append(image_url)
+                                    # 添加到全局圖片URL列表（最多3張）
+                                    if image_url not in image_urls and len(image_urls) < 3:
+                                        image_urls.append(image_url)
+
+                            if current_image_urls:
+                                context_part += f"\n\n相關圖片：\n" + "\n".join(current_image_urls)
+
+                        rag_context_parts.append(context_part)
+
+                    rag_context = "\n\n".join(rag_context_parts)
 
                     # 添加RAG上下文到對話
                     rag_message = f"""基於以下教材內容回答問題：
@@ -696,31 +825,45 @@ async def query_flowise_with_memory(request: NewChatRequest):
 
                     # 準備來源資訊
                     for result in retrieval_results:
-                        chunk = result.chunk
+                        # 使用父段落作為主要內容來源
+                        parent_chunk = result.parent_chunk
+                        child_chunk = result.child_chunk
 
-                        # 安全地存取視覺相關屬性
-                        has_images = hasattr(chunk, 'has_images') and getattr(chunk, 'has_images', False)
-                        image_path = getattr(chunk, 'image_path', None) if has_images else None
-                        image_analysis = getattr(chunk, 'image_analysis', "") if has_images else ""
-                        technical_symbols = getattr(chunk, 'technical_symbols', []) if has_images else []
+                        # 安全地存取視覺相關屬性（從父段落）
+                        has_images = hasattr(parent_chunk, 'has_images') and getattr(parent_chunk, 'has_images', False)
+                        image_paths = getattr(parent_chunk, 'image_paths', []) if has_images else []
+                        image_analyses = getattr(parent_chunk, 'image_analyses', []) if has_images else []
+
+                        # 從子段落獲取技術符號（如果有的話）
+                        technical_symbols = getattr(child_chunk, 'technical_symbols', []) if hasattr(child_chunk, 'technical_symbols') else []
 
                         # 調試日誌
-                        logger.info(f"檢索結果調試 - 頁面: {chunk.page_num}, has_images: {has_images}, image_path: {image_path}")
+                        logger.info(f"檢索結果調試 - 頁面範圍: {parent_chunk.page_range}, has_images: {has_images}, image_paths: {image_paths}")
+
+                        # 處理圖片資訊
+                        image_url = None
+                        image_analysis = ""
+                        if has_images and image_paths:
+                            # 使用第一個圖片路徑
+                            first_image_path = image_paths[0]
+                            image_url = get_image_url(first_image_path) if first_image_path else None
+                            # 使用第一個圖片分析
+                            image_analysis = image_analyses[0] if image_analyses else ""
 
                         image_info = ImageInfo(
                             has_images=has_images,
-                            image_url=get_image_url(image_path) if image_path else None,
+                            image_url=image_url,
                             image_analysis=image_analysis,
                             technical_symbols=technical_symbols
                         )
 
                         sources.append(SourceInfo(
-                            page_num=chunk.page_num,
-                            topic=chunk.topic,
-                            sub_topic=chunk.sub_topic,
-                            content=chunk.content[:200] + "..." if len(chunk.content) > 200 else chunk.content,
-                            content_type=chunk.content_type,
-                            keywords=chunk.keywords or [],
+                            page_num=child_chunk.page_num,
+                            topic=parent_chunk.topic,
+                            sub_topic=child_chunk.sub_topic,
+                            content=child_chunk.content[:200] + "..." if len(child_chunk.content) > 200 else child_chunk.content,
+                            content_type=child_chunk.content_type,
+                            keywords=child_chunk.keywords or [],
                             similarity_score=result.similarity_score,
                             relevance_reason=f"與問題相關度: {result.similarity_score:.3f}",
                             image_info=image_info
@@ -750,11 +893,13 @@ async def query_flowise_with_memory(request: NewChatRequest):
 
         response_content = completion.choices[0].message.content
 
-        # 收集圖片URL並添加到回應中
-        image_urls = []
-        for source in sources:
-            if source.image_info.has_images and source.image_info.image_url:
-                image_urls.append(source.image_info.image_url)
+        # 注意：image_urls 已經在上面的檢索過程中收集了，這裡不需要重新定義
+        # 如果上面沒有收集到圖片，再從 sources 中收集
+        if not image_urls:
+            for source in sources:
+                if source.image_info.has_images and source.image_info.image_url:
+                    if source.image_info.image_url not in image_urls and len(image_urls) < 3:
+                        image_urls.append(source.image_info.image_url)
 
         # 在回答後面添加圖片 URL (保持與原始 /query 端點一致的格式)
         if image_urls:
@@ -762,7 +907,7 @@ async def query_flowise_with_memory(request: NewChatRequest):
             for i, url in enumerate(image_urls, 1):
                 response_content += f"\n{i}. {url}"
 
-        # 添加助手回應到記憶
+        # 添加助手回應到記憶（保存原始文本）
         memory_manager.add_message(session_id, "assistant", response_content)
 
         # 生成回應ID
@@ -773,7 +918,7 @@ async def query_flowise_with_memory(request: NewChatRequest):
 
         logger.info(f"記憶對話完成 - 會話: {session_id}, RAG: {rag_used}, 訊息數: {session_summary['message_count']}")
 
-        # 對於非串流模式，回傳簡化的 JSON 格式
+        # 對於非串流模式，回傳簡化的 JSON 格式（只返回純文字，不進行HTML轉換）
         return {"reply": response_content}
 
     except Exception as e:
@@ -865,25 +1010,21 @@ async def process_file(
         # 統計圖片數量
         images_count = len([c for c in chunks if hasattr(c, 'has_images') and c.has_images])
 
-        # 初始化RAG系統
+        # 初始化 RAG 系統
         target_collection = collection_name or f"pdf_{int(time.time())}"
-        rag_system_temp = TeachingRAGSystem()
-        rag_system_temp.collection_name = target_collection
-        rag_system_temp.chunks = chunks
+        rag_system_temp = LangChainParentChildRAG(target_collection)
+        logger.info("使用 LangChain Parent-Child 策略處理段落...")
+        result = rag_system_temp.add_documents_from_zerox(chunks)
 
-        # 創建或更新向量嵌入
-        if force_recreate:
-            logger.info("強制重新創建向量嵌入...")
-            rag_system_temp.force_recreate_embeddings()
-        else:
-            logger.info("創建向量嵌入...")
-            rag_system_temp.create_embeddings()
+        if not result["success"]:
+            raise HTTPException(status_code=500, detail="Parent-Child 處理失敗")
 
         # 更新全域RAG系統（如果使用預設集合名稱）
         global rag_system
         if target_collection == rag_system.collection_name:
-            rag_system.chunks = chunks
-            logger.info("已更新全域RAG系統")
+            # 重新初始化全域 RAG 系統以載入新數據
+            rag_system = LangChainParentChildRAG(target_collection)
+            logger.info("已更新全域 LangChain RAG 系統")
 
         processing_time = time.time() - start_time
 
@@ -901,12 +1042,12 @@ async def process_file(
         except Exception as e:
             errors.append(f"清理臨時文件失敗: {str(e)}")
 
-        logger.info(f"文件處理完成，共處理 {len(chunks)} 個段落，耗時 {processing_time:.2f} 秒")
+        logger.info(f"文件處理完成，原始段落: {len(chunks)}，父段落: {result['parent_chunks']}，子段落: {result['child_chunks']}，耗時 {processing_time:.2f} 秒")
 
         return ProcessPDFResponse(
             success=True,
-            message=f"成功處理文件 '{file.filename}' ({file_ext} -> PDF)",
-            chunks_processed=len(chunks),
+            message=f"成功處理文件 '{file.filename}' ({file_ext} -> PDF) - Parent-Child策略",
+            chunks_processed=result['child_chunks'],  # 報告子段落數量
             images_extracted=images_count,
             collection_name=target_collection,
             processing_time=processing_time,
@@ -1134,6 +1275,7 @@ async def chat_with_memory(request: ChatRequest):
         response_content = ""
         sources = []
         rag_used = False
+        image_urls = []
 
         # 如果啟用RAG，檢索相關內容
         if request.use_rag and rag_system.has_vector_data():
@@ -1148,10 +1290,28 @@ async def chat_with_memory(request: ChatRequest):
                     rag_used = True
 
                     # 準備RAG上下文
-                    rag_context = "\n\n".join([
-                        f"【{result.chunk.topic} - {result.chunk.sub_topic}】\n{result.chunk.content}"
-                        for result in retrieval_results
-                    ])
+                    rag_context_parts = []
+                    for result in retrieval_results:
+                        context_part = f"【{result.parent_chunk.topic}】\n{result.parent_chunk.content}"
+
+                        # 添加相關圖片
+                        if result.parent_chunk.has_images and result.parent_chunk.image_paths:
+                            current_image_urls = []
+                            for image_path in result.parent_chunk.image_paths:
+                                # 使用統一的 URL 生成函數
+                                image_url = get_image_url(image_path)
+                                if image_url:
+                                    current_image_urls.append(image_url)
+                                    # 添加到全局圖片URL列表（最多3張）
+                                    if image_url not in image_urls and len(image_urls) < 3:
+                                        image_urls.append(image_url)
+
+                            if current_image_urls:
+                                context_part += f"\n\n相關圖片：\n" + "\n".join(current_image_urls)
+
+                        rag_context_parts.append(context_part)
+
+                    rag_context = "\n\n".join(rag_context_parts)
 
                     # 添加RAG上下文到對話
                     rag_message = f"""基於以下教材內容回答問題：
@@ -1167,29 +1327,37 @@ async def chat_with_memory(request: ChatRequest):
 
                     # 準備來源資訊
                     for result in retrieval_results:
-                        chunk = result.chunk
+                        parent_chunk = result.parent_chunk
+                        child_chunk = result.child_chunk
+
                         source_info = {
-                            "page_num": chunk.page_num,
-                            "topic": chunk.topic,
-                            "sub_topic": chunk.sub_topic,
-                            "content": chunk.content,
-                            "content_type": chunk.content_type,
-                            "keywords": chunk.keywords,
+                            "page_num": child_chunk.page_num,
+                            "page_range": parent_chunk.page_range,
+                            "topic": parent_chunk.topic,
+                            "sub_topic": child_chunk.sub_topic,
+                            "content": child_chunk.content,
+                            "content_type": child_chunk.content_type,
+                            "keywords": child_chunk.keywords,
                             "similarity_score": result.similarity_score,
                             "relevance_reason": result.relevance_reason
                         }
 
-                        # 處理圖片資訊
-                        if hasattr(chunk, 'has_images') and chunk.has_images:
+                        # 處理圖片資訊（從父段落）
+                        if hasattr(parent_chunk, 'has_images') and parent_chunk.has_images:
                             image_url = None
-                            if hasattr(chunk, 'image_path') and chunk.image_path:
-                                image_url = get_image_url(chunk.image_path)
+                            image_paths = getattr(parent_chunk, 'image_paths', [])
+                            if image_paths:
+                                # 使用第一個圖片路徑
+                                image_url = get_image_url(image_paths[0])
+
+                            image_analyses = getattr(parent_chunk, 'image_analyses', [])
+                            image_analysis = image_analyses[0] if image_analyses else ""
 
                             source_info["image_info"] = ImageInfo(
                                 has_images=True,
                                 image_url=image_url,
-                                image_analysis=getattr(chunk, 'image_analysis', ""),
-                                technical_symbols=getattr(chunk, 'technical_symbols', [])
+                                image_analysis=image_analysis,
+                                technical_symbols=getattr(child_chunk, 'technical_symbols', [])
                             )
                         else:
                             source_info["image_info"] = ImageInfo(has_images=False)
@@ -1285,6 +1453,168 @@ async def clear_session(session_id: str):
     except Exception as e:
         logger.error(f"清除會話記憶失敗: {e}")
         raise HTTPException(status_code=500, detail=f"清除會話記憶失敗: {str(e)}")
+
+# ==================== 測試處理函數 ====================
+
+async def handle_excel_mode(tester, excel_file: UploadFile):
+    """處理 Excel 模式：無圖片純問題測試"""
+    try:
+        # 讀取 Excel 文件
+        excel_content = await excel_file.read()
+        df = pd.read_excel(io.BytesIO(excel_content))
+
+        # 檢查 Excel 格式
+        if 'question' not in df.columns:
+            raise HTTPException(
+                status_code=400,
+                detail="Excel 文件必須包含 'question' 欄位"
+            )
+
+        results = []
+        for _, row in df.iterrows():
+            question = row['question']
+
+            # 執行純問題測試（無圖片）
+            result = await tester.run_question_only_test(question)
+            results.append(result)
+
+        return results
+
+    except Exception as e:
+        logger.error(f"Excel 模式處理失敗: {e}")
+        raise HTTPException(status_code=500, detail=f"Excel 處理失敗: {str(e)}")
+
+async def handle_folder_mode(tester, folder_path: str, num_images_per_category: int):
+    """處理資料夾模式：有圖片測試"""
+    try:
+        # 檢查資料夾是否存在
+        folder_full_path = Path(folder_path)
+        if not folder_full_path.exists():
+            raise HTTPException(status_code=404, detail=f"資料夾不存在: {folder_path}")
+
+        # 獲取圖片類別
+        categories = tester.rag_test.get_image_categories(str(folder_full_path))
+        if not categories:
+            raise HTTPException(status_code=400, detail="資料夾中沒有找到圖片")
+
+        # 構建選擇字典
+        selection = {}
+        for category in categories.keys():
+            selection[category] = min(num_images_per_category, len(categories[category]))
+
+        # 執行測試
+        results = tester.run_selected_tests(categories, selection)
+        return results
+
+    except Exception as e:
+        logger.error(f"資料夾模式處理失敗: {e}")
+        raise HTTPException(status_code=500, detail=f"資料夾處理失敗: {str(e)}")
+
+# ==================== 統一測試 API 端點 ====================
+
+@app.post("/api/test", response_model=TestResponse)
+async def unified_test(
+    excel_file: Optional[UploadFile] = File(None),
+    folder_path: Optional[str] = Form(None),
+    num_images_per_category: int = Form(1)
+):
+    """
+    統一測試 API - 自動判斷模式
+    - 上傳 Excel: 無圖片模式（純問題測試）
+    - 指定資料夾: 有圖片模式（圖片+問題生成+測試）
+    """
+    try:
+        # 導入測試系統
+        import sys
+        sys.path.append('./test_RAG')
+        from interactive_rag_test import InteractiveRAGTester
+
+        # 初始化測試器
+        tester = InteractiveRAGTester()
+
+        # 判斷測試模式
+        if excel_file:
+            # Excel 模式：無圖片測試（純問題）
+            logger.info("🔍 檢測到 Excel 文件，使用無圖片模式")
+            results = await handle_excel_mode(tester, excel_file)
+            test_mode = "excel_questions"
+
+        elif folder_path:
+            # 資料夾模式：有圖片測試
+            logger.info("🔍 檢測到資料夾路徑，使用有圖片模式")
+            results = await handle_folder_mode(tester, folder_path, num_images_per_category)
+            test_mode = "folder_images"
+
+        else:
+            raise HTTPException(
+                status_code=400,
+                detail="請提供 Excel 文件或資料夾路徑"
+            )
+
+        # 生成測試 ID 和時間戳
+        test_id = f"{test_mode}_test_{int(time.time())}"
+        timestamp = time.strftime('%Y%m%d_%H%M%S')
+
+        # 生成 HTML 報告
+        html_content = tester.generate_html_report_with_images(results, timestamp)
+        html_filename = f"results/api_test_{timestamp}.html"
+
+        # 確保 results 目錄存在
+        Path("results").mkdir(exist_ok=True)
+
+        # 保存 HTML 報告
+        with open(html_filename, 'w', encoding='utf-8') as f:
+            f.write(html_content)
+
+        # 計算統計資訊
+        total_tests = len(results)
+
+        # 安全地計算平均分數
+        valid_scores = [r.get('overall_score', 0.0) for r in results if isinstance(r.get('overall_score'), (int, float))]
+        avg_score = sum(valid_scores) / len(valid_scores) if valid_scores else 0.0
+
+        # 安全地計算總成本
+        total_cost = 0.0
+        for r in results:
+            cost_info = r.get('cost_info', {})
+            if isinstance(cost_info, dict):
+                total_cost += cost_info.get('total_cost', 0.0)
+
+        # 轉換結果格式
+        test_results = []
+        for result in results:
+            # 安全地獲取結果字段，提供預設值
+            test_results.append(TestResult(
+                image_name=result.get('image_name', 'unknown'),
+                category=result.get('category', 'unknown'),
+                question=result.get('question', ''),
+                rag_answer=result.get('rag_answer', ''),
+                evaluation={
+                    'technical_accuracy': result.get('technical_accuracy', 0.0),
+                    'completeness': result.get('completeness', 0.0),
+                    'clarity': result.get('clarity', 0.0),
+                    'image_reference': result.get('image_reference', 0.0),
+                    'overall_score': result.get('overall_score', 0.0)
+                },
+                cost_info=result.get('cost_info', {})
+            ))
+
+        return TestResponse(
+            test_id=test_id,
+            total_tests=total_tests,
+            results=test_results,
+            summary={
+                'average_score': avg_score,
+                'total_cost': total_cost,
+                'categories_tested': list(selection.keys()),
+                'images_per_category': selection
+            },
+            html_report_url=f"/api/v1/JH/{html_filename}"
+        )
+
+    except Exception as e:
+        logger.error(f"測試失敗: {e}")
+        raise HTTPException(status_code=500, detail=f"測試失敗: {str(e)}")
 
 if __name__ == "__main__":
     # 開發模式運行

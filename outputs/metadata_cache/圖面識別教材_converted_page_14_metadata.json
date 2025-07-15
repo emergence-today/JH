@@ -1,0 +1,45 @@
+{
+  "topic": "技術圖面規範",
+  "sub_topic": "成品圖標示規則",
+  "content_type": "specification",
+  "keywords": [
+    "圖面識別",
+    "改版號",
+    "圖面頁次",
+    "表面阻值",
+    "測定點"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Ω",
+    "A點",
+    "B點"
+  ],
+  "document_section": "第二章 成品圖 - 7) 其他",
+  "equipment_mentioned": [
+    "微歐計"
+  ],
+  "materials_mentioned": [],
+  "processes_mentioned": [
+    "表面阻值測量"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "Ω (歐姆)"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "表面阻值最大為1.0Ω"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "工程師、技術員、品質檢驗人員",
+  "action_items": [
+    "測量A點至B點的表面阻值",
+    "確認改版號標示"
+  ],
+  "related_documents": [
+    "成品圖規範"
+  ],
+  "revision_info": "改版順序：P、Q、R、S、T",
+  "importance_level": "high"
+}

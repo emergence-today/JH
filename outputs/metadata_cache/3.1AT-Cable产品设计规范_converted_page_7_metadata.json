@@ -1,0 +1,47 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "布线要求",
+  "content_type": "procedure",
+  "keywords": [
+    "布线",
+    "工装图",
+    "线束安装",
+    "电气连接"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "电气连接符号",
+    "线束路径标记"
+  ],
+  "document_section": "第4章",
+  "equipment_mentioned": [
+    "工装"
+  ],
+  "materials_mentioned": [
+    "电缆",
+    "线束"
+  ],
+  "processes_mentioned": [
+    "布线",
+    "线束安装",
+    "电气连接"
+  ],
+  "standards_mentioned": [
+    "工装图规范"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "按照工装图要求进行布线"
+  ],
+  "application_area": "电子制造",
+  "target_audience": "技术员",
+  "action_items": [
+    "按照工装图进行布线"
+  ],
+  "related_documents": [
+    "工装图"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

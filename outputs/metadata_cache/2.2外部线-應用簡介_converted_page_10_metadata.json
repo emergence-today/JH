@@ -1,0 +1,62 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "電線外被標識規格",
+  "content_type": "specification",
+  "keywords": [
+    "外被",
+    "AWM",
+    "UL認證",
+    "電線規格",
+    "耐燃等級"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "ℳ",
+    "UL",
+    "CSA",
+    "VW-1",
+    "FT1"
+  ],
+  "document_section": "2.5 外被 Jacket",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "電線",
+    "外被"
+  ],
+  "processes_mentioned": [
+    "電線標識印字"
+  ],
+  "standards_mentioned": [
+    "UL1007",
+    "AWM STYLE 1007",
+    "VW-1",
+    "FT1",
+    "CSA耐燃等級"
+  ],
+  "measurements_units": [
+    "AWG",
+    "V",
+    "℃"
+  ],
+  "safety_requirements": [
+    "耐燃等級VW-1",
+    "CSA耐燃等級FT1"
+  ],
+  "quality_criteria": [
+    "UL認證要求",
+    "溫度額定80℃",
+    "電壓額定300V"
+  ],
+  "application_area": "電子、電氣設備",
+  "target_audience": "線束設計工程師、品質檢驗人員、製造技術人員",
+  "action_items": [
+    "確認外被印字符合UL標準",
+    "檢查電線規格是否符合應用要求"
+  ],
+  "related_documents": [
+    "UL認證標準",
+    "CSA標準"
+  ],
+  "revision_info": "未提供",
+  "importance_level": "high"
+}

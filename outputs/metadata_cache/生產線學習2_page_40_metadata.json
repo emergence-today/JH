@@ -1,0 +1,54 @@
+{
+  "topic": "電子線束製造",
+  "sub_topic": "線束連接器檢驗",
+  "content_type": "procedure",
+  "keywords": [
+    "顯微鏡檢查",
+    "連接器",
+    "Pin針",
+    "外觀檢驗",
+    "不良品判斷"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Pin針",
+    "CONN"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "顯微鏡",
+    "鑷子"
+  ],
+  "materials_mentioned": [
+    "電子線束",
+    "連接器",
+    "線材"
+  ],
+  "processes_mentioned": [
+    "外觀檢查",
+    "Pin針檢查",
+    "線材連接檢查"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "連接器外表不可有缺陷",
+    "Pin不可通出攻擊面",
+    "不可有引線材分離或不規範"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "品質檢驗人員",
+  "action_items": [
+    "檢查線材首件",
+    "觀察PC端或焊點缺陷",
+    "檢查連接器外觀",
+    "檢查Pin針狀態",
+    "檢查線材連接"
+  ],
+  "related_documents": [],
+  "revision_info": "版本4.0，最近修訂於2014.08.22",
+  "importance_level": "high"
+}

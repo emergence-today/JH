@@ -1,0 +1,42 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "剝芯線",
+  "content_type": "procedure",
+  "keywords": [
+    "剝芯線",
+    "剝皮機",
+    "線扣",
+    "芯線"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "DP"
+  ],
+  "document_section": "DP 制程工藝介紹",
+  "equipment_mentioned": [
+    "剝皮機",
+    "腳踏板"
+  ],
+  "materials_mentioned": [
+    "線扣",
+    "芯線"
+  ],
+  "processes_mentioned": [
+    "剝芯線",
+    "剝皮"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子製造",
+  "target_audience": "技術員",
+  "action_items": [
+    "放入線扣",
+    "踩下腳踏板",
+    "完成剝皮"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

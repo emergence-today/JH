@@ -1,0 +1,68 @@
+{
+  "topic": "線束製造品質檢驗",
+  "sub_topic": "端子壓接檢驗",
+  "content_type": "procedure",
+  "keywords": [
+    "端端檢驗",
+    "壓接",
+    "銅絲",
+    "變形",
+    "喇叭口"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "放大鏡標誌",
+    "綠色勾號",
+    "黃色叉號"
+  ],
+  "document_section": "八、端端檢驗",
+  "equipment_mentioned": [
+    "10X放大鏡"
+  ],
+  "materials_mentioned": [
+    "端子",
+    "銅絲",
+    "電線",
+    "料帶"
+  ],
+  "processes_mentioned": [
+    "端子壓接",
+    "端子叉開檢驗",
+    "料帶段斷"
+  ],
+  "standards_mentioned": [
+    "100% 檢驗確認"
+  ],
+  "measurements_units": [
+    "10X倍率"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "壓接形狀正確",
+    "無銅絲外露",
+    "端子長度無變形",
+    "料帶段斷位置正確",
+    "喇叭口位置適當",
+    "電線壓接位置正常",
+    "端子無彎曲變形"
+  ],
+  "application_area": "電子線束製造",
+  "target_audience": "品質檢驗人員、生產技術員",
+  "action_items": [
+    "使用10X放大鏡檢查",
+    "將端子叉開進行檢驗",
+    "檢查壓接形狀",
+    "檢查銅絲外露",
+    "檢查端子長度",
+    "檢查料帶段斷位置",
+    "檢查喇叭口",
+    "檢查電線壓接位置",
+    "檢查端子彎曲變形"
+  ],
+  "related_documents": [
+    "線束製造規範",
+    "端子壓接標準"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

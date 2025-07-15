@@ -1,0 +1,49 @@
+{
+  "topic": "電磁干擾防護",
+  "sub_topic": "導電泡棉應用",
+  "content_type": "introduction",
+  "keywords": [
+    "導電泡棉",
+    "EMI",
+    "電磁干擾",
+    "機械公差",
+    "遮蔽",
+    "接地"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "EMI"
+  ],
+  "document_section": "導電泡棉章節",
+  "equipment_mentioned": [
+    "電子產品",
+    "PCB"
+  ],
+  "materials_mentioned": [
+    "導電泡棉",
+    "電鍍塑殼",
+    "金屬殼"
+  ],
+  "processes_mentioned": [
+    "EMI遮蔽",
+    "接地"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "公分"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "完整遮蔽",
+    "有效接地"
+  ],
+  "application_area": "電子",
+  "target_audience": "電子工程師、機構工程師、EMC工程師",
+  "action_items": [
+    "填補機械公差產生的縫隙",
+    "完整遮蔽和接地"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

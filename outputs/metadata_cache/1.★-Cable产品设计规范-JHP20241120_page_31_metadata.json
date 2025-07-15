@@ -1,0 +1,54 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "鐵殼焊接技術規範",
+  "content_type": "specification",
+  "keywords": [
+    "鐵殼焊接",
+    "裸線",
+    "Teflon Wire",
+    "Conn鐵殼",
+    "GND BAR"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "GND",
+    "Pin"
+  ],
+  "document_section": "第15章",
+  "equipment_mentioned": [
+    "焊接設備"
+  ],
+  "materials_mentioned": [
+    "裸線",
+    "Teflon Wire",
+    "鐵氟龍線",
+    "Conn鐵殼",
+    "GND BAR"
+  ],
+  "processes_mentioned": [
+    "焊接",
+    "刮皮露芯線",
+    "爪焊接",
+    "沾錫"
+  ],
+  "standards_mentioned": [
+    "產品設計規範"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "避免芯線斷裂",
+    "OK/NG對比標準"
+  ],
+  "application_area": "電子連接器製造",
+  "target_audience": "製造工程師、技術員",
+  "action_items": [
+    "使用裸線焊接Conn鐵殼",
+    "按照指定順序與客戶確認加工方式"
+  ],
+  "related_documents": [
+    "產品設計規範"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

@@ -1,0 +1,36 @@
+{
+  "topic": "線束製造",
+  "sub_topic": "線束組裝材料",
+  "content_type": "procedure",
+  "keywords": [
+    "黑色胶带",
+    "拉带",
+    "線束組裝",
+    "固定材料"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "■"
+  ],
+  "document_section": "線束組裝材料章節",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "黑色胶带",
+    "拉带"
+  ],
+  "processes_mentioned": [
+    "制作拉带"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "汽車電子",
+  "target_audience": "線束組裝技術員",
+  "action_items": [
+    "使用黑色胶带制作拉带"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

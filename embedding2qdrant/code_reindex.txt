@@ -1,5 +1,0 @@
-uv run batch_process_files.py "/home/ubuntu/projects/JH/今皓專家RAG(鑑識圖片PPT)/專家/材料認識/識圖" --collection steven_JH_pro_0704
-
-
-
-uv run batch_process_files.py "/home/ubuntu/projects/JH/今皓專家RAG(鑑識圖片PPT)/專家/圖紙認識/材料介紹" --collection steven_JH_pro_0704

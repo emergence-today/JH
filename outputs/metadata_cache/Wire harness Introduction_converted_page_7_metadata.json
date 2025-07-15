@@ -1,0 +1,40 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "Cable組成材料",
+  "content_type": "introduction",
+  "keywords": [
+    "Cable",
+    "Connector",
+    "Wire",
+    "輔料",
+    "FPC",
+    "FFC"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [],
+  "document_section": "第7頁",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "Connector",
+    "Wire",
+    "Assistant material",
+    "FPC",
+    "FFC",
+    "開關",
+    "LED",
+    "風扇"
+  ],
+  "processes_mentioned": [
+    "複合設計"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子",
+  "target_audience": "工程師",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

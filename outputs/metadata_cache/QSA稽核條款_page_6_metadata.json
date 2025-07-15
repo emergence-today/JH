@@ -1,0 +1,55 @@
+{
+  "topic": "品質管理",
+  "sub_topic": "合同評審與客戶服務",
+  "content_type": "checklist",
+  "keywords": [
+    "合同評審",
+    "客戶服務",
+    "客戶滿意度",
+    "客戶抱怨",
+    "品質改善"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "#DIV/0!"
+  ],
+  "document_section": "QSA Check List",
+  "equipment_mentioned": [],
+  "materials_mentioned": [],
+  "processes_mentioned": [
+    "合同評審",
+    "客戶滿意度測量",
+    "客戶抱怨處理"
+  ],
+  "standards_mentioned": [
+    "SMART原則"
+  ],
+  "measurements_units": [
+    "百分化"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "客戶需求理解與執行",
+    "合同要求滿足",
+    "客戶滿意度",
+    "客戶投訴不良率"
+  ],
+  "application_area": "製造業品質管理",
+  "target_audience": [
+    "品質管理人員",
+    "客戶服務人員",
+    "合同管理人員"
+  ],
+  "action_items": [
+    "進行合同評審",
+    "測量客戶滿意度",
+    "處理客戶抱怨",
+    "分析客戶不良信息"
+  ],
+  "related_documents": [
+    "合同評審程序",
+    "客戶服務程序"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

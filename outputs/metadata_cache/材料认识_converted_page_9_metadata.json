@@ -1,0 +1,34 @@
+{
+  "topic": "材料規格",
+  "sub_topic": "膠帶材料",
+  "content_type": "introduction",
+  "keywords": [
+    "醋酸胶带",
+    "绝缘",
+    "耐磨",
+    "固定线材"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [],
+  "document_section": "未明確指出",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "醋酸胶带"
+  ],
+  "processes_mentioned": [
+    "绝缘",
+    "固定线材"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "耐磨"
+  ],
+  "application_area": "電子、工業",
+  "target_audience": "技術員、工程師",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "未提供",
+  "importance_level": "medium"
+}

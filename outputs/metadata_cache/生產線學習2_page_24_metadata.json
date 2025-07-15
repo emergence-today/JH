@@ -1,0 +1,54 @@
+{
+  "topic": "線束製造",
+  "sub_topic": "固定編織工藝",
+  "content_type": "procedure",
+  "keywords": [
+    "電子線束",
+    "固定編織",
+    "胶带",
+    "Braiding",
+    "工艺流程"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "SOP-02871"
+  ],
+  "document_section": "作业标准书",
+  "equipment_mentioned": [
+    "固定編織工具模板",
+    "胶带机"
+  ],
+  "materials_mentioned": [
+    "胶带",
+    "編織帶",
+    "标签"
+  ],
+  "processes_mentioned": [
+    "固定第一端編織",
+    "固定第二端編織",
+    "贴胶带",
+    "整理編織"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "胶带需贴安且不可剪断打苍",
+    "编织须编紧且编织不可散乱",
+    "固定编织的位置须如图2所示"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "將編織打開朝整理齐整",
+    "沿着具标准示贴标上按排",
+    "取出标签并將線束帶垫架"
+  ],
+  "related_documents": [
+    "SOP"
+  ],
+  "revision_info": "版本1.0",
+  "importance_level": "high"
+}

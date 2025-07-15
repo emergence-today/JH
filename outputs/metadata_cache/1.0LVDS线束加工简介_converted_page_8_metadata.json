@@ -1,0 +1,84 @@
+{
+  "topic": "線束製造流程",
+  "sub_topic": "線束生產加工流程",
+  "content_type": "diagram",
+  "keywords": [
+    "生產加工",
+    "焊接",
+    "連接器",
+    "測試",
+    "包裝"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "→",
+    "GB",
+    "YAG",
+    "LCD",
+    "M/B",
+    "GND",
+    "UV",
+    "PPID"
+  ],
+  "document_section": "生產加工流程圖",
+  "equipment_mentioned": [
+    "烘烤箱",
+    "YAG 外被辐射",
+    "半成品測試設備",
+    "成品測試設備",
+    "PPID 掃描器"
+  ],
+  "materials_mentioned": [
+    "卷材",
+    "锡膏",
+    "连接器",
+    "编织",
+    "导电布",
+    "铁壳",
+    "UV胶",
+    "醋酸布",
+    "双面胶",
+    "标签",
+    "PIN针"
+  ],
+  "processes_mentioned": [
+    "裁卷材",
+    "刷锡膏",
+    "焊接",
+    "拉线",
+    "跳线",
+    "外被辐射",
+    "沾锡",
+    "装夹具",
+    "点胶",
+    "缠绕",
+    "包头",
+    "贴拉带",
+    "测试",
+    "外观检查",
+    "包装"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "焊点检查",
+    "半成品测试",
+    "成品测试",
+    "尺寸全检",
+    "外观全检"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員、製程工程師",
+  "action_items": [
+    "按照流程圖執行生產步驟",
+    "確保各檢查點的品質控制"
+  ],
+  "related_documents": [
+    "線束設計規格",
+    "測試規範",
+    "包裝標準"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

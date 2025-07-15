@@ -1,0 +1,60 @@
+{
+  "topic": "電子接口測試管控",
+  "sub_topic": "各品牌接口參數對比",
+  "content_type": "table",
+  "keywords": [
+    "測試管控",
+    "道里兰秒",
+    "輸出讓許秒",
+    "繼電更起分",
+    "熱時度",
+    "差自相應"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Ω",
+    "MΩ",
+    "°",
+    "s",
+    "cm"
+  ],
+  "document_section": "測試管控",
+  "equipment_mentioned": [
+    "DP",
+    "HDMI",
+    "Type-C",
+    "USB3.0"
+  ],
+  "materials_mentioned": [
+    "接管",
+    "金管"
+  ],
+  "processes_mentioned": [
+    "繼電更起",
+    "熱時度測試"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "Ω",
+    "MΩ",
+    "s",
+    "°",
+    "cm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "道里兰秒要求",
+    "輸出讓許秒要求",
+    "繼電更起分要求",
+    "熱時度要求"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "工程師、品質管理人員",
+  "action_items": [
+    "參數調整考慮",
+    "避量一方距離外端距離8~10cm"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

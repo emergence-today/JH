@@ -1,0 +1,57 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "客戶圖紙確認要求",
+  "content_type": "table",
+  "keywords": [
+    "客戶圖",
+    "基本信息",
+    "連接器",
+    "PIN位置",
+    "尺寸公差"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "PIN",
+    "OD"
+  ],
+  "document_section": "第1章",
+  "equipment_mentioned": [
+    "Conn",
+    "Housing"
+  ],
+  "materials_mentioned": [
+    "線材",
+    "接地片",
+    "接地線"
+  ],
+  "processes_mentioned": [
+    "焊接",
+    "貼片",
+    "繞線搭接"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "尺寸",
+    "厚度",
+    "OD"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "外觀加工要求",
+    "尺寸及公差標示清晰"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "工程師",
+  "action_items": [
+    "確認連接器型號規格",
+    "確認PIN位置",
+    "確認尺寸公差",
+    "確認外觀加工要求",
+    "確認各端口對應PIN位"
+  ],
+  "related_documents": [
+    "產品設計規範"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

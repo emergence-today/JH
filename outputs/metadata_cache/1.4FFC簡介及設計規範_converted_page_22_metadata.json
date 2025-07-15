@@ -1,0 +1,45 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "自动冲切机技术规格",
+  "content_type": "introduction, diagram, specification",
+  "keywords": [
+    "自动冲切机",
+    "CCD定位",
+    "冲切精度",
+    "FFC冲边"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "±0.02mm"
+  ],
+  "document_section": "第22页",
+  "equipment_mentioned": [
+    "自动冲切机",
+    "冲切马达机构",
+    "送料机构",
+    "放料轴",
+    "高清CCD"
+  ],
+  "materials_mentioned": [
+    "FFC"
+  ],
+  "processes_mentioned": [
+    "冲切作业",
+    "送料",
+    "定位冲切"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "冲切精度误差±0.02mm以内"
+  ],
+  "application_area": "电子制造",
+  "target_audience": "工程师、技术员",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

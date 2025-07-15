@@ -1,0 +1,58 @@
+{
+  "topic": "線束製造工藝",
+  "sub_topic": "芯線裁切與焊接",
+  "content_type": "procedure",
+  "keywords": [
+    "芯線裁切",
+    "焊接",
+    "LCD端",
+    "MB端",
+    "連接器"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "±0.1mm",
+    "PIN"
+  ],
+  "document_section": "第十九章至第二十章",
+  "equipment_mentioned": [
+    "芯線裁切機",
+    "焊接機",
+    "CCD顯微鏡"
+  ],
+  "materials_mentioned": [
+    "芯線",
+    "連接器",
+    "錫"
+  ],
+  "processes_mentioned": [
+    "芯線裁切",
+    "LCD/MB焊接",
+    "絕緣皮剝除"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "MB端：0.7±0.1mm",
+    "LCD端：0.7±0.1mm",
+    "無接地端子錯PIN",
+    "芯線需沾上錫",
+    "絕緣皮需剝除"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "調整機器設定芯線裁切尺寸",
+    "檢查連接器是否有接地端子錯PIN",
+    "檢查芯線沾錫情況",
+    "檢查絕緣皮剝除情況",
+    "在CCD顯微鏡下檢查線材PIN位",
+    "啟動機器進行焊接"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

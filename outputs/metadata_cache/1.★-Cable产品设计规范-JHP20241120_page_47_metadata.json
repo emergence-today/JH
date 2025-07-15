@@ -1,0 +1,56 @@
+{
+  "topic": "電子元件焊接",
+  "sub_topic": "DC Jack焊接技術",
+  "content_type": "procedure",
+  "keywords": [
+    "DC Jack",
+    "焊接",
+    "預鍍錫",
+    "美紋膠帶",
+    "焊點檢查"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "PAD"
+  ],
+  "document_section": "第25章",
+  "equipment_mentioned": [
+    "放大鏡",
+    "熔鐵"
+  ],
+  "materials_mentioned": [
+    "錫",
+    "耐高溫美紋膠帶",
+    "DC Power Jack"
+  ],
+  "processes_mentioned": [
+    "預鍍錫",
+    "加錫焊接",
+    "貼附膠帶",
+    "焊接",
+    "檢查"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [
+    "焊接前貼附耐高溫美紋膠帶以避免錫滲入Jack內部"
+  ],
+  "quality_criteria": [
+    "焊接後需確認無錫流入DC Power Jack內部",
+    "焊接位置要求從PAD外側焊接"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "電子焊接技術員",
+  "action_items": [
+    "焊點預鍍錫",
+    "貼附耐高溫美紋膠帶",
+    "從PAD外側焊接",
+    "撕去膠帶",
+    "用放大鏡檢查焊接質量"
+  ],
+  "related_documents": [
+    "產品設計規範"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

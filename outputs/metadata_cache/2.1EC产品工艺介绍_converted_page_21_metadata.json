@@ -1,0 +1,53 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "USB TO Housing 焊接工藝",
+  "content_type": "procedure",
+  "keywords": [
+    "USB",
+    "Housing",
+    "Hot-Bar",
+    "焊接",
+    "排線"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "P1",
+    "P2",
+    "P3",
+    "P4"
+  ],
+  "document_section": "USB TO Housing 制程工藝介紹",
+  "equipment_mentioned": [
+    "Hot-Bar 機",
+    "治具"
+  ],
+  "materials_mentioned": [
+    "排線",
+    "膠芯",
+    "紅色線",
+    "白色線",
+    "綠色線",
+    "黑色線"
+  ],
+  "processes_mentioned": [
+    "焊接",
+    "排線擺放",
+    "封接"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "排線順序：從左向右，依次紅、白、綠、黑"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "製程工程師、技術員",
+  "action_items": [
+    "將排線依序擺放",
+    "將封接好的排線放入Hot-Bar機",
+    "啟動接鈕進行焊接"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

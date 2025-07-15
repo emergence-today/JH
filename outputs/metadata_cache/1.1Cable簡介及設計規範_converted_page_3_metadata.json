@@ -1,0 +1,43 @@
+{
+  "topic": "無人機產品介紹",
+  "sub_topic": "多旋翼飛行器結構與分類",
+  "content_type": "introduction, table, diagram",
+  "keywords": [
+    "無人機",
+    "多旋翼",
+    "定翼",
+    "單旋翼",
+    "飛行控制",
+    "遙控裝置"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "±"
+  ],
+  "document_section": "第一章 產品應用介紹",
+  "equipment_mentioned": [
+    "飛行控制機",
+    "遙控裝置",
+    "飛行紀錄盒",
+    "相機"
+  ],
+  "materials_mentioned": [],
+  "processes_mentioned": [
+    "飛行控制",
+    "遙控信號傳輸"
+  ],
+  "standards_mentioned": [
+    "法規製造規格"
+  ],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "航空、無人機",
+  "target_audience": "工程師、技術人員、無人機操作人員",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

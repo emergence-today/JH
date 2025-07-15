@@ -1,0 +1,57 @@
+{
+  "topic": "電子線束製造",
+  "sub_topic": "電性測試",
+  "content_type": "procedure",
+  "keywords": [
+    "電性測試",
+    "金屬品質",
+    "測試流程",
+    "不良品檢測",
+    "電測頻器"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "×6.0",
+    "PIN"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "電測頻器",
+    "益和焊烙白畫冊"
+  ],
+  "materials_mentioned": [
+    "電子線束",
+    "金屬品"
+  ],
+  "processes_mentioned": [
+    "電性測試",
+    "金屬品質檢測",
+    "不良品識別",
+    "定點面朗向"
+  ],
+  "standards_mentioned": [
+    "SOP-02871",
+    "CM-SOP02871-01"
+  ],
+  "measurements_units": [
+    "×6.0"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "金屬品質放成品圖上之後確保行政規定部接觸銀光與面相符合",
+    "每天使用前需要對金屬品進行檢察測試"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "測試金屬品質位置部",
+    "確認金屬品與插頻金屬品質工質行成部效",
+    "每天使用前檢查金屬品",
+    "檢測不良品"
+  ],
+  "related_documents": [
+    "CM-SOP02871-01"
+  ],
+  "revision_info": "版本7.0，最近修訂於2014.08.20",
+  "importance_level": "high"
+}

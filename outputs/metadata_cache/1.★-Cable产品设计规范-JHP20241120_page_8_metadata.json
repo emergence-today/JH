@@ -1,0 +1,52 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "自动布线规范",
+  "content_type": "table",
+  "keywords": [
+    "Teflon",
+    "美纹胶带",
+    "主线",
+    "副线",
+    "双头",
+    "单头",
+    "并排布线"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "mm",
+    "PCS"
+  ],
+  "document_section": "第4章",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "Teflon",
+    "美纹胶带",
+    "电线"
+  ],
+  "processes_mentioned": [
+    "二次并排布线",
+    "双头布线",
+    "单头布线"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm",
+    "PCS"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "主线最长可拉：930mm",
+    "副线最长：850mm"
+  ],
+  "application_area": "电子",
+  "target_audience": "线束装配技术员",
+  "action_items": [
+    "根据线长确定使用单头或双头布线",
+    "按规定使用美纹胶带固定"
+  ],
+  "related_documents": [
+    "产品设计规范"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

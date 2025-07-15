@@ -1,0 +1,56 @@
+{
+  "topic": "品質管理",
+  "sub_topic": "客戶抱怨處理",
+  "content_type": "procedure",
+  "keywords": [
+    "客戶抱怨",
+    "8D",
+    "矯正措施",
+    "不良品",
+    "客訴處理"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "8D",
+    "CQE",
+    "D/C"
+  ],
+  "document_section": "第4章 作業辦法",
+  "equipment_mentioned": [],
+  "materials_mentioned": [],
+  "processes_mentioned": [
+    "客戶抱怨處理流程",
+    "8D問題解決流程",
+    "報廢處理",
+    "重工處理"
+  ],
+  "standards_mentioned": [
+    "JHQMS-017-01",
+    "報廢處理作業辦法"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "客戶抱怨處理時效",
+    "24小時內回覆客戶"
+  ],
+  "application_area": "製造業",
+  "target_audience": [
+    "品質工程師",
+    "生產主管",
+    "業務人員",
+    "工程師"
+  ],
+  "action_items": [
+    "CQE收到客訴後需回覆客戶",
+    "成立8D小組",
+    "確認問題描述",
+    "實施暫時性對策",
+    "檢討異常發生因素"
+  ],
+  "related_documents": [
+    "報廢處理作業辦法"
+  ],
+  "revision_info": "版本A，修訂日期2024/9/20",
+  "importance_level": "high"
+}

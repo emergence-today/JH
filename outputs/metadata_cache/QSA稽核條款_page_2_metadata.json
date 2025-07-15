@@ -1,0 +1,38 @@
+{
+  "topic": "文件管理",
+  "sub_topic": "文件審批",
+  "content_type": "form",
+  "keywords": [
+    "準備",
+    "審批",
+    "表格",
+    "簽名欄"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [],
+  "document_section": "簽核頁",
+  "equipment_mentioned": [],
+  "materials_mentioned": [],
+  "processes_mentioned": [
+    "文件審批流程"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "需要準備人簽名",
+    "需要審批人簽名"
+  ],
+  "application_area": "電子製造",
+  "target_audience": [
+    "工程師",
+    "管理人員"
+  ],
+  "action_items": [
+    "準備人填寫簽名",
+    "審批人填寫簽名"
+  ],
+  "related_documents": [],
+  "revision_info": "Form NO:MSMV-0D-002-1(090102)",
+  "importance_level": "high"
+}

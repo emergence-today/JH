@@ -1,0 +1,53 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "DP High-bit-rate線材結構",
+  "content_type": "specification",
+  "keywords": [
+    "線材結構",
+    "Twinax signal wires",
+    "電磁干擾",
+    "屏蔽",
+    "DP線材"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "DP",
+    "EMI"
+  ],
+  "document_section": "第2章 半成品線圖示",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "Twinax signal wires",
+    "single insulated wires",
+    "鋁箔麥拉",
+    "編織雙層屏蔽"
+  ],
+  "processes_mentioned": [
+    "屏蔽",
+    "減少電磁干擾"
+  ],
+  "standards_mentioned": [
+    "鋁箔重疊率达到20%以上",
+    "編織遮蔽率达到75%以上"
+  ],
+  "measurements_units": [
+    "%"
+  ],
+  "safety_requirements": [
+    "減少電磁干擾(EMI)"
+  ],
+  "quality_criteria": [
+    "鋁箔重疊率达到20%以上",
+    "編織遮蔽率达到75%以上"
+  ],
+  "application_area": "電子",
+  "target_audience": "工程師",
+  "action_items": [
+    "採用鋁箔麥拉＋編織雙層屏蔽",
+    "確保鋁箔重疊率达到20%以上",
+    "確保編織遮蔽率达到75%以上"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

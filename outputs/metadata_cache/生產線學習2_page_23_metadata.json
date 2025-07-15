@@ -1,0 +1,48 @@
+{
+  "topic": "線束製造",
+  "sub_topic": "穿編織工藝",
+  "content_type": "procedure",
+  "keywords": [
+    "電子線束",
+    "穿編織",
+    "鐵氟龍套",
+    "編織線"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "鐵氟龍套",
+    "針線裝"
+  ],
+  "materials_mentioned": [
+    "鐵氟龍套管",
+    "編織線",
+    "電子線束"
+  ],
+  "processes_mentioned": [
+    "檢查編織線規格",
+    "穿線套",
+    "編結"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "穿線工藝無出挑立毛線",
+    "編織鐵條不可成毛",
+    "套編織剪視量正確"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "檢查編織線規格",
+    "將穿線套穿到線材端",
+    "用針線裝檢查編織彈性"
+  ],
+  "related_documents": [],
+  "revision_info": "版本1.0",
+  "importance_level": "high"
+}

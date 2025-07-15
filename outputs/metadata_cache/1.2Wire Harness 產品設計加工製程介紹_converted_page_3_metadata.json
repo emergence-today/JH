@@ -1,0 +1,47 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "電子線材結構",
+  "content_type": "introduction",
+  "keywords": [
+    "Wire Harness Cable",
+    "芯線",
+    "外被",
+    "UL 1571",
+    "AWG"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "AWG"
+  ],
+  "document_section": "Wire Harness Cable 介紹",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "銅線",
+    "PVC",
+    "錫芯線"
+  ],
+  "processes_mentioned": [
+    "先鍍後絞",
+    "打端子"
+  ],
+  "standards_mentioned": [
+    "UL 1571",
+    "UL1007",
+    "UL1589",
+    "UL10064",
+    "UL3385"
+  ],
+  "measurements_units": [
+    "AWG"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "防止芯線斷裂"
+  ],
+  "application_area": "電子",
+  "target_audience": "工程師",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

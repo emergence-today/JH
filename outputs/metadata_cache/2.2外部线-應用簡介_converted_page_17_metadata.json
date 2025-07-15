@@ -1,0 +1,39 @@
+{
+  "topic": "連接器技術",
+  "sub_topic": "Micro USB連接器",
+  "content_type": "introduction",
+  "keywords": [
+    "Micro USB",
+    "連接器",
+    "USB線",
+    "USB-A"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "USB"
+  ],
+  "document_section": "連接器章節",
+  "equipment_mentioned": [
+    "Micro USB連接器",
+    "USB線"
+  ],
+  "materials_mentioned": [
+    "USB線",
+    "線纜束帶"
+  ],
+  "processes_mentioned": [],
+  "standards_mentioned": [
+    "USB標準"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子",
+  "target_audience": "工程師",
+  "action_items": [],
+  "related_documents": [
+    "USB規格文件"
+  ],
+  "revision_info": "",
+  "importance_level": "medium"
+}

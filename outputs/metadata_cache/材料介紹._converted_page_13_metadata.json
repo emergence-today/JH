@@ -1,0 +1,47 @@
+{
+  "topic": "電線規格",
+  "sub_topic": "UL1571電線特性",
+  "content_type": "table",
+  "keywords": [
+    "UL1571",
+    "導體",
+    "絕緣體",
+    "AWG",
+    "SR-PVC",
+    "SP-PVC"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "AWG",
+    "mm",
+    "±"
+  ],
+  "document_section": "二特性一",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "SR-PVC",
+    "SP-PVC"
+  ],
+  "processes_mentioned": [],
+  "standards_mentioned": [
+    "UL1571",
+    "UL STYLE"
+  ],
+  "measurements_units": [
+    "mm",
+    "AWG"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "直徑公差 ±0.01mm",
+    "絕緣體直徑公差 ±0.03mm"
+  ],
+  "application_area": "電子、電氣",
+  "target_audience": "工程師、技術員",
+  "action_items": [],
+  "related_documents": [
+    "UL標準規範"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

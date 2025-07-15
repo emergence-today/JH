@@ -1,0 +1,53 @@
+{
+  "topic": "電磁干擾(EMI)處理",
+  "sub_topic": "EMI屏蔽設計與改善方法",
+  "content_type": "technical_guide",
+  "keywords": [
+    "EMI",
+    "屏蔽效果",
+    "導電布",
+    "表面屏蔽",
+    "導電材料"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "欧姆",
+    "≦"
+  ],
+  "document_section": "第6章",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "導電布",
+    "導電性布",
+    "铜箔",
+    "地片",
+    "HY2303",
+    "ET-CH"
+  ],
+  "processes_mentioned": [
+    "焊接",
+    "包覆",
+    "開窗"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "欧姆",
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "HY2303 ≦ 0.06 欧姆",
+    "ET-CH ≦ 0.03 欧姆"
+  ],
+  "application_area": "電子產品製造",
+  "target_audience": "電子產品設計工程師、EMC工程師",
+  "action_items": [
+    "修改導電性較佳的導電布",
+    "導電布對貼預緊密",
+    "增加外屏蔽效果",
+    "加大各導電材料之間的重疊面積"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

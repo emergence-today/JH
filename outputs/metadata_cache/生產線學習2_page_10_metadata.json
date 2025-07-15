@@ -1,0 +1,60 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "線芯預加工",
+  "content_type": "procedure",
+  "keywords": [
+    "線芯預加工",
+    "IPC套管",
+    "紅外烘干",
+    "套管加工"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "100-8/0°C",
+    "270±30秒/分"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "紅外烘干機",
+    "天平設備"
+  ],
+  "materials_mentioned": [
+    "線芯",
+    "IPC套管",
+    "軟芯",
+    "規格管"
+  ],
+  "processes_mentioned": [
+    "線芯穿入套管",
+    "紅外烘干",
+    "套管加工"
+  ],
+  "standards_mentioned": [
+    "專用SOP"
+  ],
+  "measurements_units": [
+    "°C",
+    "秒",
+    "分"
+  ],
+  "safety_requirements": [
+    "套管不可燒焦"
+  ],
+  "quality_criteria": [
+    "線芯不可破損",
+    "套管須牢固",
+    "規格管位置須正確"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "將線芯穿入IPC套管",
+    "將軟芯放在天平設備上",
+    "放入紅外烘干機約4分鐘"
+  ],
+  "related_documents": [
+    "專用SOP"
+  ],
+  "revision_info": "文件編號: SOP-02871, 版本: 1.0",
+  "importance_level": "high"
+}

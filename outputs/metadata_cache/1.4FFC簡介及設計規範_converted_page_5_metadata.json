@@ -1,0 +1,51 @@
+{
+  "topic": "電子連接器材料",
+  "sub_topic": "FFC柔性扁平電纜特性",
+  "content_type": "introduction",
+  "keywords": [
+    "FFC",
+    "柔性扁平電纜",
+    "絕緣膜",
+    "導體",
+    "小型化"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "❖"
+  ],
+  "document_section": "第一章",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "FFC",
+    "絕緣膜",
+    "導體",
+    "PVC",
+    "帶狀電纜",
+    "柔性線路板",
+    "麥拉"
+  ],
+  "processes_mentioned": [
+    "焊接",
+    "畫線",
+    "印字",
+    "貼麥拉",
+    "彎折",
+    "定型加工"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [
+    "廢棄時不會有氯化物污染環境"
+  ],
+  "quality_criteria": [
+    "優越的柔軟性和彎曲性",
+    "插入後具有優越的可靠性",
+    "不易氧化"
+  ],
+  "application_area": "電子、精密機械",
+  "target_audience": "電子工程師、連接器設計人員",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

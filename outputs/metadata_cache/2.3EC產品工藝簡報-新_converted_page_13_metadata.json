@@ -1,0 +1,49 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "排線扣製程",
+  "content_type": "introduction",
+  "keywords": [
+    "排線扣",
+    "P1/P2",
+    "Production Flow",
+    "線夾翻轉",
+    "編位表"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "P1",
+    "P2"
+  ],
+  "document_section": "DP 制程工藝介紹",
+  "equipment_mentioned": [
+    "線夾"
+  ],
+  "materials_mentioned": [
+    "排線",
+    "銅線",
+    "彩色線材"
+  ],
+  "processes_mentioned": [
+    "排線",
+    "線夾翻轉",
+    "依編位表排線"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "依編位表正確排線"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "製程技術員",
+  "action_items": [
+    "排好一面后將線夾翻轉方向",
+    "以另一面朝上",
+    "依編位表排線"
+  ],
+  "related_documents": [
+    "編位表"
+  ],
+  "revision_info": "",
+  "importance_level": "medium"
+}

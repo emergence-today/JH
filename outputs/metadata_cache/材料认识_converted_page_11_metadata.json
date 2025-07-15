@@ -1,0 +1,33 @@
+{
+  "topic": "材料規格",
+  "sub_topic": "導電材料",
+  "content_type": "introduction",
+  "keywords": [
+    "導電銅箔",
+    "導電",
+    "耐高溫"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "■"
+  ],
+  "document_section": "未明確指出",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "導電銅箔"
+  ],
+  "processes_mentioned": [],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "導電",
+    "耐高溫"
+  ],
+  "application_area": "電子",
+  "target_audience": "工程師",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "未提供",
+  "importance_level": "medium"
+}

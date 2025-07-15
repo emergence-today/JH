@@ -1,0 +1,34 @@
+{
+  "topic": "連接器設計",
+  "sub_topic": "Type-C連接器",
+  "content_type": "diagram",
+  "keywords": [
+    "Type-C",
+    "connector",
+    "plug",
+    "PCB-mounted",
+    "over-molding"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "Type-C"
+  ],
+  "document_section": "未明確指出",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "PCB"
+  ],
+  "processes_mentioned": [
+    "over-molding"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子",
+  "target_audience": "工程師",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "未提供",
+  "importance_level": "medium"
+}

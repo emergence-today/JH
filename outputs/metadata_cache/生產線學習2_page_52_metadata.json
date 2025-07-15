@@ -1,0 +1,62 @@
+{
+  "topic": "電子線束製造",
+  "sub_topic": "開關電阻測試",
+  "content_type": "procedure",
+  "keywords": [
+    "電阻測試",
+    "開關測試",
+    "CONN",
+    "治具",
+    "不良品判定"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Ω",
+    "mΩ"
+  ],
+  "document_section": "作業標準書",
+  "equipment_mentioned": [
+    "導流低端計測試儀",
+    "測試治具"
+  ],
+  "materials_mentioned": [
+    "電子線束",
+    "CONN",
+    "PCB版"
+  ],
+  "processes_mentioned": [
+    "闸闭按键电阻测试",
+    "開合動作測試",
+    "不良品判定"
+  ],
+  "standards_mentioned": [
+    "上限值:30Ω",
+    "下限值:0.1mΩ"
+  ],
+  "measurements_units": [
+    "Ω",
+    "mΩ",
+    "秒"
+  ],
+  "safety_requirements": [
+    "測試良品與不良品區別分開放置,避免混淆"
+  ],
+  "quality_criteria": [
+    "電阻上限值:30Ω",
+    "電阻下限值:0.1mΩ",
+    "開關按鍵正常回彈"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "檢查治具PIN針是否變形",
+    "測試治具水平放置",
+    "按壓開關至聽到響聲",
+    "區分良品與不良品"
+  ],
+  "related_documents": [
+    "SOP-02871"
+  ],
+  "revision_info": "版本3.0，最近修訂於2011.11.21",
+  "importance_level": "high"
+}

@@ -1,0 +1,45 @@
+{
+  "topic": "工程製圖",
+  "sub_topic": "零件圖面識別",
+  "content_type": "introduction",
+  "keywords": [
+    "零件圖",
+    "圖面組成",
+    "尺寸標注",
+    "公差",
+    "底框表格"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "公差符號",
+    "投影符號"
+  ],
+  "document_section": "第3頁 圖面識別 - 零件圖",
+  "equipment_mentioned": [],
+  "materials_mentioned": [],
+  "processes_mentioned": [
+    "繪圖",
+    "投影"
+  ],
+  "standards_mentioned": [
+    "公差標準"
+  ],
+  "measurements_units": [
+    "長度單位"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "公差要求"
+  ],
+  "application_area": "工業製造",
+  "target_audience": "工程師、技術員、製圖人員",
+  "action_items": [
+    "理解零件圖的組成部分",
+    "按標準解讀圖面"
+  ],
+  "related_documents": [
+    "公差標準手冊"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

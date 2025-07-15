@@ -1,0 +1,59 @@
+{
+  "topic": "電子元件測試",
+  "sub_topic": "金屬品磁極位置確認與LED測試",
+  "content_type": "procedure",
+  "keywords": [
+    "磁極位置確認",
+    "LED測試",
+    "電測",
+    "金屬品",
+    "覆測"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "Enter",
+    "Exit",
+    "NIR"
+  ],
+  "document_section": "作業流程",
+  "equipment_mentioned": [
+    "金屬磁磁確認機",
+    "測試設備",
+    "350AI"
+  ],
+  "materials_mentioned": [
+    "電子線",
+    "金屬品",
+    "LED"
+  ],
+  "processes_mentioned": [
+    "覆測",
+    "金屬品磁極位置確認",
+    "電測",
+    "測試"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [],
+  "safety_requirements": [
+    "作業人員須確實執行不停電中對象手部安全措施"
+  ],
+  "quality_criteria": [
+    "磁極位置符合規定",
+    "測試結果合格"
+  ],
+  "application_area": "電子",
+  "target_audience": "技術員",
+  "action_items": [
+    "將產品放在金屬磁確認機上",
+    "確認磁極位置",
+    "進行電測",
+    "記錄測試結果"
+  ],
+  "related_documents": [
+    "04-SOP02871-01"
+  ],
+  "revision_info": "版本5.0，最新修改於2014.06.17，由許峰增加電測前序金屬品磁極確認步驟",
+  "importance_level": "high"
+}

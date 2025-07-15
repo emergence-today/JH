@@ -1,0 +1,36 @@
+{
+  "topic": "工程圖面解讀",
+  "sub_topic": "成品圖面識別",
+  "content_type": "diagram_explanation",
+  "keywords": [
+    "成品圖",
+    "圖面識別",
+    "局部說明"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "圖面符號",
+    "尺寸標註"
+  ],
+  "document_section": "第二章 成品圖",
+  "equipment_mentioned": [],
+  "materials_mentioned": [],
+  "processes_mentioned": [
+    "圖面解讀"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "製造業",
+  "target_audience": "工程師、技術員、製圖人員",
+  "action_items": [
+    "理解成品圖面",
+    "識別局部說明"
+  ],
+  "related_documents": [
+    "工程圖學標準"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

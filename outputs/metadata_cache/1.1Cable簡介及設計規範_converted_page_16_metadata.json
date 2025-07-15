@@ -1,0 +1,35 @@
+{
+  "topic": "材料规格",
+  "sub_topic": "胶带分类与应用",
+  "content_type": "introduction",
+  "keywords": [
+    "EMI胶带",
+    "绝缘性能",
+    "电磁场干扰",
+    "导电材料"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "EMI"
+  ],
+  "document_section": "第4章 第4.4节",
+  "equipment_mentioned": [],
+  "materials_mentioned": [
+    "黑色导电布",
+    "导电铜箔",
+    "导电铝箔",
+    "灰色导电布",
+    "导电泡棉"
+  ],
+  "processes_mentioned": [],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "电子",
+  "target_audience": "工程师",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

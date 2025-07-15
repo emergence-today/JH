@@ -1,0 +1,56 @@
+{
+  "topic": "製程工藝",
+  "sub_topic": "線束生產流程",
+  "content_type": "diagram",
+  "keywords": [
+    "生產加工流程",
+    "線束製造",
+    "焊接",
+    "編織"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "箭頭流程指示"
+  ],
+  "document_section": "生產加工流程圖",
+  "equipment_mentioned": [
+    "烘烤箱",
+    "YAG",
+    "GB"
+  ],
+  "materials_mentioned": [
+    "卷材",
+    "錫膏",
+    "連接器",
+    "線材",
+    "地爪"
+  ],
+  "processes_mentioned": [
+    "裁卷材",
+    "刮錫膏",
+    "焊接",
+    "拉線",
+    "斜線板跳線",
+    "修剪線頭孔線",
+    "線材裝夾具",
+    "外被輻射",
+    "外被挪移",
+    "編織沾錫",
+    "拆夾具"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子製造",
+  "target_audience": "生產技術員",
+  "action_items": [
+    "按照流程圖執行線束生產步驟"
+  ],
+  "related_documents": [
+    "線束製造規範",
+    "品質檢驗標準"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

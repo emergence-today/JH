@@ -1,0 +1,49 @@
+{
+  "topic": "連接技術",
+  "sub_topic": "HDMI線應用",
+  "content_type": "introduction",
+  "keywords": [
+    "HDMI",
+    "視頻傳輸",
+    "音頻傳輸",
+    "多媒體連接"
+  ],
+  "difficulty_level": "basic",
+  "technical_symbols": [
+    "HDMI"
+  ],
+  "document_section": "HDMI線用途",
+  "equipment_mentioned": [
+    "等離子電視",
+    "高清播放機",
+    "液晶電視",
+    "背投電視",
+    "投影機",
+    "DVD錄/放影機",
+    "D-VHS錄/放影機",
+    "數位影音顯示裝置",
+    "遊戲主機",
+    "數位相機",
+    "VR頭盔",
+    "筆記本電腦",
+    "平板電腦",
+    "智能手機"
+  ],
+  "materials_mentioned": [
+    "HDMI線"
+  ],
+  "processes_mentioned": [
+    "視頻信號傳輸",
+    "音頻信號傳輸"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [],
+  "safety_requirements": [],
+  "quality_criteria": [],
+  "application_area": "電子、多媒體、消費電子",
+  "target_audience": "工程師、技術人員、一般消費者",
+  "action_items": [],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "medium"
+}

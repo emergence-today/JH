@@ -1,0 +1,59 @@
+{
+  "topic": "線束製程工藝",
+  "sub_topic": "跳線與線頭處理",
+  "content_type": "procedure",
+  "keywords": [
+    "跳線",
+    "修剪線頭",
+    "扎線",
+    "斜線板治具",
+    "小鐵板"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "0.5PITCH",
+    "6±1mm"
+  ],
+  "document_section": "第五章、第六章",
+  "equipment_mentioned": [
+    "斜線板治具",
+    "剪刀"
+  ],
+  "materials_mentioned": [
+    "主線",
+    "小鐵板",
+    "橡皮圈"
+  ],
+  "processes_mentioned": [
+    "跳線",
+    "修剪線頭",
+    "扎線",
+    "布線"
+  ],
+  "standards_mentioned": [
+    "線頭超出線板6±1mm"
+  ],
+  "measurements_units": [
+    "mm",
+    "PITCH"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "線頭修剪齊",
+    "線材理順"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "取修剪OK的主線",
+    "將線材理順",
+    "檢查線頭修剪",
+    "放置小鐵板",
+    "布線入斜線槽",
+    "修剪多餘線頭",
+    "用橡皮圈扎線"
+  ],
+  "related_documents": [],
+  "revision_info": "",
+  "importance_level": "high"
+}

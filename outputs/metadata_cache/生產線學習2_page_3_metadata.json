@@ -1,0 +1,64 @@
+{
+  "topic": "電子線製造工藝",
+  "sub_topic": "電子線共用作業標準",
+  "content_type": "procedure",
+  "keywords": [
+    "電子線",
+    "作業標準書",
+    "變更履歷",
+    "站別",
+    "絕緣"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "ψ545℃",
+    "ψ6045'",
+    "150℃"
+  ],
+  "document_section": "變更履歷",
+  "equipment_mentioned": [
+    "UV機",
+    "絕緣機",
+    "測機",
+    "導測器",
+    "導繞機"
+  ],
+  "materials_mentioned": [
+    "SATA",
+    "D-SUB進線器",
+    "絕緣板",
+    "HGN線材"
+  ],
+  "processes_mentioned": [
+    "絕緣",
+    "貼標籤",
+    "導繞",
+    "測試",
+    "封接"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "℃"
+  ],
+  "safety_requirements": [
+    "溫度控制要求"
+  ],
+  "quality_criteria": [
+    "絕緣測試標準"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產技術人員",
+  "action_items": [
+    "按照更新後的標準執行作業流程",
+    "注意溫度控制參數變更"
+  ],
+  "related_documents": [
+    "電子線共用SOP",
+    "共用40.0",
+    "共用41 SOP"
+  ],
+  "revision_info": "文件版本65.0，包含多次站別屬層和工藝流程的變更記錄",
+  "importance_level": "high"
+}

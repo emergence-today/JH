@@ -1,0 +1,61 @@
+{
+  "topic": "產品設計變更管理",
+  "sub_topic": "變更管理序與追蹤確認",
+  "content_type": "procedure",
+  "keywords": [
+    "工程變更",
+    "ECN",
+    "變更管理",
+    "變更追蹤",
+    "設備變更",
+    "人員變更",
+    "材料變更"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "■"
+  ],
+  "document_section": "6.5 變更後追蹤確認",
+  "equipment_mentioned": [
+    "備子篩者設備",
+    "焊接設備",
+    "成型設備"
+  ],
+  "materials_mentioned": [
+    "圖紙規定材料",
+    "非規定材料"
+  ],
+  "processes_mentioned": [
+    "備子篩者工序",
+    "焊接工序",
+    "成型電測",
+    "變更追蹤流程"
+  ],
+  "standards_mentioned": [
+    "KSEN-013 01-F02"
+  ],
+  "measurements_units": [
+    "工作日"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "客戶要求",
+    "HSF承認資料"
+  ],
+  "application_area": "製造業",
+  "target_audience": [
+    "工程師",
+    "管理人員",
+    "品質人員"
+  ],
+  "action_items": [
+    "填寫工程變更狀況追蹤表",
+    "7個工作日內送達客戶端",
+    "7個工作日內告知各客戶"
+  ],
+  "related_documents": [
+    "KSEN-013 01-F02 工程變更狀況追蹤表"
+  ],
+  "revision_info": "版本/修訂: 13, 修訂日期: 2024-5-10",
+  "importance_level": "high"
+}

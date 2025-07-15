@@ -1,0 +1,59 @@
+{
+  "topic": "線束設計",
+  "sub_topic": "手工排線規格與要求",
+  "content_type": "table",
+  "keywords": [
+    "排線",
+    "胶带",
+    "LCD",
+    "MB",
+    "CCD",
+    "连接器",
+    "散线"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "0.5pitch",
+    "PIN",
+    "mm"
+  ],
+  "document_section": "第5章 手工排线",
+  "equipment_mentioned": [
+    "LCD",
+    "MB",
+    "CCD"
+  ],
+  "materials_mentioned": [
+    "排线",
+    "胶带",
+    "连接器"
+  ],
+  "processes_mentioned": [
+    "手工排线",
+    "压排排线",
+    "纵线散开"
+  ],
+  "standards_mentioned": [],
+  "measurements_units": [
+    "mm",
+    "pitch"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "胶带长度：两边缘线宽度+5mm",
+    "胶带宽度：5mm",
+    "纵线散开距离Con下边线10-15mm"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "生產線技術員",
+  "action_items": [
+    "按照规定长度准备胶带",
+    "在指定位置散开纵线",
+    "遵循沟槽下边缘散线要求"
+  ],
+  "related_documents": [
+    "产品设计规范"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}

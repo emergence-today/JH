@@ -1,0 +1,65 @@
+{
+  "topic": "電子線束測試",
+  "sub_topic": "LED量測程序",
+  "content_type": "procedure",
+  "keywords": [
+    "LED測試",
+    "電子線束",
+    "量測參數",
+    "測試設定",
+    "光電測量"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "mA",
+    "V",
+    "A"
+  ],
+  "document_section": "作業流程",
+  "equipment_mentioned": [
+    "光電測量設備",
+    "測試仪器",
+    "非常規測試仪器A"
+  ],
+  "materials_mentioned": [
+    "電子線束同三十八",
+    "LED"
+  ],
+  "processes_mentioned": [
+    "光電八項測量",
+    "正向測試",
+    "反向測試",
+    "電流測試",
+    "電壓測試"
+  ],
+  "standards_mentioned": [
+    "SOP-02871"
+  ],
+  "measurements_units": [
+    "mA",
+    "V",
+    "A",
+    "秒"
+  ],
+  "safety_requirements": [
+    "静電手环"
+  ],
+  "quality_criteria": [
+    "正向測試電流參數",
+    "反向測試電壓參數",
+    "測試時間要求"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "技術員",
+  "action_items": [
+    "按Exit鍵退出",
+    "按Test鍵選擇",
+    "設定測試參數",
+    "進行LED測試"
+  ],
+  "related_documents": [
+    "SOP要求"
+  ],
+  "revision_info": "當前版本5.0，由宋磊於2014.06.17修訂",
+  "importance_level": "high"
+}

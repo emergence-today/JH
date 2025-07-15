@@ -1,0 +1,63 @@
+{
+  "topic": "電線測試",
+  "sub_topic": "電線半成品測試流程",
+  "content_type": "procedure",
+  "keywords": [
+    "電線測試",
+    "導通阻性",
+    "耐電壓",
+    "測試條件",
+    "不良品檢測"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "V",
+    "MΩ",
+    "S"
+  ],
+  "document_section": "作業標準書 SOP-02871",
+  "equipment_mentioned": [
+    "點試儀",
+    "萬能電測儀",
+    "RT-5000型器",
+    "等端插台"
+  ],
+  "materials_mentioned": [
+    "電子線"
+  ],
+  "processes_mentioned": [
+    "電線測試",
+    "導通測試",
+    "耐電壓測試",
+    "不良品分類"
+  ],
+  "standards_mentioned": [
+    "JIS-LMA"
+  ],
+  "measurements_units": [
+    "V",
+    "MΩ",
+    "S"
+  ],
+  "safety_requirements": [
+    "電測試條件設定"
+  ],
+  "quality_criteria": [
+    "導通阻性300V",
+    "耐電壓20MΩ",
+    "容接錯按0.1S"
+  ],
+  "application_area": "電子製造",
+  "target_audience": "技術員",
+  "action_items": [
+    "設定電測試條件",
+    "檢查測試點",
+    "分類良品與不良品",
+    "確認測試結果"
+  ],
+  "related_documents": [
+    "點試RT-5000型器使用說明書"
+  ],
+  "revision_info": "當前版本6.0，最近更新為電測新條件備品制",
+  "importance_level": "high"
+}

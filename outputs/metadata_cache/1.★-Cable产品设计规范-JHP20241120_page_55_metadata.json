@@ -1,0 +1,58 @@
+{
+  "topic": "條碼標籤規範",
+  "sub_topic": "客戶條碼標籤範例",
+  "content_type": "specification",
+  "keywords": [
+    "條碼標籤",
+    "LVDS Cable",
+    "Foxconn",
+    "鴻富錦",
+    "條碼規則"
+  ],
+  "difficulty_level": "intermediate",
+  "technical_symbols": [
+    "||||||||||||||||||||",
+    "FAWHLYYMMDDDZZZ",
+    "FIDLHLYMDDDZZZ"
+  ],
+  "document_section": "第31章",
+  "equipment_mentioned": [
+    "LVDS Cable"
+  ],
+  "materials_mentioned": [
+    "BOT_DUAL_LVDS_CABLE",
+    "NEWTON 15.6\" LVDS CABLE"
+  ],
+  "processes_mentioned": [
+    "條碼生成",
+    "標籤製作"
+  ],
+  "standards_mentioned": [
+    "Commercial機種14碼規則",
+    "Newton機種13碼規則"
+  ],
+  "measurements_units": [
+    "mm"
+  ],
+  "safety_requirements": [],
+  "quality_criteria": [
+    "條碼顯示內容必須符合指定格式"
+  ],
+  "application_area": "電子製造",
+  "target_audience": [
+    "工程師",
+    "生產線技術員",
+    "品質檢驗人員"
+  ],
+  "action_items": [
+    "接到新機種需先由業務同各戶確認條碼規則",
+    "依不同規則設定於工程圖面"
+  ],
+  "related_documents": [
+    "工程圖面",
+    "PPT檔",
+    "XLS檔"
+  ],
+  "revision_info": "",
+  "importance_level": "high"
+}
