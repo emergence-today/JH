@@ -13,6 +13,8 @@ __pycache__/
 .images/
 .專家/
 .aws/
+outputs/
+
 # OS files
 .DS_Store
 Thumbs.db
@@ -45,5 +47,9 @@ processed_chunks.jsonl
 # Ignore other secrets/configs
 *.secret
 *.key.env
-.env
-.venv
+
+# Large archive files
+*.7z
+*.zip
+*.rar
+*.tar.gz
