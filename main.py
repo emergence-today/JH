@@ -504,7 +504,7 @@ async def stream_chat_response(request: NewChatRequest):
 
 用戶問題：{request.user_query}
 
-請結合教材內容和對話歷史，用清楚友善的方式回答問題。如果教材中有相關圖片，請在回答中提及。"""
+請結合教材內容和對話歷史，用清楚友善的方式回答問題。"""
 
                     # 收集圖片 URL (已在上面的循環中處理)
 
@@ -914,7 +914,7 @@ async def query_flowise_with_memory(request: NewChatRequest):
 
 用戶問題：{request.user_query}
 
-請結合教材內容和對話歷史，用清楚友善的方式回答問題。如果教材中有相關圖片，請在回答中提及。"""
+請結合教材內容和對話歷史，用清楚友善的方式回答問題。"""
 
                     # 準備來源資訊
                     for result in retrieval_results:

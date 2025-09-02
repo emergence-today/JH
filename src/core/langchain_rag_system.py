@@ -513,7 +513,7 @@ class LangChainParentChildRAG:
 
 問題：{query}
 
-請根據教材內容提供準確、詳細的回答。如果教材中有相關圖片或圖表，請在回答中提及。"""
+請根據教材內容提供準確、詳細的回答。"""
 
             completion = client.chat.completions.create(
                 model=Config.OPENAI_MODEL,
